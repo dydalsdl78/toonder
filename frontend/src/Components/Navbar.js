@@ -8,39 +8,37 @@ import Profile from "../View/Profile";
 function Navbar() {
   return (
     <Router>
-      <div>
-        <ul>
-          <li>
-            <Link to="/">메인</Link>
-          </li>
-          <li>
-            <Link to="/recommendation">추천만화</Link>
-          </li>
-          <li>
-            <Link to="/mylist">내 리스트</Link>
-          </li>
-          <li>
-            <Link to="/profile">프로필</Link>
-          </li>
-        </ul>
+      <ul className="nav justify-content-around fixed-bottom mb-5">
+        <li className="nav-item">
+          <Link to="/">메인</Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/recommendation">추천만화</Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/mylist">내 리스트</Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/profile">프로필</Link>
+        </li>
+      </ul>
 
-        <hr />
+      <hr />
 
-        <Switch>
-          <Route exact path="/">
-            <Main />
-          </Route>
-          <Route path="/recommendation">
-            <Recommendation />
-          </Route>
-          <Route path="/mylist">
-            <MyList />
-          </Route>
-          <Route path="/profile">
-            <Profile />
-          </Route>
-        </Switch>
-      </div>
+      <Switch>
+        <Route exact path="/">
+          <Main />
+        </Route>
+        <Route path="/recommendation">
+          <Recommendation />
+        </Route>
+        <Route path="/mylist">
+          <MyList />
+        </Route>
+        <Route path="/profile">
+          <Profile />
+        </Route>
+      </Switch>
     </Router>
   );
 }
