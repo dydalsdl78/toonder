@@ -1,17 +1,31 @@
 import React from "react";
+import { Switch, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
-import { createGlobalStyle } from 'styled-components';
+import Main from "./View/Main";
+import Recommendation from "./View/Recommendation";
+import MyList from "./View/MyList";
+import Profile from "./View/Profile";
 
-const GlobalStyle = createGlobalStyle`
-  body{
-    // background-color: black;
-  };
-`;
+
+
 
 function App() {
   return (
     <div className="App">
-      <GlobalStyle />
+      <Switch>
+        <Route exact path="/">
+          <Main />
+        </Route>
+        <Route path="/recommendation">
+          <Recommendation />
+        </Route>
+        <Route path="/mylist">
+          <MyList />
+        </Route>
+        <Route path="/profile">
+          <Profile />
+        </Route>
+      </Switch>
       <Navbar />
     </div>
   );
