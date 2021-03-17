@@ -8,8 +8,9 @@
 - `npm install react-router-dom`
 - 상태관리를 위한 리덕스는 프로젝트 중반부 들어가서 결정하기로 함. 
 - 패키지 매너지는 앞으로 `yarn`쓰기로 함. 
-
-
+- material-ui 사용
+  - `yarn add @material-ui/core`
+  - `yarn add @material-ui/icons`
 
 ### Jira + Gitlab + Mattermost 연동
 
@@ -27,4 +28,4 @@
 ### navbar
 
 - `git branch FE/Navbar`
-- 뭔가 루트폴더 설정하는 방법이 있었는데 까먹었다...
+- 뭔가 루트폴더 설정하는 방법이 있었는데 까먹었다....
