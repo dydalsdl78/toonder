@@ -1,6 +1,7 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Redirect, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
+import Login from "./View/Login";
 import Main from "./View/Main";
 import Recommendation from "./View/Recommendation";
 import MyList from "./View/MyList";
@@ -10,9 +11,16 @@ import Profile from "./View/Profile";
 
 
 function App() {
+  let isAuthorized = localStorage.getItem("isAuthorized");
+
   return (
     <div className="App">
+      {!isAuthorized ? <Redirect to="/login" /> : <Redirect to="/" />}
       <Switch>
+        <Route>
+          <Login />
+        </Route>
+
         <Route exact path="/">
           <Main />
         </Route>
