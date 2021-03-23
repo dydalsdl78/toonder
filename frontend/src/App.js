@@ -2,6 +2,7 @@ import React from "react";
 import { Switch, Redirect, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Login from "./View/Login";
+import Join from "./View/Join";
 import Main from "./View/Main";
 import Recommendation from "./View/Recommendation";
 import MyList from "./View/MyList";
@@ -9,7 +10,8 @@ import Profile from "./View/Profile";
 
 
 function App() {
-  let isAuthorized = localStorage.getItem("isAuthorized");
+  let isAuthorized = false
+  // let isAuthorized = localStorage.getItem("isAuthorized");
 
   return (
     <>
@@ -18,6 +20,10 @@ function App() {
         <Route>
           <Login path="/login" />
         </Route>
+        <Route>
+          <Login path="/join" />
+        </Route>
+
 
         <Route exact path="/">
           <Main />
