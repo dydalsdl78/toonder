@@ -8,17 +8,15 @@ import MyList from "./View/MyList";
 import Profile from "./View/Profile";
 
 
-
-
 function App() {
   let isAuthorized = localStorage.getItem("isAuthorized");
 
   return (
-    <div className="App">
+    <>
       {!isAuthorized ? <Redirect to="/login" /> : <Redirect to="/" />}
       <Switch>
         <Route>
-          <Login />
+          <Login path="/login" />
         </Route>
 
         <Route exact path="/">
@@ -35,7 +33,7 @@ function App() {
         </Route>
       </Switch>
       <Navbar />
-    </div>
+    </>
   );
 }
 
