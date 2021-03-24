@@ -3,6 +3,8 @@ from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 
 import uuid
 
+
+
 # 신규 유저 만드는 함수 하나와
 # superuser 만드는 함수 하나를 만들어야 한다.
 
