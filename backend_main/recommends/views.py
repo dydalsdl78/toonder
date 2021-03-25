@@ -2,9 +2,6 @@ from django.shortcuts import render
 from .models import Webtoon
 from .serializers import WebtoonSerializer
 
-
-# 
-
 def index(request):
     webtoons = Webtoon.objects.all()
 
@@ -38,6 +35,7 @@ def recomm_media(request):
 def recomm_random(request):
     pass
 def recomm_opposition(request):
+    pass
 
 
 
@@ -57,6 +55,6 @@ def favorite_list_create(request):
     pass
 
 # 유저 찜목록 삭제하기
-def favorite_list_delete(request, pk):
+def favorite_delete(request, pk):
     pass
 
