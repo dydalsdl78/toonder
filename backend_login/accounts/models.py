@@ -3,10 +3,9 @@ from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 
 import uuid
 
-
-
 # 신규 유저 만드는 함수 하나와
 # superuser 만드는 함수 하나를 만들어야 한다.
+
 
 class MyUserManager(BaseUserManager):
 
@@ -17,7 +16,7 @@ class MyUserManager(BaseUserManager):
         if not username:
             raise ValueError("유저네임이 있어야 합니다.")
 
-        #normalize는 대문자를 전부 소문자화 해준다. 
+        # normalize는 대문자를 전부 소문자화 해준다. 
         user = self.model(
             email=self.normalize_email(email),
             # 이건 로그인용이 아니니까 normalize안해줘도 된다. 
@@ -43,8 +42,6 @@ class MyUserManager(BaseUserManager):
         return user
 
 
-
-
 # profile image를 갖고오기 위한 함수
 def get_profile_image_filepath(self, filename):
     print(self.user_id)
@@ -56,19 +53,20 @@ def get_default_profile_image():
     return "/default_profile.png"
 
 
-
-
 class User(AbstractBaseUser):
     user_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     email = models.EmailField(verbose_name="email", max_length=254, unique=True)
+    # email = models.CharField(max_length=254, unique=True)
     username = models.CharField(unique=True, max_length=50)
     date_joined = models.DateTimeField(verbose_name = 'date joined', auto_now_add=True)
     last_login = models.DateTimeField(verbose_name='last login', auto_now=True)
+
     # 아래 네가지는 AbstractBaseUser에 포함되어있기 때문에 반드시 정의해줘야 한다. is_active 랑 is_staff는 별로 쓸일이 없을 수 있따.
     is_admin = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
     is_superuser = models.BooleanField(default=False)
+    
     # 이미지 필드는 pillow 패키지가 필요하다 pip install pillow했으며 freeze 하겠습니다. 
     profile_image = models.ImageField(upload_to=get_profile_image_filepath, max_length=255, blank=True, default=get_default_profile_image)
     
