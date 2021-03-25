@@ -22,9 +22,9 @@ def to_dataframe(data):
     platform = data[i].webtoon_platform
     day = data[i].serialized_day
 
-    ls_webtoon.append([title, overview, artists, image, score, link, platform, day)
+    ls_webtoon.append([title, overview, artists, image, score, link, platform, day])
 
-  webtoon_df = pd.DataFrame(ls_webtoon, columns=['title', 'overview', 'artists', 'image', 'score', 'link', 'platform', 'day'])
+  webtoon_df = pd.DataFrame(ls_webtoon, columns=['webtoon_name', 'overview', 'webtoon_writer', 'thumbnail_url', 'webtoon_score', 'webtoon_link', 'webtoon_platform', 'serialized_day'])
   
   return webtoon_df
 
@@ -32,9 +32,9 @@ def tokenizer(webtoon_df):
 
   mecab = Mecab()
   webtoon_df['overview_token'] = webtoon_df['overview'].apply(lambda x: mecab.nouns(x))
-
+  webtoon_df['overview_literal'] = webtoon_df['overview_token'].apply(lambda x: (' ').join(x))
   count_vect = TfidfVectorizer(min_df=0, ngram_range=(1, 2))
-  genre_mat = count_vect.fit_transform(movies_df['overview_literal'])
+  genre_mat = count_vect.fit_transform(webtoon_df['overview_literal'])
 
   genre_sim = cosine_similarity(genre_mat, genre_mat)
 
@@ -54,5 +54,5 @@ def find_sim_movie_ver2(df, sorted_ind, title_name, top_n=10):
   return df.iloc[similar_indexes][:top_n][['webtoon_name', 'overview', 'webtoon_writer', 'thumbnail_url', 'webtoon_score', 'webtoon_link', 'webtoon_platform', 'serialized_day']].to_json(orient='records', force_ascii=False)
 
 
-def reults(title):
-  similar_movies = find_sim_movie_ver2(webtoon_df, genre_sim_sorted_ind, '{}'.format(name), 10)
+# def reults(title):
+#   similar_movies = find_sim_movie_ver2(webtoon_df, genre_sim_sorted_ind, '{}'.format(title), 10)

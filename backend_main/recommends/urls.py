@@ -11,6 +11,7 @@ urlpatterns = [
     path('recomm_overall/', views.recomm_overall),
     path('recomm_genre/', views.recomm_genre),
     path('recomm_artist/', views.recomm_artist),
+    path('recomm_summary/', views.recomm_summary),
     path('recomm_score/', views.recomm_score),
     path('recomm_media/', views.recomm_media),
     path('recomm_random/', views.recomm_random),
