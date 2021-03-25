@@ -137,14 +137,16 @@ USE_TZ = True
 
 import os
 
-STATIC_URL = '/static/'
 STATIC_FILES_DIRS = [
-    BASE_DIR / 'static'
+    BASE_DIR / 'static',
+    BASE_DIR / 'media',
 ]
-
+STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
-
+STATIC_ROOT = BASE_DIR / 'static_cdn'
+MEDIA_ROOT = BASE_DIR / 'media_cdn'
+TEMP = BASE_DIR / 'media_cdn/temp'
+BASE_DIR = "https://127.0.0.1:8000"
 
 AUTH_USER_MODEL = 'accounts.User'
 
