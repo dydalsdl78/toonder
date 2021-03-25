@@ -20,5 +20,5 @@ urlpatterns = [
     path('likes/', views.likes_list_create),
     path('likes/<int:likes_pk>', views.likes_delete),
     path('favorite/', views.favorite_list_create),
-    path('likes/<int:likes_pk>', views.favorite_delete),
+    path('favorite/<int:favorite_pk>', views.favorite_delete),
 ]
