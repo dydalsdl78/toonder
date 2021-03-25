@@ -151,8 +151,10 @@ BASE_DIR = "https://127.0.0.1:8000"
 AUTH_USER_MODEL = 'accounts.User'
 
 
-# import datetime
+import datetime
 
-# JWT_AUTH = {
-#     'JWT_EXPIRATION_DELTA': datetime.timedelta(seconds=3600),
-# }
+JWT_AUTH = {
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(seconds=600),
+    'JWT_ALLOW_REFRESH': True,
+    'JWT_REFRESH_EXPIRATION_DELTA' : datetime.timedelta(days=7),
+}
