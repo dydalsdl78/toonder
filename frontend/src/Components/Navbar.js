@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { withRouter, useHistory } from "react-router-dom";
 import { makeStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
@@ -25,7 +25,7 @@ const useStyles = makeStyles({
 function Navbar() {
   const history = useHistory();
   const classes = useStyles();
-  const [value, setValue] = React.useState('/');
+  const [value, setValue] = useState('/');
 
   const handleChange = (event, newValue) => {
     setValue(newValue);

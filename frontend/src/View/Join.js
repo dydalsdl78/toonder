@@ -1,16 +1,21 @@
-import React from 'react';
+import React, { useState, useRef } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { withRouter, useHistory } from 'react-router-dom';
+import { useForm } from 'react-hook-form';
 // import Avatar from '@material-ui/core/Avatar';
 // import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Checkbox from '@material-ui/core/Checkbox';
+// import FormControlLabel from '@material-ui/core/FormControlLabel';
+// import Checkbox from '@material-ui/core/Checkbox';
 import Link from '@material-ui/core/Link';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+
+import { join } from "../actions/auth";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -25,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.secondary.main,
   },
   form: {
-    width: '100%', // Fix IE 11 issue.
+    width: '100%',
     marginTop: theme.spacing(3),
   },
   submit: {
@@ -33,8 +38,55 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Join() {
+
+function Join() {
+  const form = useRef();
+  const history = useHistory();
+  const { handleSubmit, register, errors, watch } = useForm();
   const classes = useStyles();
+  
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [passwordConfirm, setPasswordConfirm] = useState("");
+  // const [successful, setSuccessful] = useState(false);
+  
+  // const { message } = useSelector(state => state.message);
+  const dispatch = useDispatch();
+  
+  const joinBtnClick = () => {
+    if (!errors) {
+      dispatch(join(email, password))
+        .then(() => {
+          history.push("/login");
+        })
+        .catch(() => {
+          // setSuccessful(false);
+        });
+    } else {
+      // setSuccessful(false);
+    }
+  };
+
+  const onChangeUsername = (e) => {
+    const username = e.target.value;
+    setUsername(username);
+  };
+
+  const onChangeEmail = (e) => {
+    const email = e.target.value;
+    setEmail(email);
+  };
+
+  const onChangePassword = (e) => {
+    const password = e.target.value;
+    setPassword(password);
+  };
+
+  const onChangePasswordConfirm = (e) => {
+    const passwordConfirm = e.target.value;
+    setPasswordConfirm(passwordConfirm);
+  };
 
   return (
     <Container component="main" maxWidth="xs">
@@ -46,18 +98,30 @@ export default function Join() {
         <Typography component="h1" variant="h5">
           Sign up
         </Typography>
-        <form className={classes.form} noValidate>
+        <form className={classes.form} onSubmit={handleSubmit(joinBtnClick)} ref={form}>
           <Grid container spacing={2}>
             <Grid item xs={12}>
               <TextField
-                autoComplete="nickname"
-                name="nickname"
+                autoComplete="username"
+                name="username"
                 variant="outlined"
-                required
                 fullWidth
-                id="nickname"
-                label="NickName"
+                id="username"
+                label="userName"
                 autoFocus
+                value={username}
+                onChange={onChangeUsername}
+                ref={register({
+                  required: 'required',
+                  pattern: {
+                    value: /[0-9a-zA-Z]+/,
+                    message: 'invalid username',
+                  },
+                  maxLength: {
+                    value: 10,
+                    message: 'maxLength is 10',
+                  },
+                })}
               />
             </Grid>
             <Grid item xs={12}>
@@ -69,6 +133,15 @@ export default function Join() {
                 label="Email Address"
                 name="email"
                 autoComplete="email"
+                value={email}
+                onChange={onChangeEmail}
+                ref={register({
+                  required: 'required',
+                  pattern: {
+                    value: /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i,
+                    message: 'invalid email',
+                  },
+                })}
               />
             </Grid>
             <Grid item xs={12}>
@@ -81,6 +154,23 @@ export default function Join() {
                 type="password"
                 id="password"
                 autoComplete="current-password"
+                value={password}
+                onChange={onChangeEmail}
+                ref={register({
+                  required: 'required',
+                  pattern: {
+                    value: /[0-9a-zA-Z]+/,
+                    message: 'invalid password',
+                  },
+                  minLength: {
+                    value: 8,
+                    message: 'maxLength is 8',
+                  },
+                  maxLength: {
+                    value: 16,
+                    message: 'maxLength is 16',
+                  },
+                })}
               />
             </Grid>
             <Grid item xs={12}>
@@ -93,14 +183,21 @@ export default function Join() {
                 type="passwordConfirm"
                 id="passwordConfirm"
                 autoComplete="current-password-confirm"
+                value={passwordConfirm}
+                ref={register({
+                  required: '필수입력사항 입니다.',
+                  validate: value => {
+                    return value === watch('password');
+                  },
+                })}
               />
             </Grid>
-            <Grid item xs={12}>
+            {/* <Grid item xs={12}>
               <FormControlLabel
                 control={<Checkbox value="allowExtraEmails" color="primary" />}
                 label="I want to receive inspiration, marketing promotions and updates via email."
               />
-            </Grid>
+            </Grid> */}
           </Grid>
           <Button
             type="submit"
@@ -113,7 +210,7 @@ export default function Join() {
           </Button>
           <Grid container justify="flex-end">
             <Grid item>
-              <Link href="#" variant="body2">
+              <Link onClick={()=>{history.push('/login')}} variant="body2">
                 Already have an account? Login
               </Link>
             </Grid>
@@ -123,3 +220,4 @@ export default function Join() {
     </Container>
   );
 };
+export default withRouter(Join)

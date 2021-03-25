@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useSelector } from "react";
 import { Switch, Redirect, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Login from "./View/Login";
@@ -10,18 +10,17 @@ import Profile from "./View/Profile";
 
 
 function App() {
-  let isAuthorized = false
-  // let isAuthorized = localStorage.getItem("isAuthorized");
+  const { isLoggedIn } = useSelector(state => state.auth);
 
   return (
     <>
-      {!isAuthorized ? <Redirect to="/login" /> : <Redirect to="/" />}
+      {!isLoggedIn ? <Redirect to="/login" /> : <Redirect to="/" />}
       <Switch>
         <Route>
           <Login path="/login" />
         </Route>
         <Route>
-          <Login path="/join" />
+          <Join path="/join" />
         </Route>
 
 
