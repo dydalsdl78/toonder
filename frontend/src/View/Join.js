@@ -49,22 +49,25 @@ function Join() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordConfirm, setPasswordConfirm] = useState("");
-  // const [successful, setSuccessful] = useState(false);
+  const [successful, setSuccessful] = useState(false);
   
   // const { message } = useSelector(state => state.message);
   const dispatch = useDispatch();
   
   const joinBtnClick = () => {
+    setSuccessful(false);
+
     if (!errors) {
       dispatch(join(email, password))
         .then(() => {
+          setSuccessful(true);
           history.push("/login");
         })
         .catch(() => {
-          // setSuccessful(false);
+          setSuccessful(false);
         });
     } else {
-      // setSuccessful(false);
+      setSuccessful(false);
     }
   };
 
@@ -99,122 +102,123 @@ function Join() {
           Sign up
         </Typography>
         <form className={classes.form} onSubmit={handleSubmit(joinBtnClick)} ref={form}>
-          <Grid container spacing={2}>
-            <Grid item xs={12}>
-              <TextField
-                autoComplete="username"
-                name="username"
-                variant="outlined"
-                fullWidth
-                id="username"
-                label="userName"
-                autoFocus
-                value={username}
-                onChange={onChangeUsername}
-                ref={register({
-                  required: 'required',
-                  pattern: {
-                    value: /[0-9a-zA-Z]+/,
-                    message: 'invalid username',
-                  },
-                  maxLength: {
-                    value: 10,
-                    message: 'maxLength is 10',
-                  },
-                })}
-              />
+          {!successful}
+            <Grid container spacing={2}>
+              <Grid item xs={12}>
+                <TextField
+                  autoComplete="username"
+                  name="username"
+                  variant="outlined"
+                  fullWidth
+                  id="username"
+                  label="userName"
+                  autoFocus
+                  value={username}
+                  onChange={onChangeUsername}
+                  inputRef={register({
+                    required: 'required',
+                    pattern: {
+                      value: /[0-9a-zA-Z]+/,
+                      message: 'invalid username',
+                    },
+                    maxLength: {
+                      value: 10,
+                      message: 'maxLength is 10',
+                    },
+                  })}
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <TextField
+                  variant="outlined"
+                  required
+                  fullWidth
+                  id="email"
+                  label="Email Address"
+                  name="email"
+                  autoComplete="email"
+                  value={email}
+                  onChange={onChangeEmail}
+                  inputRef={register({
+                    required: 'required',
+                    pattern: {
+                      value: /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i,
+                      message: 'invalid email',
+                    },
+                  })}
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <TextField
+                  variant="outlined"
+                  required
+                  fullWidth
+                  name="password"
+                  label="Password"
+                  type="password"
+                  id="password"
+                  autoComplete="current-password"
+                  value={password}
+                  onChange={onChangePassword}
+                  inputRef={register({
+                    required: 'required',
+                    pattern: {
+                      value: /[0-9a-zA-Z]+/,
+                      message: 'invalid password',
+                    },
+                    minLength: {
+                      value: 8,
+                      message: 'maxLength is 8',
+                    },
+                    maxLength: {
+                      value: 16,
+                      message: 'maxLength is 16',
+                    },
+                  })}
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <TextField
+                  variant="outlined"
+                  required
+                  fullWidth
+                  name="passwordConfirm"
+                  label="Password Confirm"
+                  type="passwordConfirm"
+                  id="passwordConfirm"
+                  autoComplete="current-password-confirm"
+                  value={passwordConfirm}
+                  onChange={onChangePasswordConfirm}
+                  inputRef={register({
+                    required: '필수입력사항 입니다.',
+                    validate: value => {
+                      return value === watch('password');
+                    },
+                  })}
+                />
+              </Grid>
+              {/* <Grid item xs={12}>
+                <FormControlLabel
+                  control={<Checkbox value="allowExtraEmails" color="primary" />}
+                  label="I want to receive inspiration, marketing promotions and updates via email."
+                />
+              </Grid> */}
             </Grid>
-            <Grid item xs={12}>
-              <TextField
-                variant="outlined"
-                required
-                fullWidth
-                id="email"
-                label="Email Address"
-                name="email"
-                autoComplete="email"
-                value={email}
-                onChange={onChangeEmail}
-                ref={register({
-                  required: 'required',
-                  pattern: {
-                    value: /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i,
-                    message: 'invalid email',
-                  },
-                })}
-              />
+            <Button
+              type="submit"
+              fullWidth
+              variant="contained"
+              color="primary"
+              className={classes.submit}>
+              <span>Join</span>
+            </Button>
+            <Grid container justify="flex-end">
+              <Grid item>
+                <Link onClick={()=>{history.push('/login')}} variant="body2">
+                  Already have an account? Login
+                </Link>
+              </Grid>
             </Grid>
-            <Grid item xs={12}>
-              <TextField
-                variant="outlined"
-                required
-                fullWidth
-                name="password"
-                label="Password"
-                type="password"
-                id="password"
-                autoComplete="current-password"
-                value={password}
-                onChange={onChangeEmail}
-                ref={register({
-                  required: 'required',
-                  pattern: {
-                    value: /[0-9a-zA-Z]+/,
-                    message: 'invalid password',
-                  },
-                  minLength: {
-                    value: 8,
-                    message: 'maxLength is 8',
-                  },
-                  maxLength: {
-                    value: 16,
-                    message: 'maxLength is 16',
-                  },
-                })}
-              />
-            </Grid>
-            <Grid item xs={12}>
-              <TextField
-                variant="outlined"
-                required
-                fullWidth
-                name="passwordConfirm"
-                label="Password Confirm"
-                type="passwordConfirm"
-                id="passwordConfirm"
-                autoComplete="current-password-confirm"
-                value={passwordConfirm}
-                ref={register({
-                  required: '필수입력사항 입니다.',
-                  validate: value => {
-                    return value === watch('password');
-                  },
-                })}
-              />
-            </Grid>
-            {/* <Grid item xs={12}>
-              <FormControlLabel
-                control={<Checkbox value="allowExtraEmails" color="primary" />}
-                label="I want to receive inspiration, marketing promotions and updates via email."
-              />
-            </Grid> */}
-          </Grid>
-          <Button
-            type="submit"
-            fullWidth
-            variant="contained"
-            color="primary"
-            className={classes.submit}
-          >
-            Join
-          </Button>
-          <Grid container justify="flex-end">
-            <Grid item>
-              <Link onClick={()=>{history.push('/login')}} variant="body2">
-                Already have an account? Login
-              </Link>
-            </Grid>
-          </Grid>
         </form>
       </div>
     </Container>

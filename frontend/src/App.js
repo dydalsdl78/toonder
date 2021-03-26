@@ -10,11 +10,11 @@ import Profile from "./View/Profile";
 
 
 function App() {
-  const { isLoggedIn } = useSelector(state => state.auth);
+  // const { isLoggedIn } = useSelector(state => state.auth);
 
   return (
     <>
-      {!isLoggedIn ? <Redirect to="/login" /> : <Redirect to="/" />}
+      {/* {!isLoggedIn ? <Redirect to="/login" /> : <Redirect to="/" />} */}
       <Switch>
         <Route>
           <Login path="/login" />

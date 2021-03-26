@@ -99,7 +99,7 @@ function Login() {
           <TextField
             variant="outlined"
             margin="normal"
-            required
+            // required
             fullWidth
             id="email"
             label="Email Address"
@@ -108,7 +108,7 @@ function Login() {
             onChange={onChangeEmail}
             autoComplete="email"
             autoFocus
-            ref={register({
+            inputRef={register({
               required: 'required',
               pattern: {
                 value: /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i,
@@ -119,7 +119,7 @@ function Login() {
           <TextField
             variant="outlined"
             margin="normal"
-            required
+            // required
             fullWidth
             name="password"
             value={password}
@@ -128,7 +128,7 @@ function Login() {
             type="password"
             id="password"
             autoComplete="current-password"
-            ref={register({
+            inputRef={register({
               required: 'required',
             })}
           />
