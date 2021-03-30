@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import SearchBar from "../Components/SearchBar";
-import Slider from "../Components/Slider";
+import Carousel from "../Components/Carousel";
+import styled from 'styled-components';
+
+const Title = styled.h1`
+  color: #db5b33;
+  font-weight: 300;
+  text-align: center;
+`;
 
 function Main() {
   return (
     <>
       <SearchBar />
-      <Slider />
+      <Title></Title>
+      <Carousel images={images} />
     </>
   );
 }
