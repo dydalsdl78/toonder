@@ -31,8 +31,13 @@ def webtoon_list(request):
 def recomm_overall(request):
     pass
 def recomm_genre(request):
+    # 사용자의 장르 벡터
+    # 웹툰들의 장르 벡터
     pass
 def recomm_artist(request):
+    # 찜목록에 있는 웹툰의 작가들
+    # 로그인된 사용자의 정보를 통해 찜목록에 있는 것을 갖고온다.
+    # favorite_webtoons = Webtoon.objects.filter(webtoon_writer='찜목록의 작가이름')
     pass
 
 # 사용자 정보가 필요없는 항목들------------------------
@@ -44,6 +49,7 @@ def recomm_summary(request):
     overview_sim_sorted_ind = summary_recomm.tokenizer(df_webtoon)
     title = request.data['title']
     # title = '학사재생'
+    # 찜목록에 있는 모든 웹툰리스트들과 가장 유사도가 높은 몇가지를 출력해야함
     similar_webtoons = summary_recomm.find_sim_movie_ver2(df_webtoon, overview_sim_sorted_ind, '{}'.format(title), 10)
     results = json.loads(similar_webtoons)
     return Response(results)
