@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'recommends',
+    'accounts',
 
     'rest_framework',
     'corsheaders',
@@ -135,4 +136,26 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
+import os
+
+STATIC_FILES_DIRS = [
+    BASE_DIR / 'static',
+    BASE_DIR / 'media',
+]
 STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
+STATIC_ROOT = BASE_DIR / 'static_cdn'
+MEDIA_ROOT = BASE_DIR / 'media_cdn'
+TEMP = BASE_DIR / 'media_cdn/temp'
+BASE_DIR = "https://127.0.0.1:8000"
+
+AUTH_USER_MODEL = 'accounts.User'
+
+
+import datetime
+
+JWT_AUTH = {
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(seconds=600),
+    'JWT_ALLOW_REFRESH': True,
+    'JWT_REFRESH_EXPIRATION_DELTA' : datetime.timedelta(days=7),
+}
