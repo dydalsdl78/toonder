@@ -1,6 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from rest_framework.response import Response
+from rest_framework.views import APIView
+from rest_framework import viewsets
+from drf_yasg import openapi
 from rest_framework.decorators import api_view
 from .models import Webtoon
 from .serializers import WebtoonSerializer, SummarySerializer
@@ -35,31 +38,52 @@ def recomm_genre(request):
     # 웹툰들의 장르 벡터
     pass
 def recomm_artist(request):
+    # jwt토큰을 헤더에 담아 이 api를 요청하면
     # 찜목록에 있는 웹툰의 작가들
+
     # 로그인된 사용자의 정보를 통해 찜목록에 있는 것을 갖고온다.
     # favorite_webtoons = Webtoon.objects.filter(webtoon_writer='찜목록의 작가이름')
     pass
 
 # 사용자 정보가 필요없는 항목들------------------------
-@api_view(['POST'])
-def recomm_summary(request):
-    webtoons = Webtoon.objects.all()
+class WebtoonSummaryViewSet(viewsets.ModelViewSet):
+    """
+        웹툰 줄거리 기반 추천
+        ---
+        # 내용
+            - title : 웹툰 제목
+    """
+    # queryset = Webtoon.objects.all() 
+    serializer_class = WebtoonSerializer
 
-    df_webtoon = summary_recomm.to_dataframe(webtoons)
-    overview_sim_sorted_ind = summary_recomm.tokenizer(df_webtoon)
-    title = request.data['title']
-    # title = '학사재생'
-    # 찜목록에 있는 모든 웹툰리스트들과 가장 유사도가 높은 몇가지를 출력해야함
-    similar_webtoons = summary_recomm.find_sim_movie_ver2(df_webtoon, overview_sim_sorted_ind, '{}'.format(title), 10)
-    results = json.loads(similar_webtoons)
-    return Response(results)
+    # @api_view(['POST'])
+    def recomm_summary(self, request):
+        webtoons = Webtoon.objects.all()
 
-@api_view(['GET'])
-def recomm_score(request):
-    webtoons = Webtoon.objects.order_by("-webtoon_score")[:10]
-    # 시리얼라이즈
-    serializer = WebtoonSerializer(webtoons, many=True)
-    return Response(serializer.data)
+        df_webtoon = summary_recomm.to_dataframe(webtoons)
+        overview_sim_sorted_ind = summary_recomm.tokenizer(df_webtoon)
+        title = request.data['title']
+        # title = '학사재생'
+        # 찜목록에 있는 모든 웹툰리스트들과 가장 유사도가 높은 몇가지를 출력해야함
+        similar_webtoons = summary_recomm.find_sim_movie_ver2(df_webtoon, overview_sim_sorted_ind, '{}'.format(title), 10)
+        results = json.loads(similar_webtoons)
+        return Response(results)
+
+class WebtoonScoreViewSet(viewsets.ModelViewSet):
+    """
+        웹툰 평점 순 추천
+        ---
+        # 내용
+    """
+    # queryset = Webtoon.objects.all() 
+    serializer_class = WebtoonSerializer
+
+    # @api_view(['GET'])
+    def recomm_score(self, request):
+        webtoons = Webtoon.objects.order_by("-webtoon_score")[:10]
+        # 시리얼라이즈
+        serializer = WebtoonSerializer(webtoons, many=True)
+        return Response(serializer.data)
 
 def recomm_media(request):
     pass
@@ -74,8 +98,6 @@ def recomm_random(request):
 def recomm_opposition(request):
     # 어떤기준으로 완전 반대되는 추천??
     pass
-
-
 
 
 # 유저 좋아요, 찜목록 리스트 관련----------------------------------

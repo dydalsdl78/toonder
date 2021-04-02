@@ -32,6 +32,7 @@ schema_view = get_schema_view(
         default_version='v1', 
         terms_of_service="https://www.google.com/policies/terms/", 
     ), 
+    validators=['flex'],
     public=True, 
     permission_classes=(permissions.AllowAny,), 
     patterns=schema_url_patterns, 
