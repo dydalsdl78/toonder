@@ -35,7 +35,9 @@ def recomm_genre(request):
     # 웹툰들의 장르 벡터
     pass
 def recomm_artist(request):
+    # jwt토큰을 헤더에 담아 이 api를 요청하면
     # 찜목록에 있는 웹툰의 작가들
+
     # 로그인된 사용자의 정보를 통해 찜목록에 있는 것을 갖고온다.
     # favorite_webtoons = Webtoon.objects.filter(webtoon_writer='찜목록의 작가이름')
     pass
@@ -74,8 +76,6 @@ def recomm_random(request):
 def recomm_opposition(request):
     # 어떤기준으로 완전 반대되는 추천??
     pass
-
-
 
 
 # 유저 좋아요, 찜목록 리스트 관련----------------------------------
