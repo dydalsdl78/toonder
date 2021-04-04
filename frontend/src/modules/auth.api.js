@@ -1,29 +1,29 @@
 import axios from "axios";
 
 // for local test
-const API_URL = "http://localhost:8080/api/auth/";
+const API_URL = "http://127.0.0.1:8000/accounts/";
 // for release
 // const API_URL = "";
 
-
-const join = (username, email, password, passwordConfirm) => {
-  return axios.post(API_URL + "signup", {
+const join = (username, email, password, passwordConfirmation) => {
+  return axios.post(API_URL + "signup/", {
     username,
     email,
     password,
-    passwordConfirm,
+    passwordConfirmation,
   });
 };
 
 const login = (email, password) => {
   return axios
-    .post(API_URL + "signin", {
+    .post(API_URL + "api-token-auth/", {
       email,
       password,
     })
     .then((response) => {
-      if (response.data.accessToken) {
-        localStorage.setItem("user", JSON.stringify(response.data));
+      console.log(response);
+      if (response.data.token) {
+        localStorage.setItem("user", JSON.stringify(response.data.token));
       }
 
       return response.data;
