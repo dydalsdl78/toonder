@@ -37,13 +37,14 @@ def signup(request):
 @api_view(['GET'])
 @authentication_classes([JSONWebTokenAuthentication])
 @permission_classes([IsAuthenticated])
-def get_you(request):
+def get_userinfo(request):
     user = get_object_or_404(get_user_model(), pk=request.user.user_id)
 
     # 우선 로그인 때 사용한 email은 재활용하고,
     # username을 받아오기 위함
     return Response({
         'username': user.username,
+        'email': user.email,
     }, status=status.HTTP_200_OK)
 
 
