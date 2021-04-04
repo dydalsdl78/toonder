@@ -144,10 +144,11 @@ STATIC_FILES_DIRS = [
 ]
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
-STATIC_ROOT = BASE_DIR / 'static_cdn'
-MEDIA_ROOT = BASE_DIR / 'media_cdn'
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
 TEMP = BASE_DIR / 'media_cdn/temp'
 BASE_DIR = "https://127.0.0.1:8000"
+
 
 AUTH_USER_MODEL = 'accounts.User'
 
