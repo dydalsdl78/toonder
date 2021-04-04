@@ -1,8 +1,6 @@
 from django.db import models
 from django.conf import settings
 
-from accounts.models import User 
-
 # Create your models here.
 class Genre(models.Model):
     genre_name = models.CharField(max_length=50)
@@ -21,11 +19,11 @@ class Webtoon(models.Model):
     overview_morph = models.TextField()
 
     genres = models.ManyToManyField(Genre, related_name='webtoons')
-    users_webtoon = models.ManyToManyField(User, related_name='favorites')
+    users_webtoon = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='favorites')
 
 
 class Like(models.Model):
     is_like = models.BooleanField(default=False)
 
-    users_like = models.ForeignKey(User, on_delete=models.CASCADE, related_name='likes')
+    users_like = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='likes')
     webtoons_like = models.ForeignKey(Webtoon, on_delete=models.CASCADE, related_name='like_webtoon')
