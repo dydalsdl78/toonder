@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { withRouter, useHistory } from "react-router-dom";
+import { useForm } from "react-hook-form";
 // import Avatar from '@material-ui/core/Avatar';
 // import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Button from "@material-ui/core/Button";
@@ -39,28 +40,19 @@ const useStyles = makeStyles((theme) => ({
 function Join() {
   const form = useRef();
   const history = useHistory();
+  const { handleSubmit, register, errors, watch } = useForm();
   const classes = useStyles();
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordConfirm, setPasswordConfirm] = useState("");
+  const [successful, setSuccessful] = useState(false);
 
-  //검증 룰이 더 필요함. 유저네임 이메일 중복확인, 비밀번호 일치여부 프론트에서 확인.
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const handleSubmit2 = () => {
+    setSuccessful(false);
     console.log("join");
-    try {
-      let res = await AuthService.join(
-        username,
-        email,
-        password,
-        passwordConfirm
-      );
-      console.log(res);
-      history.push("/login");
-    } catch (e) {
-      console.log(e);
-    }
+    AuthService.join(username, email, password, passwordConfirm);
+
     // if (!errors) {
     //   dispatch(join(email, password))
     //     .then(() => {
@@ -105,7 +97,8 @@ function Join() {
         <Typography component="h1" variant="h5">
           Sign up
         </Typography>
-        <form className={classes.form} onSubmit={handleSubmit}>
+        <form className={classes.form} onSubmit={handleSubmit()} ref={form}>
+          {!successful}
           <Grid container spacing={2}>
             <Grid item xs={12}>
               <TextField
@@ -118,6 +111,17 @@ function Join() {
                 autoFocus
                 value={username}
                 onChange={onChangeUsername}
+                inputRef={register({
+                  required: "required",
+                  pattern: {
+                    value: /[0-9a-zA-Z]+/,
+                    message: "invalid username",
+                  },
+                  maxLength: {
+                    value: 10,
+                    message: "maxLength is 10",
+                  },
+                })}
               />
             </Grid>
             <Grid item xs={12}>
@@ -131,6 +135,13 @@ function Join() {
                 autoComplete="email"
                 value={email}
                 onChange={onChangeEmail}
+                inputRef={register({
+                  required: "required",
+                  pattern: {
+                    value: /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i,
+                    message: "invalid email",
+                  },
+                })}
               />
             </Grid>
             <Grid item xs={12}>
@@ -145,6 +156,21 @@ function Join() {
                 autoComplete="current-password"
                 value={password}
                 onChange={onChangePassword}
+                inputRef={register({
+                  required: "required",
+                  pattern: {
+                    value: /[0-9a-zA-Z]+/,
+                    message: "invalid password",
+                  },
+                  minLength: {
+                    value: 8,
+                    message: "maxLength is 8",
+                  },
+                  maxLength: {
+                    value: 16,
+                    message: "maxLength is 16",
+                  },
+                })}
               />
             </Grid>
             <Grid item xs={12}>
@@ -159,6 +185,12 @@ function Join() {
                 autoComplete="current-password-confirm"
                 value={passwordConfirm}
                 onChange={onChangePasswordConfirm}
+                inputRef={register({
+                  required: "필수입력사항 입니다.",
+                  validate: (value) => {
+                    return value === watch("password");
+                  },
+                })}
               />
             </Grid>
             {/* <Grid item xs={12}>
