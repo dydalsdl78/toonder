@@ -45,6 +45,22 @@ def tokenizer(webtoon_df):
   print(token_sim_sorted_val[30:50])
   return token_sim_sorted_ind
 
+def opposition_tokenizer(webtoon_df):
+
+  mecab = Mecab()
+  webtoon_df['overview_token'] = webtoon_df['overview'].apply(lambda x: mecab.nouns(x))
+  webtoon_df['overview_literal'] = webtoon_df['overview_token'].apply(lambda x: (' ').join(x))
+  count_vect = TfidfVectorizer(min_df=0, ngram_range=(1, 2))
+  token_mat = count_vect.fit_transform(webtoon_df['overview_literal'])
+
+  token_sim = cosine_similarity(token_mat, token_mat)
+  token_sim_sorted_ind = token_sim.argsort()
+
+  token_sim_sorted_val = np.sort(token_sim)
+  print(token_sim_sorted_val[30:50])
+  return token_sim_sorted_ind
+
+
 # 유사도 계산
 def find_sim_movie_ver2(df, sorted_ind, title_webtoon, top_n=10):
   title_webtoon = df[df['webtoon_name'] == title_webtoon]
