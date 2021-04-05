@@ -24,7 +24,7 @@ from drf_yasg import openapi
 from django.conf import settings
 from django.conf.urls.static import static
 
-schema_url_patterns = [ path('/', include('recommends.urls')), ] 
+schema_url_patterns = [ path('/recommends/', include('recommends.urls')), ] 
 
 schema_view = get_schema_view( 
     openapi.Info( 
