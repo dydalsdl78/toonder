@@ -1,5 +1,5 @@
 from rest_framework import serializers, viewsets
-from .models import Webtoon
+from .models import Webtoon, Genre
 
 
 class WebtoonSerializer(serializers.ModelSerializer):
