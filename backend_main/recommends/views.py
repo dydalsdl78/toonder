@@ -1,8 +1,7 @@
 from django.contrib.auth import get_user_model
-from django.http import HttpResponse
-from django.shortcuts import render
 from django.conf import settings
 
+from rest_framework import status
 from rest_framework.decorators import authentication_classes, permission_classes
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 from rest_framework.permissions import IsAuthenticated
@@ -11,9 +10,9 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework import viewsets
 
-from .serializers import WebtoonSerializer, SummarySerializer
+from webtoons.serializers import WebtoonSerializer, SummarySerializer
 from model import summary_recomm
-from .models import Webtoon, Genre
+from webtoons.models import Webtoon, Genre
 
 from drf_yasg import openapi
 import json
