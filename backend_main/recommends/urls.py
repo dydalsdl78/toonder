@@ -3,10 +3,6 @@ from . import views
 from .views import WebtoonSummaryViewSet, WebtoonGenreViewSet, WebtoonOppositionViewSet, WebtoonArtistViewSet, WebtoonScoreViewSet, WebtoonRandomViewSet
 
 urlpatterns = [
-    # path('', WebtoonMainViewSet.as_view({"get": "webtoon_main"})),
-
-    #전체 웹툰 리스트
-    # path('webtoon_list/', WebtoonListViewSet.as_view({"get": "webtoon_list"})),
 
     # 웹툰 추천 카드 관련 주소들
     path('recomm_overall/', views.recomm_overall),
