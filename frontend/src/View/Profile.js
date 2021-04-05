@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Redirect } from "react-router-dom";
 import { AuthContext } from "../Context/context";
+import { Title } from "../Lib";
 
 const Profile = () => {
   // if (!currentUser) {
@@ -10,11 +11,7 @@ const Profile = () => {
 
   return (
     <div className="container">
-      <header className="jumbotron">
-        <h3>
-          <strong>이름</strong>
-        </h3>
-      </header>
+      <Title>Profile</Title>
 
       <p>
         <strong>Email:</strong>
