@@ -31,8 +31,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'recommends',
-    'accounts',
+    'accounts',     # 유저 관련 기능
+    'recommends',   # 추천 알고리즘
+    'webtoons',     # 메인페이지를 위한 웹툰들, 상세페이지를 위한 웹툰들, 검색기능
 
     'rest_framework',
     'corsheaders',
@@ -144,10 +145,11 @@ STATIC_FILES_DIRS = [
 ]
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
-STATIC_ROOT = BASE_DIR / 'static_cdn'
-MEDIA_ROOT = BASE_DIR / 'media_cdn'
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
 TEMP = BASE_DIR / 'media_cdn/temp'
 BASE_DIR = "https://127.0.0.1:8000"
+
 
 AUTH_USER_MODEL = 'accounts.User'
 

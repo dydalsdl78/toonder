@@ -8,4 +8,19 @@ class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = get_user_model()
-        fields = ('username', 'password', 'email')
+        fields = ('username', 'password', 'email' )
+
+
+class ChangeUserSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = get_user_model()
+        fields = ('username', )
+        # fields = ('username', 'profile_image' )
+
+
+class ChangePasswordSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = get_user_model()
+        fields = ('password', )

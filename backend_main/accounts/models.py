@@ -44,7 +44,7 @@ class MyUserManager(BaseUserManager):
 
 # profile image를 갖고오기 위한 함수
 def get_profile_image_filepath(self, filename):
-    print(self.user_id)
+    # print(self.user_id)
 
     return f'profile_images/{self.user_id}/{"profile_image.png"}'
 
