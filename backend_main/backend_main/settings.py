@@ -31,7 +31,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'recommends',
+    'accounts',     # 유저 관련 기능
+    'recommends',   # 추천 알고리즘
+    'webtoons',     # 메인페이지를 위한 웹툰들, 상세페이지를 위한 웹툰들, 검색기능
 
     'rest_framework',
     'corsheaders',
@@ -135,4 +137,27 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
+import os
+
+STATIC_FILES_DIRS = [
+    BASE_DIR / 'static',
+    BASE_DIR / 'media',
+]
 STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
+TEMP = BASE_DIR / 'media_cdn/temp'
+BASE_DIR = "https://127.0.0.1:8000"
+
+
+AUTH_USER_MODEL = 'accounts.User'
+
+
+import datetime
+
+JWT_AUTH = {
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(seconds=600),
+    'JWT_ALLOW_REFRESH': True,
+    'JWT_REFRESH_EXPIRATION_DELTA' : datetime.timedelta(days=7),
+}
