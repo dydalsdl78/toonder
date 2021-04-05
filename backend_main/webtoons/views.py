@@ -1,3 +1,5 @@
+from django.shortcuts import get_object_or_404
+
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
@@ -23,5 +25,14 @@ def search_keyword(request):
     ))
 
     webtoon_serializer = WebtoonSerializer(webtoons, many=True)
+
+    return Response(webtoon_serializer.data, status=status.HTTP_200_OK)
+
+
+@api_view(['GET'])
+def webtoon_detail(request, webtoon_pk):
+    webtoon = get_object_or_404(Webtoon, pk=webtoon_pk)
+
+    webtoon_serializer = WebtoonSerializer(webtoon)
 
     return Response(webtoon_serializer.data, status=status.HTTP_200_OK)
