@@ -1,14 +1,8 @@
-import React from 'react';
-import Preview from './Preview';
+import React from "react";
+import Preview from "./Preview";
 
 function SearchPreview(props) {
-  return (
-    <div>
-      {props.map((preview) => {
-          <Preview key={preview.id} preview={preview}/>
-      })}
-    </div>
-  );
+  return <div></div>;
 }
 
 export default SearchPreview;

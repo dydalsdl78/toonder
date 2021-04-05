@@ -51,27 +51,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("login");
-    try {
-      let res = await AuthService.login(email, password);
-      console.log(res);
-      authContext.login(res.token);
-      history.push("/");
-    } catch (e) {
-      console.log(e);
-    }
-
-    //   setLoading(true);
-    //   if (!errors) {
-    //     dispatch(login(email, password))
-    //       .then(() => {
-    //         history.push("/");
-    //       })
-    //       .catch(() => {
-    //         setLoading(false);
-    //       });
-    //   } else {
-    //     setLoading(false);
-    //   }
+    authContext.login(email, password);
   };
 
   const onChangeEmail = (e) => {
