@@ -10,9 +10,9 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework import viewsets
 
-from .serializers import WebtoonSerializer, SummarySerializer
+from webtoons.serializers import WebtoonSerializer, SummarySerializer
 from model import summary_recomm
-from .models import Webtoon, Genre
+from webtoons.models import Webtoon, Genre
 
 from drf_yasg import openapi
 import json
