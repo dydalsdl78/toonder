@@ -31,8 +31,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'recommends',
-    'accounts',
+    'accounts',     # 유저 관련 기능
+    'recommends',   # 추천 알고리즘
+    'webtoons',     # 메인페이지를 위한 웹툰들, 상세페이지를 위한 웹툰들, 검색기능
 
     'rest_framework',
     'corsheaders',

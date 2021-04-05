@@ -1,8 +1,7 @@
 from django.contrib.auth import get_user_model
-from django.http import HttpResponse
-from django.shortcuts import render
 from django.conf import settings
 
+from rest_framework import status
 from rest_framework.decorators import authentication_classes, permission_classes
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 from rest_framework.permissions import IsAuthenticated

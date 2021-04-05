@@ -57,7 +57,7 @@ def certify_password(request):
     user = get_object_or_404(get_user_model(), pk=request.user.user_id)
 
     if user.check_password(request.data['password']):
-        return Response({ 'accomplished': '검증완료' }, status=status.HTTP_200_OK)
+        return Response({ 'accomplished': '검증완료' }, status=status.HTTP_202_ACCEPTED)
 
     # 비밀번호 검증에 실패하면 catch에 error.data에 반환되는 부분
     # error.data['failed'] 하면 재활용 가능할지도
