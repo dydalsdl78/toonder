@@ -1,7 +1,12 @@
 import React from "react";
+import { Title } from "../Lib";
 
-function MyLIst() {
-  return "MyList";
+function MyList() {
+  return (
+    <div className="container">
+      <Title>MyList</Title>
+    </div>
+  );
 }
 
-export default MyLIst;
+export default MyList;
