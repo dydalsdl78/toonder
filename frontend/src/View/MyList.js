@@ -1,21 +1,22 @@
 import React, { useEffect, useState } from "react";
-import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-import GridList from '@material-ui/core/GridList';
-import GridListTile from '@material-ui/core/GridListTile';
-import GridListTileBar from '@material-ui/core/GridListTileBar';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import GradeIcon from '@material-ui/icons/Grade';
+import { makeStyles } from "@material-ui/core/styles";
+import Paper from "@material-ui/core/Paper";
+import Tabs from "@material-ui/core/Tabs";
+import Tab from "@material-ui/core/Tab";
+import GridList from "@material-ui/core/GridList";
+import GridListTile from "@material-ui/core/GridListTile";
+import GridListTileBar from "@material-ui/core/GridListTileBar";
+import FavoriteIcon from "@material-ui/icons/Favorite";
+import GradeIcon from "@material-ui/icons/Grade";
 import Recommend from "../modules/recommend.api";
+import { FavoriteSharp } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'space-around',
-    overflow: 'hidden',
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "space-around",
+    overflow: "hidden",
     backgroundColor: theme.palette.background.paper,
   },
   gridList: {
@@ -24,8 +25,8 @@ const useStyles = makeStyles((theme) => ({
   },
   tabBar: {
     flexGrow: 1,
-    width: '100%',
-  }
+    width: "100%",
+  },
 }));
 
 function MyList() {
@@ -36,17 +37,19 @@ function MyList() {
   const [favs, setFavs] = useState([]);
 
   useEffect(async () => {
-    setLikes(await Recommend.getLikes())
-    setFavs(await Recommend.getFavs())
-    setView(favs)
+    const likelist = await Recommend.getLikes();
+    setLikes(likelist.data);
+    const favlist = await Recommend.getFavs();
+    setFavs(favlist.data);
+    setView(favlist.data);
   }, []);
 
+  console.log("view : ", view);
   const handleChange = (e, newValue) => {
     setValue(newValue);
   };
-
   return (
-    <div className={classes.root + ' container'}>
+    <div className={classes.root + " container"}>
       <Paper sqaure className={classes.tabBar}>
         <Tabs
           value={value}
@@ -56,8 +59,20 @@ function MyList() {
           textColor="secondary"
           aria-label="icon label tabs example"
         >
-          <Tab icon={<GradeIcon />} label="Favorites" onClick={() => {setView(favs)}}/>
-          <Tab icon={<FavoriteIcon />} label="Likes" onClick={() => {setView(likes)}}/>
+          <Tab
+            icon={<GradeIcon />}
+            label="Favorites"
+            onClick={() => {
+              setView(favs);
+            }}
+          />
+          <Tab
+            icon={<FavoriteIcon />}
+            label="Likes"
+            onClick={() => {
+              setView(likes);
+            }}
+          />
         </Tabs>
       </Paper>
       <GridList cellHeight={180} className={classes.gridList}>

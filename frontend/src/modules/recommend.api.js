@@ -37,14 +37,38 @@ const getOppositionRecommend = () => {
   return axios.get(API_URL + "recomm_opposition/");
 };
 
-const getLikes = () => {
-  return axios.get(API_URL + "like/");
+const getLikes = async () => {
+  const token = JSON.parse(localStorage.getItem("user"));
+  const config = {
+    headers: {
+      Authorization: `JWT ${token}`,
+    },
+  };
+  console.log(config);
+  try {
+    const res = await axios.get(API_URL + "like/", config);
+    return res;
+  } catch (err) {
+    console.log(err);
+  }
 };
 
-const getFavs = () => {
-  return axios.get(API_URL + "favorite/");
+const getFavs = async () => {
+  const token = JSON.parse(localStorage.getItem("user"));
+  const config = {
+    headers: {
+      Authorization: `JWT ${token}`,
+    },
+  };
+  console.log(config);
+  try {
+    const res = await axios.get(API_URL + "favorite/", config);
+    console.log(res);
+    return res;
+  } catch (err) {
+    console.log(err);
+  }
 };
-
 
 export default {
   getAllRecommend,

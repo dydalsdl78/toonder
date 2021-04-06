@@ -10,7 +10,7 @@ function Recommendation() {
     const res = await AuthService.recomm_overall();
     console.log(res.data);
     setRecommendations(res);
-  }, [recommendations]);
+  }, []);
 
   return (
     <div className="container">
