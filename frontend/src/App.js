@@ -32,17 +32,29 @@ function App() {
     }
   };
 
+  const getuser = async (token) => {
+    try {
+      const res = await AuthService.getuser(token);
+      console.log(res);
+      setToken(token);
+      setEmail(res.data.email);
+      setUsername(res.data.username);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   const logout = () => {
     setToken(null);
     AuthService.logout();
   };
 
   useEffect(() => {
-    const storedData = JSON.parse(localStorage.getItem("user"));
-    if (storedData) {
-      login(storedData);
+    const token = JSON.parse(localStorage.getItem("user"));
+    if (token) {
+      getuser(token);
     }
-  }, [login]);
+  }, [getuser]);
 
   const theme = {
     primary: "#00b8a9",

@@ -1,4 +1,5 @@
 import axios from "axios";
+import authHeader from "./auth-header";
 
 // for local test
 const API_URL = "http://127.0.0.1:8000/accounts/";
@@ -30,6 +31,14 @@ const login = (email, password) => {
     });
 };
 
+const getuser = (token) => {
+  return axios.get(API_URL + "get_userinfo/", {
+    headers: {
+      Authorization: `JWT ${token}`,
+    },
+  });
+};
+
 const logout = () => {
   localStorage.removeItem("user");
 };
@@ -37,5 +46,6 @@ const logout = () => {
 export default {
   join,
   login,
+  getuser,
   logout,
 };

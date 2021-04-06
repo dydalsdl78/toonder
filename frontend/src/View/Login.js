@@ -63,8 +63,8 @@ function Login() {
     const password = e.target.value;
     setPassword(password);
   };
-
-  if (AuthContext.isLoggedIn) {
+  console.log(AuthContext.isLoggedIn);
+  if (AuthContext.username) {
     return <Redirect to="/" />;
   }
 
