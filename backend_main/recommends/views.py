@@ -189,20 +189,103 @@ class WebtoonOppositionViewSet(viewsets.ModelViewSet):
         return Response(recommend_result)
 
 
-# 유저 좋아요 리스트 & 추가하기
-def likes_list_create(request):
-    # Webtoon.objects.create(request.data)
-    pass
+@api_view(['POST'])
+@authentication_classes([JSONWebTokenAuthentication])
+@permission_classes([IsAuthenticated])
+def like(request, webtoon_number):
+    if request.user.is_authenticated:
+        webtoon = get_object_or_404(Webtoon, pk=webtoon_number)
+    else:
+        return Response(status=status.HTTP_401_UNAUTHORIZED)
 
-# 유저 좋아요 삭제하기
-def likes_delete(request, pk):
-    pass
+    if webtoon.like_users.filter(pk=request.user.user_id).exists():
+        webtoon.like_users.remove(request.user)
 
-# 유저 찜목록 리스트 & 추가하기
-def favorite_list_create(request):
-    pass
+    else:
+        webtoon.like_users.add(request.user)
+    return Response(status=status.HTTP_201_CREATED)
 
-# 유저 찜목록 삭제하기
-def favorite_delete(request, pk):
-    pass
+
+@api_view(['POST'])
+@authentication_classes([JSONWebTokenAuthentication])
+@permission_classes([IsAuthenticated])  
+def favorite(request, webtoon_number):
+    if request.user.is_authenticated:
+        webtoon = get_object_or_404(Webtoon, pk=webtoon_number)
+        
+    if webtoon.favorite_users.filter(pk=request.user.user_id).exists():
+        webtoon.favorite_users.remove(request.user)
+
+    else:
+        webtoon.favorite_users.add(request.user)
+        
+    return Response(status=status.HTTP_201_CREATED)
+
+
+@api_view(['GET'])
+@authentication_classes([JSONWebTokenAuthentication])
+@permission_classes([IsAuthenticated])
+def like_list(request):
+    if request.user.is_authenticated:
+        user = request.user
+        like_list = user.like_webtoon.all()
+        genres = Genre.objects.all()
+
+        webtoon_like_list = list()
+
+        i = 0
+        for webtoon in like_list:
+            
+            webtoon_like = dict()
+            genres_names = []
+            webtoon_genres = webtoon.genres.all()
+
+            for webtoon_genre in webtoon_genres:
+                for genre in genres:
+                    genre_name = genre.genre_name
+
+                    if webtoon_genre.id == genre.id:
+                        genres_names.append(genre.genre_name)
+                        webtoon_genre.id = genre.genre_name
+            i += 1
+
+            serializer = WebtoonSerializer(webtoon)
+            webtoon_like = serializer.data
+            webtoon_like['genres_names'] = genres_names
+            webtoon_like_list.append(webtoon_like)
+
+    return Response(webtoon_like_list, status=status.HTTP_202_ACCEPTED)
+
+@api_view(['GET'])
+@authentication_classes([JSONWebTokenAuthentication])
+@permission_classes([IsAuthenticated])
+def favorite_list(request):
+    if request.user.is_authenticated:
+        user = request.user
+        favorite_list = user.favorite_webtoon.all()
+        genres = Genre.objects.all()
+
+        webtoon_favorite_list = list()
+
+        i = 0
+        for webtoon in favorite_list:
+            webtoon_favorite = dict()
+            genres_names = []
+            webtoon_genres = webtoon.genres.all()
+
+            for webtoon_genre in webtoon_genres:
+                for genre in genres:
+                    genre_name = genre.genre_name
+
+                    if webtoon_genre.id == genre.id:
+                        genres_names.append(genre.genre_name)
+                        webtoon_genre.id = genre.genre_name
+            i += 1
+
+            serializer = WebtoonSerializer(webtoon)
+            webtoon_favorite = serializer.data
+            webtoon_favorite['genres_names'] = genres_names
+            webtoon_favorite_list.append(webtoon_favorite)
+
+    return Response(webtoon_favorite_list, status=status.HTTP_202_ACCEPTED)
 
