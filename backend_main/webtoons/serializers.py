@@ -1,5 +1,5 @@
 from rest_framework import serializers, viewsets
-from .models import Webtoon
+from .models import Webtoon, Genre
 
 
 class WebtoonSerializer(serializers.ModelSerializer):
@@ -8,15 +8,8 @@ class WebtoonSerializer(serializers.ModelSerializer):
     model = Webtoon
     fields = '__all__'
 
-class SummarySerializer(serializers.ModelSerializer):
+class GenreSerializer(serializers.ModelSerializer):
 
   class Meta:
-    model = Webtoon
-    fields = ('webtoon_name',
-              'overview',
-              'webtoon_writer',
-              'thumbnail_url',
-              'webtoon_score',
-              'webtoon_link',
-              'webtoon_platform',
-              'serialized_day')
+    model = Genre
+    fields = '__all__'

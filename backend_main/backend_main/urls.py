@@ -24,7 +24,10 @@ from drf_yasg import openapi
 from django.conf import settings
 from django.conf.urls.static import static
 
-schema_url_patterns = [ path('/', include('recommends.urls')), ] 
+schema_url_patterns = [ 
+                        path('/webtoons/', include('webtoons.urls')),
+                        path('/recommends/', include('recommends.urls')), 
+                        ] 
 
 schema_view = get_schema_view( 
     openapi.Info( 
@@ -41,7 +44,7 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('webtoons.urls')),
+    path('webtoons/', include('webtoons.urls')),
     path('accounts/', include('accounts.urls')),
     path('recommends/', include('recommends.urls')),
     url(r'^swagger(?P<format>\.json|\.yaml)$', schema_view.without_ui(cache_timeout=0), name='schema-json'), 
