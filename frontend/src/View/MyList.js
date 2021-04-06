@@ -41,7 +41,7 @@ function MyList() {
     setLikes(likelist.data);
     const favlist = await Recommend.getFavs();
     setFavs(favlist.data);
-    setView(favlist.data);
+    setView(likelist.data);
   }, []);
 
   console.log("view : ", view);
@@ -60,17 +60,17 @@ function MyList() {
           aria-label="icon label tabs example"
         >
           <Tab
-            icon={<GradeIcon />}
-            label="Favorites"
-            onClick={() => {
-              setView(favs);
-            }}
-          />
-          <Tab
             icon={<FavoriteIcon />}
             label="Likes"
             onClick={() => {
               setView(likes);
+            }}
+          />
+          <Tab
+            icon={<GradeIcon />}
+            label="Favorites"
+            onClick={() => {
+              setView(favs);
             }}
           />
         </Tabs>
