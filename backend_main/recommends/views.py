@@ -57,25 +57,25 @@ class WebtoonOverAllViewSet(viewsets.ModelViewSet):
         #     serializer = WebtoonSerializer(webtoon[0])
         #     result.append(serializer.data)
        
-        # # 작가
-        # user_id = get_user_model().objects.values('user_id').filter(username="sadml.faklsdjfklsad")
-        # # user_id = get_user_model().objects.values('user_id').filter(username=request.user)
-        # favorite_webtoons = Webtoon.objects.filter(favorite_users=user_id[0]['user_id'])
+        # 작가
+        user_id = get_user_model().objects.values('user_id').filter(username="sadml.faklsdjfklsad")
+        # user_id = get_user_model().objects.values('user_id').filter(username=request.user)
+        favorite_webtoons = Webtoon.objects.filter(favorite_users=user_id[0]['user_id'])
         
-        # recommend_result = {}
-        # webtoons = Webtoon.objects.all()
+        recommend_result = {}
+        webtoons = Webtoon.objects.all()
 
-        # for favorite_webtoon in favorite_webtoons:
-        #     writer = favorite_webtoon.webtoon_writer
-        #     already_num = favorite_webtoon.webtoon_number
+        for favorite_webtoon in favorite_webtoons:
+            writer = favorite_webtoon.webtoon_writer
+            already_num = favorite_webtoon.webtoon_number
             
-        #     tmp = []
+            tmp = []
 
-        #     for webtoon in webtoons:
-        #         if webtoon.webtoon_writer in writer and webtoon.webtoon_number != already_num:
-        #             serializer = WebtoonSerializer(webtoon)
-        #             tmp.append(serializer.data)
-        #             recommend_result[writer] = tmp
+            for webtoon in webtoons:
+                if webtoon.webtoon_writer in writer and webtoon.webtoon_number != already_num:
+                    serializer = WebtoonSerializer(webtoon)
+                    tmp.append(serializer.data)
+                    recommend_result[writer] = tmp
 
         # 줄거리
         # 로그인 유저의 찜리스트 목록 가져오기
