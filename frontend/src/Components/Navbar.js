@@ -13,12 +13,12 @@ import AccountBoxIcon from "@material-ui/icons/AccountBox";
 const useStyles = makeStyles({
   root: {
     width: "100%",
-    backgroundColor: "#f8f3d4",
+    backgroundColor: "white",
     position: "fixed",
     bottom: 0,
   },
   selected: {
-    color: "red",
+    color: "#f8f3d4",
   },
 });
 
