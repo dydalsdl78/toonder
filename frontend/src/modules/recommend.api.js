@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // for local test
-const API_URL = "http://127.0.0.1:8000/recommends/";
+const API_URL = "http://127.0.0.1:8000";
 // for release
 // const API_URL = "";
 
@@ -46,7 +46,7 @@ const getLikes = async () => {
   };
   console.log(config);
   try {
-    const res = await axios.get(API_URL + "like/", config);
+    const res = await axios.get(API_URL + "/recommends/like/", config);
     return res;
   } catch (err) {
     console.log(err);
@@ -62,7 +62,30 @@ const getFavs = async () => {
   };
   console.log(config);
   try {
-    const res = await axios.get(API_URL + "favorite/", config);
+    const res = await axios.get(API_URL + "/recommends/favorite/", config);
+    console.log(res);
+    return res;
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+const like = async (webtoon_number) => {
+  const token = JSON.parse(localStorage.getItem("user"));
+  const config = {
+    headers: {
+      Authorization: `JWT ${token}`,
+    },
+  };
+  const bodyParmeters = {
+    key: "value",
+  };
+  try {
+    const res = await axios.post(
+      `${API_URL}/recommends/like/${webtoon_number}/`,
+      bodyParmeters,
+      config
+    );
     console.log(res);
     return res;
   } catch (err) {
@@ -81,4 +104,5 @@ export default {
   getOppositionRecommend,
   getLikes,
   getFavs,
+  like,
 };

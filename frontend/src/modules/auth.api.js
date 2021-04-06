@@ -50,9 +50,7 @@ const recomm_overall = async () => {
       Authorization: `JWT ${token}`,
     },
   };
-  console.log(config);
   const res = await axios.get(API_URL + "recommends/recomm_overall/", config);
-  console.log(res);
   return res;
 };
 

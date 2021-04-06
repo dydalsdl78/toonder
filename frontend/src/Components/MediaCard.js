@@ -19,7 +19,6 @@ const useStyles = makeStyles({
 
 export default function MediaCard({ toon }) {
   const classes = useStyles();
-  console.log(toon);
 
   return (
     <Card className={classes.root}>

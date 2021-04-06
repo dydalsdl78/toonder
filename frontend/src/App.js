@@ -15,11 +15,13 @@ import MyList from "./View/MyList";
 import Profile from "./View/Profile";
 import { AuthContext } from "./Context/context";
 import AuthService from "./modules/auth.api";
+import WebtoonService from "./modules/webtoons.api";
 
 function App() {
   const [token, setToken] = useState(null);
   const [username, setUsername] = useState(null);
   const [email, setEmail] = useState(null);
+  const [mainlist, setMainlist] = useState([]);
 
   const login = async (email, password) => {
     try {
@@ -49,11 +51,14 @@ function App() {
     AuthService.logout();
   };
 
-  useEffect(() => {
+  useEffect(async () => {
     const token = JSON.parse(localStorage.getItem("user"));
     if (token) {
       getuser(token);
     }
+    const res = await WebtoonService.main();
+    console.log(res.data);
+    setMainlist(res.data);
   }, []);
 
   const theme = {
@@ -78,7 +83,7 @@ function App() {
       >
         <Switch>
           <Route exact path="/">
-            <Main />
+            <Main mainlist={mainlist} />
           </Route>
           <Route path="/login">
             <Login />

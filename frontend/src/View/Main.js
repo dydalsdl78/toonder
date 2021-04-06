@@ -6,10 +6,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import MediaCard from "../Components/MediaCard";
 
-import WebtoonService from "../modules/webtoons.api";
-
-function Main() {
-  const [mainlist, setMainlist] = useState([]);
+function Main({ mainlist }) {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -28,11 +25,7 @@ function Main() {
     },
   };
 
-  useEffect(async () => {
-    const res = await WebtoonService.main();
-    console.log(res.data);
-    setMainlist(res.data);
-  }, []);
+  useEffect(async () => {}, []);
 
   const mainList = Object.entries(mainlist).map(([genre, webtoons]) => {
     return (
