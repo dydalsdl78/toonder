@@ -3,10 +3,6 @@ from . import views
 from .views import WebtoonSummaryViewSet, WebtoonGenreViewSet, WebtoonOppositionViewSet, WebtoonArtistViewSet, WebtoonScoreViewSet, WebtoonRandomViewSet
 
 urlpatterns = [
-    # path('', WebtoonMainViewSet.as_view({"get": "webtoon_main"})),
-
-    #전체 웹툰 리스트
-    # path('webtoon_list/', WebtoonListViewSet.as_view({"get": "webtoon_list"})),
 
     # 웹툰 추천 카드 관련 주소들
     path('recomm_overall/', views.recomm_overall),
@@ -19,8 +15,8 @@ urlpatterns = [
     path('recomm_opposition/', WebtoonOppositionViewSet.as_view({"get": "recomm_opposition"})),
 
     # 유저 좋아요, 찜목록 리스트 관련 주소들
-    path('likes/', views.likes_list_create),
-    path('likes/<int:likes_pk>', views.likes_delete),
-    path('favorite/', views.favorite_list_create),
-    path('favorite/<int:favorite_pk>', views.favorite_delete),
+    path('like/<int:webtoon_number>', views.like, name='like'),
+    path('like/', views.like_list, name='like_list'),
+    path('favorite/<int:webtoon_number>', views.favorite, name='favorite'),
+    path('favorite/', views.favorite_list, name='favorite_list'),
 ]

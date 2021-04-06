@@ -1,9 +1,8 @@
 from django.urls import path
-from . import views
-
+from .views import MainViewSet, SearchViewSet, DetailViewSet
 
 urlpatterns = [
-    path('', views.index),
-    path('search/', views.search_keyword),
-    path('detail/<int:webtoon_pk>/', views.webtoon_detail),
+    path('main/', MainViewSet.as_view({"get": "main"})),
+    path('search/', SearchViewSet.as_view({"post" : "search_keyword"})),
+    path('detail/<int:webtoon_pk>/', DetailViewSet.as_view({ "get" : "webtoon_detail"})),
 ]
