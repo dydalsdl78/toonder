@@ -11,7 +11,7 @@ const Profile = () => {
 
   return (
     <div className="container">
-      <Title>Profile</Title>
+      <Title>{authContext.username}'s Profile</Title>
 
       <p>
         <strong>Email:</strong>
