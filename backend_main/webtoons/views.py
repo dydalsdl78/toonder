@@ -35,6 +35,7 @@ class MainViewSet(viewsets.ModelViewSet):
 
         return Response(results, status=status.HTTP_200_OK)
 
+
 class SearchViewSet(viewsets.ModelViewSet):
     """
         웹툰 검색 결과 출력
@@ -57,9 +58,36 @@ class SearchViewSet(viewsets.ModelViewSet):
             overview__contains=keyword
         ))
 
-        webtoon_serializer = WebtoonSerializer(webtoons, many=True)
+        # 장르 데이터 추가하는 코드
+        genres = Genre.objects.all()
+        
+        webtoon_list = list()
+        serializer = WebtoonSerializer(webtoons, many=True)
+        print(webtoons)
+        for webtoon in webtoons:
+            print(webtoon)
+            print(webtoon.genres.all())
 
-        return Response(webtoon_serializer.data, status=status.HTTP_200_OK)
+            webtoon_info = dict()
+            genres_names = []
+            webtoon_genres = webtoon.genres.all()
+
+            for webtoon_genre in webtoon_genres:
+                for genre in genres:
+                    genre_name = genre.genre_name
+
+                    if webtoon_genre.id == genre.id:
+                        genres_names.append(genre.genre_name)
+
+
+            serializer = WebtoonSerializer(webtoon)
+            webtoon_info = serializer.data
+            webtoon_info['genres_names'] = genres_names
+            webtoon_list.append(webtoon_info)
+
+        return Response(webtoon_list, status=status.HTTP_200_OK)
+
+
 
 class DetailViewSet(viewsets.ModelViewSet):
 # @api_view(['GET'])
@@ -74,4 +102,25 @@ class DetailViewSet(viewsets.ModelViewSet):
 
         webtoon_serializer = WebtoonSerializer(webtoon)
 
-        return Response(webtoon_serializer.data, status=status.HTTP_200_OK)
+        # 장르 데이터 추가하는 코드
+        genres = Genre.objects.all()
+        
+
+        webtoon_info = dict()
+        genres_names = []
+        webtoon_genres = webtoon.genres.all()
+
+        for webtoon_genre in webtoon_genres:
+            for genre in genres:
+                genre_name = genre.genre_name
+
+                if webtoon_genre.id == genre.id:
+                    genres_names.append(genre.genre_name)
+
+
+        serializer = WebtoonSerializer(webtoon)
+        webtoon_info = serializer.data
+        webtoon_info['genres_names'] = genres_names
+
+
+        return Response(webtoon_info, status=status.HTTP_200_OK)
