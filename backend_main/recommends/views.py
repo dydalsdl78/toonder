@@ -24,11 +24,23 @@ import json
 #     """
 #         웹툰 추천 통합
 #     """
+    # permission_classes = [IsAccountAdminOrReadOnly]
+    # authentication_classes = [JSONWebTokenAuthentication]
 
 @api_view(['GET'])
 @authentication_classes([JSONWebTokenAuthentication])
 @permission_classes([IsAuthenticated]) 
 def recomm_overall(request):
+
+    # 좋아요 리스트에 있는 웹툰 목록
+    user = request.user
+    user_id = get_user_model().objects.values('user_id').filter(username="sadml.faklsdjfklsad")
+    # user_id = get_user_model().objects.values('user_id').filter(username=user.username)
+    favorite_webtoons = Webtoon.objects.filter(like_users=user_id[0]['user_id'])
+
+    # 웹툰 전체 목록
+    webtoons = Webtoon.objects.all()
+
     # # 장르
     # # 사용자의 장르 벡터
     # user_id = get_user_model().objects.values('user_id').filter(username="sadml.faklsdjfklsad")
@@ -57,15 +69,9 @@ def recomm_overall(request):
     #     serializer = WebtoonSerializer(webtoon[0])
     #     result.append(serializer.data)
 
-    # 작가
-    user = request.user
-    print(user)
-    user_id = get_user_model().objects.values('user_id').filter(username=user.username)
-    favorite_webtoons = Webtoon.objects.filter(favorite_users=user_id[0]['user_id'])
-    
+    # 작가 
     recommend_result = {}
-    webtoons = Webtoon.objects.all()
-
+    
     for favorite_webtoon in favorite_webtoons:
         writer = favorite_webtoon.webtoon_writer
         already_num = favorite_webtoon.webtoon_number
@@ -79,13 +85,6 @@ def recomm_overall(request):
                 recommend_result[writer] = tmp
 
     # 줄거리
-    # 로그인 유저의 찜리스트 목록 가져오기
-    user_id = get_user_model().objects.values('user_id').filter(username=user.username)
-    # user_id = get_user_model().objects.values('user_id').filter(username=request.user)
-    favorite_webtoons = Webtoon.objects.filter(favorite_users=user_id[0]['user_id'])
-    
-    webtoons = Webtoon.objects.all()
-
     df_webtoon = summary_recomm.to_dataframe(webtoons)
     overview_sim_sorted_ind = summary_recomm.tokenizer(df_webtoon)
 
@@ -117,9 +116,9 @@ def recomm_overall(request):
 
     # 반대
     # 로그인 유저의 찜리스트 목록 가져오기
-    user_id = get_user_model().objects.values('user_id').filter(username=user.username)
+    user_id = get_user_model().objects.values('user_id').filter(username="sadml.faklsdjfklsad")
     # user_id = get_user_model().objects.values('user_id').filter(username=request.user)
-    favorite_webtoons = Webtoon.objects.filter(favorite_users=user_id[0]['user_id'])
+    favorite_webtoons = Webtoon.objects.filter(like_users=user_id[0]['user_id'])
     
     webtoons = Webtoon.objects.all()
 
@@ -161,7 +160,7 @@ class WebtoonGenreViewSet(viewsets.ModelViewSet):
     """
 
     serializer_class = WebtoonSerializer
-
+    
     @authentication_classes([JSONWebTokenAuthentication])
     @permission_classes([IsAuthenticated])   
     def recomm_genre(self, request):
