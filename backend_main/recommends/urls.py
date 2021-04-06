@@ -1,11 +1,11 @@
 from django.urls import path
 from . import views
-from .views import WebtoonSummaryViewSet, WebtoonGenreViewSet, WebtoonOppositionViewSet, WebtoonArtistViewSet, WebtoonScoreViewSet, WebtoonRandomViewSet
+from .views import WebtoonOverAllViewSet, WebtoonSummaryViewSet, WebtoonGenreViewSet, WebtoonOppositionViewSet, WebtoonArtistViewSet, WebtoonScoreViewSet, WebtoonRandomViewSet
 
 urlpatterns = [
 
     # 웹툰 추천 카드 관련 주소들
-    path('recomm_overall/', views.recomm_overall),
+    path('recomm_overall/', WebtoonOverAllViewSet.as_view({"get":"recomm_overall"})),
     path('recomm_genre/', WebtoonGenreViewSet.as_view({"get": "recomm_genre"})),
     path('recomm_artist/', WebtoonArtistViewSet.as_view({"get": "recomm_artist"})),
     path('recomm_summary/', WebtoonSummaryViewSet.as_view({"get": "recomm_summary"})),
