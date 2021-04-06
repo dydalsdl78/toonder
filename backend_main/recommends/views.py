@@ -19,15 +19,15 @@ from drf_yasg import openapi
 import json
 
 
+
 class WebtoonOverAllViewSet(viewsets.ModelViewSet):
     """
         웹툰 추천 통합
     """
-
+    authentication_classes = (JSONWebTokenAuthentication)
+    permission_classes = (IsAuthenticated)
     serializer_class = WebtoonSerializer
 
-    @authentication_classes([JSONWebTokenAuthentication])
-    @permission_classes([IsAuthenticated])   
     def recomm_overall(self, request):
         # # 장르
         # # 사용자의 장르 벡터
@@ -58,8 +58,9 @@ class WebtoonOverAllViewSet(viewsets.ModelViewSet):
         #     result.append(serializer.data)
        
         # 작가
-        user_id = get_user_model().objects.values('user_id').filter(username="sadml.faklsdjfklsad")
-        # user_id = get_user_model().objects.values('user_id').filter(username=request.user)
+        user = request.user
+        print(user)
+        user_id = get_user_model().objects.values('user_id').filter(username=user.username)
         favorite_webtoons = Webtoon.objects.filter(favorite_users=user_id[0]['user_id'])
         
         recommend_result = {}
@@ -79,7 +80,7 @@ class WebtoonOverAllViewSet(viewsets.ModelViewSet):
 
         # 줄거리
         # 로그인 유저의 찜리스트 목록 가져오기
-        user_id = get_user_model().objects.values('user_id').filter(username="sadml.faklsdjfklsad")
+        user_id = get_user_model().objects.values('user_id').filter(username=user.username)
         # user_id = get_user_model().objects.values('user_id').filter(username=request.user)
         favorite_webtoons = Webtoon.objects.filter(favorite_users=user_id[0]['user_id'])
         
@@ -116,7 +117,7 @@ class WebtoonOverAllViewSet(viewsets.ModelViewSet):
 
         # 반대
         # 로그인 유저의 찜리스트 목록 가져오기
-        user_id = get_user_model().objects.values('user_id').filter(username="sadml.faklsdjfklsad")
+        user_id = get_user_model().objects.values('user_id').filter(username=user.username)
         # user_id = get_user_model().objects.values('user_id').filter(username=request.user)
         favorite_webtoons = Webtoon.objects.filter(favorite_users=user_id[0]['user_id'])
         
@@ -144,14 +145,14 @@ class WebtoonOverAllViewSet(viewsets.ModelViewSet):
             opposition_result[title] = tmp
 
         return Response(
-            {
+            [
                 # "장르유사도가 높은": result,
-                "작가의 다른 작품": recommend_result,
-                "줄거리 유사도가 높은": summmary_result,
-                "평점이 높은 순": score_serializer.data,
-                "무작위": serializer.data,
-                "줄거리 유사도가 낮은": opposition_result,
-             })
+                {"좋아하는 작가의 다른 작품": recommend_result},
+                {"좋아하는 작품과 줄거리 유사한": summmary_result},
+                {"다른 사람들이 좋은 평가를 한": score_serializer.data},
+                {"이런건 어떤가요?": serializer.data},
+                {"평소에는 보지 않지만 어떠세요?": opposition_result},
+            ])
 
 
 class WebtoonGenreViewSet(viewsets.ModelViewSet):
