@@ -54,7 +54,7 @@ function App() {
     if (token) {
       getuser(token);
     }
-  }, [getuser]);
+  }, []);
 
   const theme = {
     primary: "#00b8a9",

@@ -26,8 +26,8 @@ export default function MediaCard({ toon }) {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image={toon.image}
-          title={toon.title}
+          image={toon.thumbnail_url}
+          title={toon.webtoon_name}
         />
         <CardContent>
           <Typography
@@ -36,7 +36,7 @@ export default function MediaCard({ toon }) {
             component="h2"
             text-align="center"
           >
-            {toon.title}
+            {toon.webtoon_name}
           </Typography>
           {/* <Typography variant="body2" color="textSecondary" component="p">
             Lizards are a widespread group of squamate reptiles
