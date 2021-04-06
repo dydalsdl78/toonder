@@ -2,28 +2,8 @@ import React from "react";
 import TinderCard from "react-tinder-card";
 import "./SwipeCard.css";
 
-export default function SwipeCard() {
+export default function SwipeCard(props) {
   const recommendations = [
-    {
-      name: "Richard Hendricks",
-      url:
-        "http://image.kmib.co.kr/online_image/2020/1209/611711110015305265_1.jpg",
-    },
-    {
-      name: "Richard ",
-      url:
-        "http://image.kmib.co.kr/online_image/2020/1209/611711110015305265_1.jpg",
-    },
-    {
-      name: "Richard fgsdf",
-      url:
-        "http://image.kmib.co.kr/online_image/2020/1209/611711110015305265_1.jpg",
-    },
-    {
-      name: "Richard sdfwerewre",
-      url:
-        "http://image.kmib.co.kr/online_image/2020/1209/611711110015305265_1.jpg",
-    },
     {
       name: "Richard Hendricks",
       url:
