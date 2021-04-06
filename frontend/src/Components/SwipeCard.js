@@ -1,37 +1,31 @@
 import React from "react";
 import TinderCard from "react-tinder-card";
 import "./SwipeCard.css";
+import Recommend from "../modules/recommend.api";
 
-export default function SwipeCard(props) {
-  const recommendations = [
-    {
-      name: "Richard Hendricks",
-      url:
-        "http://image.kmib.co.kr/online_image/2020/1209/611711110015305265_1.jpg",
-    },
-    {
-      name: "Richard ",
-      url:
-        "http://image.kmib.co.kr/online_image/2020/1209/611711110015305265_1.jpg",
-    },
-    {
-      name: "Richard fgsdf",
-      url:
-        "http://image.kmib.co.kr/online_image/2020/1209/611711110015305265_1.jpg",
-    },
-    {
-      name: "Richard sdfwerewre",
-      url:
-        "http://image.kmib.co.kr/online_image/2020/1209/611711110015305265_1.jpg",
-    },
-  ];
-
-  const onSwipe = (direction) => {
-    console.log("You swiped: " + direction);
+export default function SwipeCard({ recommendations }) {
+  const onSwipe = async (direction, recommendation) => {
+    console.log("You swiped: " + direction, recommendation.webtoon_number);
+    if (direction == "right") {
+      console.log("here");
+      Recommend.like(recommendation.webtoon_number);
+    } else if (direction == "left") {
+      console.log("left");
+    } else if (direction == "up") {
+      goWatch(recommendation.webtoon_link);
+    } else if (direction == "down") {
+      console.log("down");
+    } else {
+      console.log("error");
+    }
   };
 
   const onCardLeftScreen = (myIdentifier) => {
     console.log(myIdentifier + " left the screen");
+  };
+
+  const goWatch = (url) => {
+    window.open(url);
   };
 
   return (
@@ -40,15 +34,22 @@ export default function SwipeCard(props) {
         return (
           <TinderCard
             className="swipe"
-            key={recommendation.name}
-            onSwipe={(dir) => onSwipe(dir, recommendation.name)}
-            onCardLeftScreen={() => onCardLeftScreen(recommendation.name)}
+            key={recommendation.webtoon_name}
+            onSwipe={(dir) => onSwipe(dir, recommendation)}
+            onCardLeftScreen={() =>
+              onCardLeftScreen(recommendation.webtoon_name)
+            }
           >
+            <p className="pcard">{recommendation.reason}</p>
             <div
-              style={{ backgroundImage: "url(" + recommendation.url + ")" }}
+              style={{
+                backgroundImage: "url(" + recommendation.thumbnail_url + ")",
+              }}
               className="card"
             >
-              <h3>{recommendation.name}</h3>
+              <h2>{recommendation.webtoon_score.toFixed(1)}</h2>
+              <h3>{recommendation.webtoon_name}</h3>
+              <h5>{recommendation.webtoon_writer}</h5>
             </div>
           </TinderCard>
         );

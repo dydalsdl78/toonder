@@ -37,14 +37,61 @@ const getOppositionRecommend = () => {
   return axios.get(`${API_URL}/recommends/recomm_opposition/`);
 };
 
-const getLikes = () => {
-  return axios.get(`${API_URL}/recommends/like/`);
+const getLikes = async () => {
+  const token = JSON.parse(localStorage.getItem("user"));
+  const config = {
+    headers: {
+      Authorization: `JWT ${token}`,
+    },
+  };
+  console.log(config);
+  try {
+    const res = await axios.get(API_URL + "/recommends/like/", config);
+    return res;
+  } catch (err) {
+    console.log(err);
+  }
 };
 
-const getFavs = () => {
-  return axios.get(`${API_URL}/recommends/favorite/`);
+const getFavs = async () => {
+  const token = JSON.parse(localStorage.getItem("user"));
+  const config = {
+    headers: {
+      Authorization: `JWT ${token}`,
+    },
+  };
+  console.log(config);
+  try {
+    const res = await axios.get(API_URL + "/recommends/favorite/", config);
+    console.log(res);
+    return res;
+  } catch (err) {
+    console.log(err);
+  }
 };
 
+const like = async (webtoon_number) => {
+  const token = JSON.parse(localStorage.getItem("user"));
+  const config = {
+    headers: {
+      Authorization: `JWT ${token}`,
+    },
+  };
+  const bodyParmeters = {
+    key: "value",
+  };
+  try {
+    const res = await axios.post(
+      `${API_URL}/recommends/like/${webtoon_number}/`,
+      bodyParmeters,
+      config
+    );
+    console.log(res);
+    return res;
+  } catch (err) {
+    console.log(err);
+  }
+};
 
 export default {
   getAllRecommend,
@@ -57,4 +104,5 @@ export default {
   getOppositionRecommend,
   getLikes,
   getFavs,
+  like,
 };
