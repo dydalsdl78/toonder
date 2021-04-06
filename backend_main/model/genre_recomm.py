@@ -43,14 +43,14 @@ def webtoon_to_dataframe(data):
     
     # print("시리얼라이즈끝")
     # genres = serializer.data
-    
+    # print(genres)
     genres = data[i].genres.all().values('genre_name')
     # print(genres)
 
     # print(genre_ls)
-    genre_ls = [g['genre_name'] for g in genres]
+    # genre_ls = [g['genre_name'] for g in genres]
     
-    ls_webtoon.append([title, genre_ls])
+    ls_webtoon.append([title, genres])
     
     # print(ls_webtoon.values())
   print(time()-p)
