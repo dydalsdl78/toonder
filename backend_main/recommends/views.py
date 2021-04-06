@@ -25,6 +25,7 @@ import json
 #         웹툰 추천 통합
 #     """
 
+@api_view(['GET'])
 @authentication_classes([JSONWebTokenAuthentication])
 @permission_classes([IsAuthenticated]) 
 def recomm_overall(request):
