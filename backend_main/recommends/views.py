@@ -25,7 +25,7 @@ class WebtoonOverAllViewSet(viewsets.ModelViewSet):
         웹툰 추천 통합
     """
     serializer_class = WebtoonSerializer
-    permission_classes = [IsAccountAdminOrReadOnly]
+    permission_classes = [IsAuthenticated]
     authentication_classes = [JSONWebTokenAuthentication]
 
 # @api_view(['GET'])
