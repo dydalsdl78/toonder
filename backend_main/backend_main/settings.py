@@ -25,7 +25,9 @@ SECRET_KEY = 'cxva1mapfk%d@^p(sq5h=1la^gc(f_s-sw6__r1p&@1me@4gx$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '*',    # 서버 배포 시에는 필요한 HOST만 추가
+]
 
 
 # Application definition
@@ -47,6 +49,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
+# 서버 배포 시에는 서버 주소로 변경
+CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     'http://localhost:3001',
@@ -148,7 +152,7 @@ MEDIA_URL = '/media/'
 STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
 TEMP = BASE_DIR / 'media_cdn/temp'
-BASE_DIR = "https://127.0.0.1:8000"
+BASE_DIR = "http://127.0.0.1:8000"     # 서버 배포 시에는 서버 주소로 변경
 
 
 AUTH_USER_MODEL = 'accounts.User'

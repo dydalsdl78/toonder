@@ -19,7 +19,6 @@ class Webtoon(models.Model):
     overview_morph = models.TextField()
 
     genres = models.ManyToManyField(Genre, related_name='webtoons')
-    # users_webtoon = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='favorites')
 
     like_users = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='like_webtoon')
     favorite_users = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='favorite_webtoon')

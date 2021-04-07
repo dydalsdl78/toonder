@@ -1,10 +1,7 @@
-from django.db import models
-from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
-
 import uuid
 
-# 신규 유저 만드는 함수 하나와
-# superuser 만드는 함수 하나를 만들어야 한다.
+from django.db import models
+from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 
 
 class MyUserManager(BaseUserManager):
@@ -44,8 +41,6 @@ class MyUserManager(BaseUserManager):
 
 # profile image를 갖고오기 위한 함수
 def get_profile_image_filepath(self, filename):
-    # print(self.user_id)
-
     return f'profile_images/{self.user_id}/{"profile_image.png"}'
 
 

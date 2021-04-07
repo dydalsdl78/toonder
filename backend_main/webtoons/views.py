@@ -4,15 +4,15 @@ from django.shortcuts import get_object_or_404
 
 from rest_framework import status, viewsets
 from rest_framework.response import Response
-from rest_framework.decorators import api_view
 
-from rest_framework.decorators import authentication_classes, permission_classes
+from rest_framework.decorators import api_view, authentication_classes, permission_classes
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 from rest_framework.permissions import IsAuthenticated
 
 from accounts.models import User
 from .models import Webtoon, Genre
 from .serializers import WebtoonSerializer, GenreSerializer
+
 
 class MainViewSet(viewsets.ModelViewSet):
 # @api_view(['GET'])
@@ -29,10 +29,7 @@ class MainViewSet(viewsets.ModelViewSet):
         genre_ids = list(genres.values('id'))
         
         for genre_id in sample(genre_ids, 8):
-            # print(list(genres[genre_id['id'] - 1].webtoons.all().order_by('-webtoon_score')[:10].values()))
             results[genres[genre_id['id'] - 1].genre_name] = list(genres[genre_id['id'] - 1].webtoons.all().order_by('-webtoon_score')[:10].values())
-
-        # print(results.keys())
 
         return Response(results, status=status.HTTP_200_OK)
 
