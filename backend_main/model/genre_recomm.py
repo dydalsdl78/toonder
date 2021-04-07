@@ -35,7 +35,8 @@ def webtoon_to_dataframe(data):
     # serializer = GenreSerializer(data[i].genres.all(), many=True)
     
     # genres = serializer.data
-    genres = data[i].genres.all().values('genre_name')
+    # genres = data[i].genres.all().values('genre_name')
+    genres = data[i].genres_list
     # genres = data[i].genres.all().values_list('id', flat=True)
     # print(genres)
     # genre_ls = [g['genre_name'] for g in genres]
@@ -54,13 +55,13 @@ def webtoon_to_matrix(df_webtoon):
   # print(df_webtoon['genres'])
 
   # print(df_webtoon['s3'])
-  df_webtoon['genres_literal'] = df_webtoon['genres'].apply(lambda x : (' ').join([g['genre_name'] for g in x]))
+  # df_webtoon['genres_literal'] = df_webtoon['genres'].apply(lambda x : (' ').join([g['genre_name'] for g in x]))
   # print(df_webtoon)
   # df_webtoon.to_csv('genres.csv')
   # df_webtoon['genres_literal'] = df_webtoon['genres'].apply(lambda x : (' ').join(x))
   count_vect = CountVectorizer(min_df=0, ngram_range=(1,1)) #min_df: 단어장에 들어갈 최소빈도, ngram_range: 1 <= n <= 2
-  genre_mat = count_vect.fit_transform(df_webtoon['genres_literal'])
-  # genre_mat = count_vect.fit_transform(df_webtoon['genres'])
+  # genre_mat = count_vect.fit_transform(df_webtoon['genres_literal'])
+  genre_mat = count_vect.fit_transform(df_webtoon['genres'])
   return genre_mat.toarray()
 
 
