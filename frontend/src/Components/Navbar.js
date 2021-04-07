@@ -7,7 +7,7 @@ import HomeIcon from "@material-ui/icons/Home";
 import ThumbUpIcon from "@material-ui/icons/ThumbUp";
 import BookmarksIcon from "@material-ui/icons/Bookmarks";
 import AccountBoxIcon from "@material-ui/icons/AccountBox";
-
+import AuthService from "../modules/auth.api";
 // import styled from 'styled-components';
 
 const useStyles = makeStyles({
@@ -27,7 +27,9 @@ function Navbar() {
   const classes = useStyles();
   const [value, setValue] = useState("/");
 
-  const handleChange = (event, newValue) => {
+  const handleChange = async (event, newValue) => {
+    const token = JSON.parse(localStorage.getItem("user"));
+    const refresh = await AuthService.refresh(token);
     setValue(newValue);
     history.push(newValue);
   };

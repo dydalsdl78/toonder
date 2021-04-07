@@ -1,10 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { Redirect } from "react-router-dom";
 import { Title } from "../Lib";
 import SwipeCard from "../Components/SwipeCard";
 import AuthService from "../modules/auth.api";
+import { AuthContext } from "../Context/context";
 
 function Recommendation() {
   const [recommendations, setRecommendations] = useState([]);
+  const authContext = useContext(AuthContext);
 
   function shuffle(array) {
     var currentIndex = array.length,
@@ -46,11 +49,16 @@ function Recommendation() {
     setRecommendations(random_list);
   }, []);
 
-  return (
+  return authContext.isLoggedIn ? (
     <div className="container">
-      <Title>Recommendation</Title>
       <SwipeCard recommendations={recommendations} />
     </div>
+  ) : (
+    <Redirect
+      to={{
+        pathname: "/login",
+      }}
+    />
   );
 }
 

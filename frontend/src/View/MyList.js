@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
+import { Redirect } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Tabs from "@material-ui/core/Tabs";
@@ -10,6 +11,7 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import GradeIcon from "@material-ui/icons/Grade";
 import Recommend from "../modules/recommend.api";
 import { FavoriteSharp } from "@material-ui/icons";
+import { AuthContext } from "../Context/context";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -35,20 +37,25 @@ function MyList() {
   const [view, setView] = useState([]);
   const [likes, setLikes] = useState([]);
   const [favs, setFavs] = useState([]);
+  const authContext = useContext(AuthContext);
 
   useEffect(async () => {
     const likelist = await Recommend.getLikes();
-    setLikes(likelist.data);
+    if (likelist) {
+      setLikes(likelist.data);
+      setView(likelist.data);
+    }
     const favlist = await Recommend.getFavs();
-    setFavs(favlist.data);
-    setView(likelist.data);
+    if (favlist) {
+      setFavs(favlist.data);
+    }
   }, []);
 
   console.log("view : ", view);
   const handleChange = (e, newValue) => {
     setValue(newValue);
   };
-  return (
+  return authContext.isLoggedIn ? (
     <div className={classes.root + " container"}>
       <Paper sqaure className={classes.tabBar}>
         <Tabs
@@ -87,6 +94,12 @@ function MyList() {
         ))}
       </GridList>
     </div>
+  ) : (
+    <Redirect
+      to={{
+        pathname: "/login",
+      }}
+    />
   );
 }
 

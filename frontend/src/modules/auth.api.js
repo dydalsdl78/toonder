@@ -31,6 +31,20 @@ const login = (email, password) => {
     });
 };
 
+const refresh = (token) => {
+  return axios
+    .post(`${API_URL}/accounts/api-token-refresh/`, {
+      token,
+    })
+    .then((res) => {
+      if (res.data.token) {
+        localStorage.setItem("user", JSON.stringify(res.data.token));
+      }
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+};
 const getuser = (token) => {
   return axios.get(`${API_URL}/accounts/get_userinfo/`, {
     headers: {
@@ -59,6 +73,7 @@ const recomm_overall = async () => {
 export default {
   join,
   login,
+  refresh,
   getuser,
   logout,
   recomm_overall,
