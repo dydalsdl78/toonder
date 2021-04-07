@@ -17,6 +17,7 @@ from webtoons.serializers import WebtoonSerializer
 from model import summary_recomm, genre_recomm
 from webtoons.models import Webtoon, Genre
 
+import random
 import json
 import io
 
@@ -26,15 +27,15 @@ class WebtoonOverAllViewSet(viewsets.ModelViewSet):
         웹툰 추천 통합
     """
     serializer_class = WebtoonSerializer
-    permission_classes = [IsAuthenticated]
-    authentication_classes = [JSONWebTokenAuthentication]
+    # permission_classes = [IsAuthenticated]
+    # authentication_classes = [JSONWebTokenAuthentication]
 
     def recomm_overall(self, request):
 
         # 좋아요 리스트에 있는 웹툰 목록
         user = request.user
-        # user_id = get_user_model().objects.values('user_id').filter(username="kym123")
-        user_id = get_user_model().objects.values('user_id').filter(username=user.username)
+        user_id = get_user_model().objects.values('user_id').filter(username="kym123")
+        # user_id = get_user_model().objects.values('user_id').filter(username=user.username)
         favorite_webtoons = Webtoon.objects.filter(like_users=user_id[0]['user_id'])
 
         # 웹툰 전체 목록
@@ -129,15 +130,17 @@ class WebtoonOverAllViewSet(viewsets.ModelViewSet):
         for favorite_webtoon in favorite_webtoons:
             title = favorite_webtoon.webtoon_name
 
-            # 찜목록에 있는 모든 웹툰리스트들과 가장 유사도가 높은 몇가지를 출력
-            similar_webtoons = summary_recomm.find_sim_movie_ver2(df_webtoon, overview_sim_sorted_ind, '{}'.format(title), 3)
+            # 찜목록에 있는 모든 웹툰리스트들과 가장 유사도가 낮은 30개를 출력
+            unsimilar_webtoons = summary_recomm.find_sim_movie_ver2(df_webtoon, overview_sim_sorted_ind, '{}'.format(title), 30)
+            results = json.loads(unsimilar_webtoons)
 
-            results = json.loads(similar_webtoons)
+            # 30개중 3개씩 랜덤추출
+            results = random.sample(results, 3)
 
             for result in results:
                 webtoon = Webtoon.objects.get(webtoon_number=result['webtoon_number'])        
                 opposition_serializer = WebtoonSerializer(webtoon)
-                opposition_json = JSONRenderer().render(serializer.data)
+                opposition_json = JSONRenderer().render(opposition_serializer.data)
                 opposition_stream = io.BytesIO(opposition_json)
                 opposition_data = JSONParser().parse(opposition_stream)
                 opposition_data['opposition_webtoon'] = title
