@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // for local test
-const API_URL = "http://127.0.0.1:8000/webtoons";
+const API_URL = process.env.REACT_APP_SERVER_URL;
 // for release
 // const API_URL = "";
 const token = JSON.parse(localStorage.getItem("user"));
@@ -13,7 +13,7 @@ const config = {
 };
 
 const main = () => {
-  return axios.get(API_URL + "/main/");
+  return axios.get(`${API_URL}/webtoons/main/`);
 };
 
 export default {
