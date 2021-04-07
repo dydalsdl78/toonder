@@ -16,17 +16,22 @@ import Profile from "./View/Profile";
 import Detail from "./View/Detail";
 import { AuthContext } from "./Context/context";
 import AuthService from "./modules/auth.api";
+import WebtoonService from "./modules/webtoons.api";
 
 function App() {
   const history = useHistory();
   const [token, setToken] = useState(null);
-  const [username, setUsername] = useState(null);
+  const [username, setUsername] = useState("guest");
   const [email, setEmail] = useState(null);
+  const [mainlist, setMainlist] = useState([]);
 
   const login = async (email, password) => {
     try {
       let res = await AuthService.login(email, password);
-      setEmail(email);
+      let userinfo = await AuthService.getuser(res.token);
+      console.log("here", userinfo);
+      setEmail(userinfo.data.email);
+      setUsername(userinfo.data.username);
       setToken(res.token);
       history.push("/");
     } catch (e) {
@@ -51,11 +56,22 @@ function App() {
     AuthService.logout();
   };
 
-  useEffect(() => {
-    const token = JSON.parse(localStorage.getItem("user"));
+  useEffect(async () => {
+    const old_token = JSON.parse(localStorage.getItem("user"));
+    const token = await AuthService.refresh(old_token);
     if (token) {
-      getuser(token);
+      try {
+        getuser(token);
+      } catch (err) {
+        console.log(err);
+      }
     }
+  }, []);
+
+  useEffect(async () => {
+    const res = await WebtoonService.main();
+    console.log(res.data);
+    setMainlist(res.data);
   }, []);
 
   const theme = {
@@ -67,6 +83,7 @@ function App() {
 
   return (
     <>
+      <Banner />
       <AuthContext.Provider
         value={{
           isLoggedIn: !!token,
@@ -76,11 +93,12 @@ function App() {
           setUsername,
           email,
           setEmail,
+          getuser,
         }}
       >
         <Switch>
           <Route exact path="/">
-            <Main />
+            <Main mainlist={mainlist} />
           </Route>
           <Route path="/login">
             <Login />

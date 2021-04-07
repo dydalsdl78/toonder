@@ -21,7 +21,6 @@ const useStyles = makeStyles({
 export default function MediaCard({ toon }) {
   const history = useHistory();
   const classes = useStyles();
-  console.log(toon);
 
   const handleClick = () => {
     console.log(toon.webtoon_number)

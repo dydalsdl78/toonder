@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
+import { Redirect } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Tabs from "@material-ui/core/Tabs";
@@ -67,10 +68,14 @@ function MyList() {
 
   useEffect(async () => {
     const likelist = await Recommend.getLikes();
-    setLikes(likelist.data);
+    if (likelist) {
+      setLikes(likelist.data);
+      setView(likelist.data);
+    }
     const favlist = await Recommend.getFavs();
-    setFavs(favlist.data);
-    setView(favlist.data);
+    if (favlist) {
+      setFavs(favlist.data);
+    }
   }, []);
 
   useEffect(()=>{
@@ -116,8 +121,8 @@ function MyList() {
             }}
             />
           <Tab
-            icon={<FavoriteIcon />}
-            label="Likes"
+            icon={<GradeIcon />}
+            label="Favorites"
             onClick={() => {
               setMode('like')
               setView(likes);
