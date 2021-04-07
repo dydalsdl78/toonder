@@ -10,6 +10,7 @@ from rest_framework.decorators import authentication_classes, permission_classes
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 from rest_framework.permissions import IsAuthenticated
 
+from accounts.models import User
 from .models import Webtoon, Genre
 from .serializers import WebtoonSerializer, GenreSerializer
 

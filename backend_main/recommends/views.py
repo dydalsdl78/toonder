@@ -2,6 +2,7 @@ from django.contrib.auth import get_user_model
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render
 from django.core.serializers.json import DjangoJSONEncoder
+from django.shortcuts import get_object_or_404
 
 from rest_framework import status, viewsets
 from rest_framework.decorators import authentication_classes, permission_classes
@@ -345,6 +346,7 @@ class WebtoonOppositionViewSet(viewsets.ModelViewSet):
 @authentication_classes([JSONWebTokenAuthentication])
 @permission_classes([IsAuthenticated])
 def like(request, webtoon_number):
+    print(request.user)
     if request.user.is_authenticated:
         webtoon = get_object_or_404(Webtoon, pk=webtoon_number)
     else:
@@ -362,6 +364,7 @@ def like(request, webtoon_number):
 @authentication_classes([JSONWebTokenAuthentication])
 @permission_classes([IsAuthenticated])  
 def favorite(request, webtoon_number):
+    print(request.user)
     if request.user.is_authenticated:
         webtoon = get_object_or_404(Webtoon, pk=webtoon_number)
         

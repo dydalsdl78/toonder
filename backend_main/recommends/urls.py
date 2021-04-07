@@ -15,8 +15,8 @@ urlpatterns = [
     path('recomm_opposition/', WebtoonOppositionViewSet.as_view({"get": "recomm_opposition"})),
 
     # 유저 좋아요, 찜목록 리스트 관련 주소들
-    path('like/<int:webtoon_number>', views.like, name='like'),
+    path('like/<int:webtoon_number>/', views.like, name='like'),
     path('like/', views.like_list, name='like_list'),
-    path('favorite/<int:webtoon_number>', views.favorite, name='favorite'),
+    path('favorite/<int:webtoon_number>/', views.favorite, name='favorite'),
     path('favorite/', views.favorite_list, name='favorite_list'),
 ]
