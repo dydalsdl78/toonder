@@ -16,6 +16,24 @@ const main = () => {
   return axios.get(API_URL + "main/");
 };
 
+const getDetail = async (webtoon_number) => {
+  const token = JSON.parse(localStorage.getItem("user"));
+  const config = {
+    headers: {
+      Authorization: `JWT ${token}`,
+    },
+  };
+  console.log(config);
+  try {
+    const res = await axios.get(API_URL + "detail/" + {webtoon_number} + "/", config);
+    console.log(res);
+    return res;
+  } catch (err) {
+    console.log(err);
+  }
+};
+
 export default {
   main,
+  getDetail,
 };

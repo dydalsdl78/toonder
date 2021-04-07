@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
   },
   gridList: {
     width: 500,
-    height: 450,
+    height: 2050,
   },
   tabBar: {
     flexGrow: 1,

@@ -13,6 +13,7 @@ import Main from "./View/Main";
 import Recommendation from "./View/Recommendation";
 import MyList from "./View/MyList";
 import Profile from "./View/Profile";
+import Detail from "./View/Detail";
 import { AuthContext } from "./Context/context";
 import AuthService from "./modules/auth.api";
 
@@ -94,6 +95,9 @@ function App() {
           </Route>
           <Route path="/profile">
             <Profile />
+          </Route>
+          <Route path="/detail">
+            <Detail />
           </Route>
         </Switch>
         <Navbar />
