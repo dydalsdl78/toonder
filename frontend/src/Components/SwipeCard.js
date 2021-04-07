@@ -8,7 +8,7 @@ export default function SwipeCard({ recommendations }) {
     console.log("You swiped: " + direction, recommendation.webtoon_number);
     if (direction == "right") {
       console.log("here");
-      Recommend.like(recommendation.webtoon_number);
+      Recommend.postLike(recommendation.webtoon_number);
     } else if (direction == "left") {
       console.log("left");
     } else if (direction == "up") {

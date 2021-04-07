@@ -77,29 +77,6 @@ const getFavs = async () => {
   }
 };
 
-const like = async (webtoon_number) => {
-  const token = JSON.parse(localStorage.getItem("user"));
-  const config = {
-    headers: {
-      Authorization: `JWT ${token}`,
-    },
-  };
-  const bodyParmeters = {
-    key: "value",
-  };
-  try {
-    const res = await axios.post(
-      `${API_URL}/recommends/like/${webtoon_number}/`,
-      bodyParmeters,
-      config
-    );
-    console.log(res);
-    return res;
-  } catch (err) {
-    console.log(err);
-  }
-};
-
 const postFav = async (number) => {
   const token = JSON.parse(localStorage.getItem("user"));
   const config = {
@@ -109,7 +86,7 @@ const postFav = async (number) => {
   };
   console.log(config);
   try {
-    const res = await axios.post(API_URL + `favorite/${number}/`, {key:'value'}, config);
+    const res = await axios.post(`${API_URL}/recommends/favorite/${number}/`, {key:'value'}, config);
     console.log(res);
     return res;
   } catch (err) {
@@ -126,7 +103,7 @@ const postLike = async (number) => {
   };
   console.log(config);
   try {
-    const res = await axios.post(API_URL + `like/${number}/`, {key:'value'}, config);
+    const res = await axios.post(`${API_URL}/recommends/like/${number}/`, {key:'value'}, config);
     console.log(res);
     return res;
   } catch (err) {

@@ -11,8 +11,8 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import BookmarkIcon from '@material-ui/icons/Bookmark';
 import IconButton from '@material-ui/core/IconButton';
 import Recommend from "../modules/recommend.api";
-import { FavoriteSharp } from "@material-ui/icons";
 import { useHistory } from "react-router";
+import { AuthContext } from "../Context/context";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -38,11 +38,13 @@ const useStyles = makeStyles((theme) => ({
 function MyList() {
   const classes = useStyles();
   const history = useHistory();
+  const authContext = useContext(AuthContext);
   const [value, setValue] = useState(0);
   const [view, setView] = useState([]);
   const [likes, setLikes] = useState([]);
   const [favs, setFavs] = useState([]);
   const [mode, setMode] = useState('fav');
+  
 
   const handleClick = (number) => {
     console.log(number)
@@ -101,7 +103,7 @@ function MyList() {
     setValue(newValue);
   };
   
-  return (
+  return authContext.isLoggedIn ? (
     <>
       <Paper sqaure className={classes.tabBar}>
         <Tabs
@@ -156,7 +158,12 @@ function MyList() {
         </GridList>
       </div>
     </>
-  );
+  ) : (
+    <Redirect
+      to={{
+        pathname: "/login",
+      }}
+    />);
 }
 
 export default MyList;

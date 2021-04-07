@@ -14,6 +14,7 @@ import Recommendation from "./View/Recommendation";
 import MyList from "./View/MyList";
 import Profile from "./View/Profile";
 import Detail from "./View/Detail";
+import Banner from "./Components/Banner";
 import { AuthContext } from "./Context/context";
 import AuthService from "./modules/auth.api";
 import WebtoonService from "./modules/webtoons.api";
@@ -59,6 +60,11 @@ function App() {
   useEffect(async () => {
     const old_token = JSON.parse(localStorage.getItem("user"));
     const token = await AuthService.refresh(old_token);
+    const refresh = await AuthService.refresh(token);
+    setToken(refresh);
+    const userinfo = await AuthService.getuser(token);
+    setEmail(userinfo.data.email);
+    setUsername(userinfo.data.username);
     if (token) {
       try {
         getuser(token);
