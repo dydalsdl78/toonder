@@ -17,15 +17,9 @@ const main = () => {
 };
 
 const getDetail = async (webtoon_number) => {
-  const token = JSON.parse(localStorage.getItem("user"));
-  const config = {
-    headers: {
-      Authorization: `JWT ${token}`,
-    },
-  };
-  console.log(config);
+  console.log(webtoon_number);
   try {
-    const res = await axios.get(API_URL + "detail/" + {webtoon_number} + "/", config);
+    const res = await axios.get(API_URL + "detail/" + webtoon_number + "/");
     console.log(res);
     return res;
   } catch (err) {

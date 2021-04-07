@@ -47,6 +47,7 @@ const getLikes = async () => {
   console.log(config);
   try {
     const res = await axios.get(API_URL + "like/", config);
+    console.log(res)
     return res;
   } catch (err) {
     console.log(err);
@@ -70,6 +71,40 @@ const getFavs = async () => {
   }
 };
 
+const postFav = async (number) => {
+  const token = JSON.parse(localStorage.getItem("user"));
+  const config = {
+    headers: {
+      Authorization: `JWT ${token}`,
+    },
+  };
+  console.log(config);
+  try {
+    const res = await axios.post(API_URL + `favorite/${number}/`, {key:'value'}, config);
+    console.log(res);
+    return res;
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+const postLike = async (number) => {
+  const token = JSON.parse(localStorage.getItem("user"));
+  const config = {
+    headers: {
+      Authorization: `JWT ${token}`,
+    },
+  };
+  console.log(config);
+  try {
+    const res = await axios.post(API_URL + `like/${number}/`, {key:'value'}, config);
+    console.log(res);
+    return res;
+  } catch (err) {
+    console.log(err);
+  }
+};
+
 export default {
   getAllRecommend,
   getGenreRecommend,
@@ -81,4 +116,6 @@ export default {
   getOppositionRecommend,
   getLikes,
   getFavs,
+  postLike,
+  postFav,
 };

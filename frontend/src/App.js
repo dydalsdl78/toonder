@@ -18,6 +18,7 @@ import { AuthContext } from "./Context/context";
 import AuthService from "./modules/auth.api";
 
 function App() {
+  const history = useHistory();
   const [token, setToken] = useState(null);
   const [username, setUsername] = useState(null);
   const [email, setEmail] = useState(null);
@@ -27,7 +28,7 @@ function App() {
       let res = await AuthService.login(email, password);
       setEmail(email);
       setToken(res.token);
-      this.history.push("/");
+      history.push("/");
     } catch (e) {
       console.log(e);
     }
@@ -36,7 +37,7 @@ function App() {
   const getuser = async (token) => {
     try {
       const res = await AuthService.getuser(token);
-      console.log(res);
+      console.log('getUser', res);
       setToken(token);
       setEmail(res.data.email);
       setUsername(res.data.username);
