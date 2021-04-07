@@ -1,7 +1,4 @@
 from django.contrib.auth import get_user_model
-from django.http import HttpResponse, JsonResponse
-from django.shortcuts import render
-from django.core.serializers.json import DjangoJSONEncoder
 
 from rest_framework import status, viewsets
 from rest_framework.decorators import authentication_classes, permission_classes
@@ -9,15 +6,15 @@ from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from rest_framework.views import APIView
+from rest_framework.renderers import JSONRenderer
+from rest_framework.parsers import JSONParser
 
 from webtoons.serializers import WebtoonSerializer
 from model import summary_recomm, genre_recomm
 from webtoons.models import Webtoon, Genre
 
-from drf_yasg import openapi
 import json
-
+import io
 
 
 class WebtoonOverAllViewSet(viewsets.ModelViewSet):
@@ -25,71 +22,71 @@ class WebtoonOverAllViewSet(viewsets.ModelViewSet):
         웹툰 추천 통합
     """
     serializer_class = WebtoonSerializer
-    permission_classes = [IsAccountAdminOrReadOnly]
-    authentication_classes = [JSONWebTokenAuthentication]
+    # permission_classes = [IsAuthenticated]
+    # authentication_classes = [JSONWebTokenAuthentication]
 
-# @api_view(['GET'])
-# @authentication_classes([JSONWebTokenAuthentication])
-# @permission_classes([IsAuthenticated]) 
     def recomm_overall(self, request):
 
         # 좋아요 리스트에 있는 웹툰 목록
         user = request.user
-        user_id = get_user_model().objects.values('user_id').filter(username="sadml.faklsdjfklsad")
+        user_id = get_user_model().objects.values('user_id').filter(username="kym123")
         # user_id = get_user_model().objects.values('user_id').filter(username=user.username)
         favorite_webtoons = Webtoon.objects.filter(like_users=user_id[0]['user_id'])
 
         # 웹툰 전체 목록
         webtoons = Webtoon.objects.all()
 
-        # # 장르
-        # # 사용자의 장르 벡터
-        # user_id = get_user_model().objects.values('user_id').filter(username="sadml.faklsdjfklsad")
-        # # user_id = get_user_model().objects.values('user_id').filter(username=request.user)
-        # favorite_webtoons = Webtoon.objects.filter(favorite_users=user_id[0]['user_id'])
-        # serializer = WebtoonSerializer(favorite_webtoons, many=True)
-        # webtoon_data = serializer.data
+        # 사용자 장르 벡터와 웹툰 장르 벡터의 유사도가 높은 순서
 
-        # user_genres_matrix = genre_recomm.user_to_matrix(webtoon_data)
+        # 사용자의 장르 벡터
+        user_id = get_user_model().objects.values('user_id').filter(username="sadml.faklsdjfklsad")
+        # user_id = get_user_model().objects.values('user_id').filter(username=request.user)
+        favorite_webtoons = Webtoon.objects.filter(favorite_users=user_id[0]['user_id'])
+        serializer = WebtoonSerializer(favorite_webtoons, many=True)
+        webtoon_data = serializer.data
 
-        # # 웹툰들의 장르 벡터
-        # webtoons = Webtoon.objects.all()
-        # df_webtoon = genre_recomm.webtoon_to_dataframe(webtoons)
-        # genre_mat =  genre_recomm.webtoon_to_matrix(df_webtoon)
-        
-        # # 각각의 유사도 계산
-        # similarity = genre_recomm.cal_similarity(user_genres_matrix, genre_mat)
-        
-        # # 유사도 순 정렬
-        # sorted_similarity = sorted(similarity.items(), reverse=True, key=lambda item: item[1])
-        
-        # # id값에 해당하는 웹툰 정보 응답
-        # result = []
-        # for i in range(10):
-        #     webtoon = Webtoon.objects.filter(webtoon_number=sorted_similarity[i][0])
-        #     serializer = WebtoonSerializer(webtoon[0])
-        #     result.append(serializer.data)
+        user_genres_matrix = genre_recomm.user_to_matrix(webtoon_data)
 
-        # 작가 
-        recommend_result = {}
+        # 웹툰들의 장르 벡터
+        webtoons = Webtoon.objects.all()
+        df_webtoon = genre_recomm.webtoon_to_dataframe(webtoons)
+        genre_mat =  genre_recomm.webtoon_to_matrix(df_webtoon)
+        
+        # 각각의 유사도 계산
+        similarity = genre_recomm.cal_similarity(user_genres_matrix, genre_mat)
+        
+        # 유사도 순 정렬
+        sorted_similarity = sorted(similarity.items(), reverse=True, key=lambda item: item[1])
+        
+        # id값에 해당하는 웹툰 정보 응답
+        genre_result = []
+        for i in range(10):
+            webtoon = Webtoon.objects.filter(webtoon_number=sorted_similarity[i][0])
+            serializer = WebtoonSerializer(webtoon[0])
+            genre_result.append(serializer.data)
+
+        # 좋아요한 웹툰의 작가가 쓴 다른 웹툰들
+        artists_result = []
         
         for favorite_webtoon in favorite_webtoons:
             writer = favorite_webtoon.webtoon_writer
             already_num = favorite_webtoon.webtoon_number
             
-            tmp = []
-
             for webtoon in webtoons:
                 if webtoon.webtoon_writer in writer and webtoon.webtoon_number != already_num:
                     serializer = WebtoonSerializer(webtoon)
-                    tmp.append(serializer.data)
-                    recommend_result[writer] = tmp
+                    artist_json = JSONRenderer().render(serializer.data)
+                    artist_stream = io.BytesIO(artist_json)
+                    artist_data = JSONParser().parse(artist_stream)
+                    artist_data['favorite_writer'] = writer
 
-        # 줄거리
+                    artists_result.append(artist_data)
+
+        # 좋아요한 웹툰과 줄거리 유사도 높은 웹툰들
         df_webtoon = summary_recomm.to_dataframe(webtoons)
         overview_sim_sorted_ind = summary_recomm.tokenizer(df_webtoon)
 
-        summmary_result = {}
+        summmary_result = []
 
         for favorite_webtoon in favorite_webtoons:
             title = favorite_webtoon.webtoon_name
@@ -97,36 +94,33 @@ class WebtoonOverAllViewSet(viewsets.ModelViewSet):
             # 찜목록에 있는 모든 웹툰리스트들과 가장 유사도가 높은 몇가지를 출력
             similar_webtoons = summary_recomm.find_sim_movie_ver2(df_webtoon, overview_sim_sorted_ind, '{}'.format(title), 3)
 
-            results = json.loads(similar_webtoons)
+            similar_webtoons_json = json.loads(similar_webtoons)
 
-            tmp = []
-            for result in results:
+            for result in similar_webtoons_json:
                 webtoon = Webtoon.objects.get(webtoon_number=result['webtoon_number'])        
                 serializer = WebtoonSerializer(webtoon)
-                tmp.append(serializer.data)
+                summary_json = JSONRenderer().render(serializer.data)
+                summary_stream = io.BytesIO(summary_json)
+                summary_data = JSONParser().parse(summary_stream)
+                summary_data['similar_webtoon'] = title
 
-            summmary_result[title] = tmp
+                summmary_result.append(summary_data)
 
-        # 평점
-        webtoons = Webtoon.objects.order_by("-webtoon_score")[:10]
-        score_serializer = WebtoonSerializer(webtoons, many=True)
+        # 다른 사람들이 높게 평가한 웹툰들
+        score_webtoons = Webtoon.objects.order_by("-webtoon_score")[:10]
+        score_serializer = WebtoonSerializer(score_webtoons, many=True)
+        score_result = score_serializer.data
 
-        # 무작위
-        webtoon = Webtoon.objects.order_by("?")[:5]
-        serializer = WebtoonSerializer(webtoon, many=True)
+        # 무작위 추천 웹툰
+        random_webtoon = Webtoon.objects.order_by("?")[:5]
+        random_serializer = WebtoonSerializer(random_webtoon, many=True)
+        random_result = random_serializer.data
 
-        # 반대
-        # 로그인 유저의 찜리스트 목록 가져오기
-        user_id = get_user_model().objects.values('user_id').filter(username="sadml.faklsdjfklsad")
-        # user_id = get_user_model().objects.values('user_id').filter(username=request.user)
-        favorite_webtoons = Webtoon.objects.filter(like_users=user_id[0]['user_id'])
-        
-        webtoons = Webtoon.objects.all()
-
+        # 좋아요한 웹툰과 줄거리 유사가 낮은 웹툰들
         df_webtoon = summary_recomm.to_dataframe(webtoons)
         overview_sim_sorted_ind = summary_recomm.opposition_tokenizer(df_webtoon)
 
-        opposition_result = {}
+        opposition_result = []
 
         for favorite_webtoon in favorite_webtoons:
             title = favorite_webtoon.webtoon_name
@@ -136,21 +130,24 @@ class WebtoonOverAllViewSet(viewsets.ModelViewSet):
 
             results = json.loads(similar_webtoons)
 
-            tmp = []
             for result in results:
                 webtoon = Webtoon.objects.get(webtoon_number=result['webtoon_number'])        
                 opposition_serializer = WebtoonSerializer(webtoon)
-                tmp.append(opposition_serializer.data)
+                opposition_json = JSONRenderer().render(serializer.data)
+                opposition_stream = io.BytesIO(opposition_json)
+                opposition_data = JSONParser().parse(opposition_stream)
+                opposition_data['opposition_webtoon'] = title
 
-            opposition_result[title] = tmp
+                opposition_result.append(opposition_data)
+    
 
         return Response(
             [
-                # "장르유사도가 높은": result,
-                {"좋아하는 작가의 다른 작품": recommend_result},
+                {"장르유사도가 높은": genre_result},
+                {"좋아하는 작가의 다른 작품": artists_result},
                 {"좋아하는 작품과 줄거리 유사한": summmary_result},
-                {"다른 사람들이 좋은 평가를 한": score_serializer.data},
-                {"이런건 어떤가요?": serializer.data},
+                {"다른 사람들이 좋은 평가를 한": score_result},
+                {"이런건 어떤가요?": random_result},
                 {"평소에는 보지 않지만 어떠세요?": opposition_result},
             ])
 
@@ -281,9 +278,6 @@ class WebtoonScoreViewSet(viewsets.ModelViewSet):
         webtoons = Webtoon.objects.order_by("-webtoon_score")[:10]
         serializer = WebtoonSerializer(webtoons, many=True)
         return Response(serializer.data)
-
-def recomm_media(request):
-    pass
 
 class WebtoonRandomViewSet(viewsets.ModelViewSet):
     """

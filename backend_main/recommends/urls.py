@@ -11,7 +11,6 @@ urlpatterns = [
     path('recomm_artist/', WebtoonArtistViewSet.as_view({"get": "recomm_artist"})),
     path('recomm_summary/', WebtoonSummaryViewSet.as_view({"get": "recomm_summary"})),
     path('recomm_score/', WebtoonScoreViewSet.as_view({"get": "recomm_score"})),
-    path('recomm_media/', views.recomm_media),
     path('recomm_random/', WebtoonRandomViewSet.as_view({"get": "recomm_random"})),
     path('recomm_opposition/', WebtoonOppositionViewSet.as_view({"get": "recomm_opposition"})),
 
