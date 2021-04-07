@@ -7,6 +7,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import { useHistory } from "react-router";
 
 const useStyles = makeStyles({
   root: {
@@ -18,10 +19,21 @@ const useStyles = makeStyles({
 });
 
 export default function MediaCard({ toon }) {
+  const history = useHistory();
   const classes = useStyles();
 
+  const handleClick = () => {
+    console.log(toon.webtoon_number)
+    history.push({
+      pathname: "/detail",
+      state: {
+        number:toon.webtoon_number
+      }
+    });
+  };
+
   return (
-    <Card className={classes.root}>
+    <Card className={classes.root} onClick={handleClick}>
       <CardActionArea>
         <CardMedia
           className={classes.media}

@@ -16,6 +16,18 @@ const main = () => {
   return axios.get(`${API_URL}/webtoons/main/`);
 };
 
+const getDetail = async (webtoon_number) => {
+  console.log(webtoon_number);
+  try {
+    const res = await axios.get(API_URL + "detail/" + webtoon_number + "/");
+    console.log(res);
+    return res;
+  } catch (err) {
+    console.log(err);
+  }
+};
+
 export default {
   main,
+  getDetail,
 };

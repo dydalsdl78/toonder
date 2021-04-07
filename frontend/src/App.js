@@ -13,12 +13,13 @@ import Main from "./View/Main";
 import Recommendation from "./View/Recommendation";
 import MyList from "./View/MyList";
 import Profile from "./View/Profile";
-import Banner from "./Components/Banner";
+import Detail from "./View/Detail";
 import { AuthContext } from "./Context/context";
 import AuthService from "./modules/auth.api";
 import WebtoonService from "./modules/webtoons.api";
 
 function App() {
+  const history = useHistory();
   const [token, setToken] = useState(null);
   const [username, setUsername] = useState("guest");
   const [email, setEmail] = useState(null);
@@ -32,7 +33,7 @@ function App() {
       setEmail(userinfo.data.email);
       setUsername(userinfo.data.username);
       setToken(res.token);
-      this.history.push("/");
+      history.push("/");
     } catch (e) {
       console.log(e);
     }
@@ -40,11 +41,11 @@ function App() {
 
   const getuser = async (token) => {
     try {
-      const refresh = await AuthService.refresh(token);
-      setToken(refresh);
-      const userinfo = await AuthService.getuser(token);
-      setEmail(userinfo.data.email);
-      setUsername(userinfo.data.username);
+      const res = await AuthService.getuser(token);
+      console.log('getUser', res);
+      setToken(token);
+      setEmail(res.data.email);
+      setUsername(res.data.username);
     } catch (err) {
       console.log(err);
     }
@@ -113,6 +114,9 @@ function App() {
           </Route>
           <Route path="/profile">
             <Profile />
+          </Route>
+          <Route path="/detail">
+            <Detail />
           </Route>
         </Switch>
         <Navbar />
