@@ -23,3 +23,5 @@ class Webtoon(models.Model):
 
     like_users = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='like_webtoon')
     favorite_users = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='favorite_webtoon')
+
+    genres_list = models.TextField(default='')
