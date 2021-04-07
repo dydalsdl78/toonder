@@ -23,6 +23,7 @@ function App() {
   const [username, setUsername] = useState("guest");
   const [email, setEmail] = useState(null);
   const [mainlist, setMainlist] = useState([]);
+  const [value, setValue] = useState("/");
 
   const login = async (email, password) => {
     try {
@@ -52,6 +53,8 @@ function App() {
 
   const logout = () => {
     setToken(null);
+    setEmail(null);
+    setUsername("guest");
     AuthService.logout();
   };
 
@@ -63,7 +66,10 @@ function App() {
         getuser(token);
       } catch (err) {
         console.log(err);
+        logout();
       }
+    } else {
+      console.log("로그인해주세요");
     }
   }, []);
 
@@ -100,7 +106,7 @@ function App() {
             <Main mainlist={mainlist} />
           </Route>
           <Route path="/login">
-            <Login />
+            <Login value={value} setValue={setValue} />
           </Route>
           <Route path="/join">
             <Join />
@@ -115,7 +121,7 @@ function App() {
             <Profile />
           </Route>
         </Switch>
-        <Navbar />
+        <Navbar value={value} setValue={setValue} />
       </AuthContext.Provider>
     </>
   );

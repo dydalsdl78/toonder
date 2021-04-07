@@ -18,6 +18,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 
 import ProfileCard from "../Components/ProfileCard";
+import FormDialog from "../Components/FormDialog";
 
 import AuthService from "../modules/auth.api";
 
@@ -37,14 +38,11 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(1),
   },
   submit: {
-    margin: theme.spacing(3, 0, 2),
+    marginTop: "20px",
   },
 }));
 
 const Profile = () => {
-  // if (!currentUser) {
-  //   return <Redirect to="/login" />;
-  // }
   const history = useHistory();
   const authContext = useContext(AuthContext);
 
@@ -68,32 +66,48 @@ const Profile = () => {
         <Avatar className={classes.avatar}>
           <FaceIcon />
         </Avatar>
-        <Typography component="h1" variant="h5">
+        <Typography
+          component="h1"
+          variant="h5"
+          style={{ marginBottom: "100px" }}
+        >
           {authContext.username}님의 프로필
         </Typography>
-        <Grid container>
-          <Grid xs={12}>sdfsadfsdfsdf</Grid>
-          <Grid xs={9}>sdfasdfsdfsdf</Grid>
-          <Grid xs={3}>sdfsdfsdfdsf</Grid>
-          <Grid xs={3}>sdfsdfsdfdsf</Grid>
-          <Grid xs={3}>sdfsdfsdfdsf</Grid>
-          <Grid xs={3}>sdfsdfsdfdsf</Grid>
-          <Grid xs={3}>sdfsdfsdfdsf</Grid>
-          <Grid xs={3}>sdfsdfsdfdsf</Grid>
-          <Grid xs={3}>sdfsdfsdfdsf</Grid>
-          <Grid xs={3}>sdfsdfsdfdsf</Grid>
-          <Grid xs={3}>sdfsdfsdfdsf</Grid>
+        <Grid container spacing={3}>
+          <Grid item xs={3}>
+            닉네임
+          </Grid>
+          <Grid item xs={9}>
+            {authContext.username}
+          </Grid>
+          <Grid item xs={3}>
+            이메일
+          </Grid>
+          <Grid item xs={9}>
+            {authContext.email}
+          </Grid>
+          <Grid item xs={3}>
+            비밀번호
+          </Grid>
+          <Grid item xs={6}>
+            ************
+          </Grid>
+          <Grid item xs={3}>
+            <FormDialog />
+          </Grid>
         </Grid>
         <Button
           fullWidth
           variant="contained"
           color="primary"
           className={classes.submit}
-          onClick={() => {
-            history.push("/");
+          onClick={(e) => {
+            e.preventDefault();
+            authContext.logout();
+            history.push("/login");
           }}
         >
-          로그아웃 하기
+          로그아웃 하기!
         </Button>
       </div>
     </Container>

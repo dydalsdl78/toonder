@@ -22,10 +22,9 @@ const useStyles = makeStyles({
   },
 });
 
-function Navbar() {
+function Navbar({ value, setValue }) {
   const history = useHistory();
   const classes = useStyles();
-  const [value, setValue] = useState("/");
 
   const handleChange = async (event, newValue) => {
     const token = JSON.parse(localStorage.getItem("user"));
