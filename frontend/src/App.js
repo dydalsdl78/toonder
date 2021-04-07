@@ -36,6 +36,9 @@ function App() {
 
   const getuser = async (token) => {
     try {
+      console.log(token);
+      const refresh = await AuthService.refresh(token);
+      console.log(refresh);
       const res = await AuthService.getuser(token);
       console.log(res);
       setToken(token);
@@ -54,8 +57,15 @@ function App() {
   useEffect(async () => {
     const token = JSON.parse(localStorage.getItem("user"));
     if (token) {
-      getuser(token);
+      try {
+        getuser(token);
+      } catch (err) {
+        console.log(err);
+      }
     }
+  }, []);
+
+  useEffect(async () => {
     const res = await WebtoonService.main();
     console.log(res.data);
     setMainlist(res.data);
