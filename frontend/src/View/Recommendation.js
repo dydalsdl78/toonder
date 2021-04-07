@@ -51,7 +51,6 @@ function Recommendation() {
 
   return authContext.isLoggedIn ? (
     <div className="container">
-      <Title>Recommendation</Title>
       <SwipeCard recommendations={recommendations} />
     </div>
   ) : (

@@ -51,7 +51,8 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("login");
-    authContext.login(email, password);
+    await authContext.login(email, password);
+    history.push("/");
   };
 
   const onChangeEmail = (e) => {
@@ -81,7 +82,7 @@ function Login() {
           <LockOutlinedIcon />
         </Avatar> */}
         <Typography component="h1" variant="h5">
-          Login
+          로그인해요
         </Typography>
         <form className={classes.form} onSubmit={handleSubmit}>
           <TextField
@@ -90,7 +91,7 @@ function Login() {
             // required
             fullWidth
             id="email"
-            label="Email Address"
+            label="이메일"
             name="email"
             value={email}
             onChange={onChangeEmail}
@@ -105,7 +106,7 @@ function Login() {
             name="password"
             value={password}
             onChange={onChangePassword}
-            label="Password"
+            label="비밀번호"
             type="password"
             id="password"
             autoComplete="current-password"
@@ -122,17 +123,12 @@ function Login() {
             disabled={loading}
             className={classes.submit}
           >
-            {loading ? "Loding" : "Login"}
+            {loading ? "Loading" : "로그인"}
           </Button>
           <Grid container>
-            <Grid item xs>
-              <Link href="#" variant="body2">
-                Forgot password?
-              </Link>
-            </Grid>
             <Grid item>
               <Link variant="body2" onClick={() => history.push("/join")}>
-                {"Don't have an account? Sign Up"}
+                {"처음 오셨나요? 회원가입!"}
               </Link>
             </Grid>
           </Grid>

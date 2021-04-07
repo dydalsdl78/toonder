@@ -13,20 +13,24 @@ import Main from "./View/Main";
 import Recommendation from "./View/Recommendation";
 import MyList from "./View/MyList";
 import Profile from "./View/Profile";
+import Banner from "./Components/Banner";
 import { AuthContext } from "./Context/context";
 import AuthService from "./modules/auth.api";
 import WebtoonService from "./modules/webtoons.api";
 
 function App() {
   const [token, setToken] = useState(null);
-  const [username, setUsername] = useState(null);
+  const [username, setUsername] = useState("guest");
   const [email, setEmail] = useState(null);
   const [mainlist, setMainlist] = useState([]);
 
   const login = async (email, password) => {
     try {
       let res = await AuthService.login(email, password);
-      setEmail(email);
+      let userinfo = await AuthService.getuser(res.token);
+      console.log("here", userinfo);
+      setEmail(userinfo.data.email);
+      setUsername(userinfo.data.username);
       setToken(res.token);
       this.history.push("/");
     } catch (e) {
@@ -36,14 +40,11 @@ function App() {
 
   const getuser = async (token) => {
     try {
-      console.log(token);
       const refresh = await AuthService.refresh(token);
-      console.log(refresh);
-      const res = await AuthService.getuser(token);
-      console.log(res);
-      setToken(token);
-      setEmail(res.data.email);
-      setUsername(res.data.username);
+      setToken(refresh);
+      const userinfo = await AuthService.getuser(token);
+      setEmail(userinfo.data.email);
+      setUsername(userinfo.data.username);
     } catch (err) {
       console.log(err);
     }
@@ -55,7 +56,8 @@ function App() {
   };
 
   useEffect(async () => {
-    const token = JSON.parse(localStorage.getItem("user"));
+    const old_token = JSON.parse(localStorage.getItem("user"));
+    const token = await AuthService.refresh(old_token);
     if (token) {
       try {
         getuser(token);
@@ -80,6 +82,7 @@ function App() {
 
   return (
     <>
+      <Banner />
       <AuthContext.Provider
         value={{
           isLoggedIn: !!token,
@@ -89,6 +92,7 @@ function App() {
           setUsername,
           email,
           setEmail,
+          getuser,
         }}
       >
         <Switch>

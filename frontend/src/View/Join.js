@@ -102,19 +102,17 @@ function Join() {
         {/* <Avatar className={classes.avatar}>
           <LockOutlinedIcon />
         </Avatar> */}
-        <Typography component="h1" variant="h5">
-          Sign up
-        </Typography>
         <form className={classes.form} onSubmit={handleSubmit}>
           <Grid container spacing={2}>
             <Grid item xs={12}>
               <TextField
                 autoComplete="username"
+                required
                 name="username"
                 variant="outlined"
                 fullWidth
                 id="username"
-                label="userName"
+                label="닉네임"
                 autoFocus
                 value={username}
                 onChange={onChangeUsername}
@@ -126,7 +124,7 @@ function Join() {
                 required
                 fullWidth
                 id="email"
-                label="Email Address"
+                label="이메일(로그인에 사용됩니다)"
                 name="email"
                 autoComplete="email"
                 value={email}
@@ -139,7 +137,7 @@ function Join() {
                 required
                 fullWidth
                 name="password"
-                label="Password"
+                label="비밀번호"
                 type="password"
                 id="password"
                 autoComplete="current-password"
@@ -153,7 +151,7 @@ function Join() {
                 required
                 fullWidth
                 name="passwordConfirm"
-                label="Password Confirm"
+                label="비밀번호 확인"
                 type="password"
                 id="passwordConfirm"
                 autoComplete="current-password-confirm"
@@ -175,7 +173,7 @@ function Join() {
             color="primary"
             className={classes.submit}
           >
-            <span>Join</span>
+            <span>가입하기</span>
           </Button>
           <Grid container justify="flex-end">
             <Grid item>
@@ -185,7 +183,7 @@ function Join() {
                 }}
                 variant="body2"
               >
-                Already have an account? Login
+                계정이 있으신가요? 로그인!
               </Link>
             </Grid>
           </Grid>
