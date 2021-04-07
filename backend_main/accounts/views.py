@@ -57,7 +57,7 @@ def certify_password(request):
     if user.check_password(request.data['password']):
         return Response({ 'accomplished': '검증완료' }, status=status.HTTP_202_ACCEPTED)
 
-    # 비밀번호 검증에 실패하면 catch에 error.data에 반환되는 부분
+    # 비밀번호 검증에 실패하면 catch의 error.data에 반환되는 부분
     return Response({ 'failed': '현재 비밀번호가 틀렸습니다.' })
 
 
