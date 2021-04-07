@@ -40,9 +40,11 @@ const refresh = (token) => {
       if (res.data.token) {
         localStorage.setItem("user", JSON.stringify(res.data.token));
       }
+    })
+    .catch((err) => {
+      console.log(err);
     });
 };
-
 const getuser = (token) => {
   return axios.get(`${API_URL}/accounts/get_userinfo/`, {
     headers: {

@@ -9,8 +9,9 @@ const Profile = () => {
   // }
   const authContext = useContext(AuthContext);
 
-  return (
+  return authContext.isLoggedIn ? (
     <div className="container">
+      {console.log(authContext.isLoggedIn)}
       <Title>{authContext.username}'s Profile</Title>
 
       <p>
@@ -18,6 +19,12 @@ const Profile = () => {
         {authContext.email}
       </p>
     </div>
+  ) : (
+    <Redirect
+      to={{
+        pathname: "/login",
+      }}
+    />
   );
 };
 

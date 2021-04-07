@@ -63,12 +63,17 @@ function Login() {
     const password = e.target.value;
     setPassword(password);
   };
-  console.log(AuthContext.isLoggedIn);
   if (AuthContext.username) {
     return <Redirect to="/" />;
   }
 
-  return (
+  return authContext.isLoggedIn ? (
+    <Redirect
+      to={{
+        pathname: "/",
+      }}
+    />
+  ) : (
     <Container component="main" maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper}>

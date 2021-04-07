@@ -39,37 +39,41 @@ const getOppositionRecommend = () => {
 
 const getLikes = async () => {
   const token = JSON.parse(localStorage.getItem("user"));
-  const config = {
-    headers: {
-      Authorization: `JWT ${token}`,
-    },
-  };
-  console.log(config);
-  console.log(API_URL);
-  try {
-    const res = await axios.get(`${API_URL}/recommends/like/`, config);
-    console.log(res);
-    return res;
-  } catch (err) {
-    console.log(err);
+  if (token) {
+    const config = {
+      headers: {
+        Authorization: `JWT ${token}`,
+      },
+    };
+    console.log(config);
+    console.log(API_URL);
+    try {
+      const res = await axios.get(`${API_URL}/recommends/like/`, config);
+      console.log(res);
+      return res;
+    } catch (err) {
+      console.log(err);
+    }
   }
 };
 
 const getFavs = async () => {
   const token = JSON.parse(localStorage.getItem("user"));
-  const config = {
-    headers: {
-      Authorization: `JWT ${token}`,
-    },
-  };
-  console.log(config);
-  console.log(API_URL);
-  try {
-    const res = await axios.get(`${API_URL}/recommends/favorite/`, config);
-    console.log(res);
-    return res;
-  } catch (err) {
-    console.log(err);
+  if (token) {
+    const config = {
+      headers: {
+        Authorization: `JWT ${token}`,
+      },
+    };
+    console.log(config);
+    console.log(API_URL);
+    try {
+      const res = await axios.get(`${API_URL}/recommends/favorite/`, config);
+      console.log(res);
+      return res;
+    } catch (err) {
+      console.log(err);
+    }
   }
 };
 
