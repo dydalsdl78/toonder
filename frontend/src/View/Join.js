@@ -10,6 +10,7 @@ import Container from "@material-ui/core/Container";
 
 import AuthService from "../modules/auth.api";
 
+
 const useStyles = makeStyles((theme) => ({
   paper: {
     marginTop: theme.spacing(8),
@@ -39,34 +40,19 @@ function Join() {
   const [password, setPassword] = useState("");
   const [passwordConfirm, setPasswordConfirm] = useState("");
 
-  //검증 룰이 더 필요함. 유저네임 이메일 중복확인, 비밀번호 일치여부 프론트에서 확인.
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("join");
     try {
-      let res = await AuthService.join(
+      await AuthService.join(
         username,
         email,
         password,
         passwordConfirm
       );
-      console.log(res);
       history.push("/login");
-    } catch (e) {
-      console.log(e);
+    } catch (err) {
+      console.log(err);
     }
-    // if (!errors) {
-    //   dispatch(join(email, password))
-    //     .then(() => {
-    //       setSuccessful(true);
-    //       history.push("/login");
-    //     })
-    //     .catch(() => {
-    //       setSuccessful(false);
-    //     });
-    // } else {
-    //   setSuccessful(false);
-    // }
   };
 
   const onChangeUsername = (e) => {
@@ -93,9 +79,6 @@ function Join() {
     <Container component="main" maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper}>
-        {/* <Avatar className={classes.avatar}>
-          <LockOutlinedIcon />
-        </Avatar> */}
         <form className={classes.form} onSubmit={handleSubmit}>
           <Grid container spacing={2}>
             <Grid item xs={12}>
@@ -153,12 +136,6 @@ function Join() {
                 onChange={onChangePasswordConfirm}
               />
             </Grid>
-            {/* <Grid item xs={12}>
-                <FormControlLabel
-                  control={<Checkbox value="allowExtraEmails" color="primary" />}
-                  label="I want to receive inspiration, marketing promotions and updates via email."
-                />
-              </Grid> */}
           </Grid>
           <Button
             type="submit"

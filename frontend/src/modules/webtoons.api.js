@@ -1,9 +1,7 @@
 import axios from "axios";
 
-// for local test
+
 const API_URL = process.env.REACT_APP_SERVER_URL;
-// for release
-// const API_URL = "";
 
 const main = () => {
   return axios.get(`${API_URL}/webtoons/main/`);

@@ -1,9 +1,7 @@
 import axios from "axios";
 
-// for local test
+
 const API_URL = process.env.REACT_APP_SERVER_URL;
-// for release
-// const API_URL = "";
 
 const join = (username, email, password, passwordConfirmation) => {
   return axios.post(`${API_URL}/accounts/signup/`, {
@@ -50,7 +48,6 @@ const passwordChange = (current_password, new_password) => {
     })
     .catch((err) => {
       console.log(err);
-      return err;
     });
 };
 
@@ -77,7 +74,7 @@ const getuser = (token) => {
 
 const logout = () => {
   localStorage.removeItem("user");
-  alert("로그아웃 되었습니다");
+  alert("로그아웃 되었습니다.");
 };
 
 const recomm_overall = async () => {

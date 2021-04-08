@@ -4,6 +4,7 @@ import "./SwipeCard.css";
 import Recommend from "../modules/recommend.api";
 import { useHistory } from "react-router";
 
+
 export default function SwipeCard({ recommendations }) {
   const history = useHistory();
 

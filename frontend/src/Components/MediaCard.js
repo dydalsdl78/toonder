@@ -7,6 +7,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 import { useHistory } from "react-router";
 
+
 const useStyles = makeStyles({
   root: {
     maxWidth: 300,
@@ -46,19 +47,8 @@ export default function MediaCard({ toon }) {
           >
             {toon.webtoon_name}
           </Typography>
-          {/* <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles
-          </Typography> */}
         </CardContent>
       </CardActionArea>
-      {/* <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
-      </CardActions> */}
     </Card>
   );
 }
