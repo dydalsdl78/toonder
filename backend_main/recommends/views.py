@@ -30,7 +30,7 @@ class WebtoonOverAllViewSet(viewsets.ModelViewSet):
     
     # 사용자의 좋아요 리스트에 있는 웹툰 목록
         user = get_object_or_404(get_user_model(), pk=request.user.user_id)
-        user_id = get_user_model().objects.values('user_id').filter(username=user.username)
+        user_id = get_user_model().objects.values('user_id').get(username=user.username)
         favorite_webtoons = Webtoon.objects.filter(like_users=user_id['user_id'])
         
 
