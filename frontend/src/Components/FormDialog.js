@@ -8,6 +8,7 @@ import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import AuthService from "../modules/auth.api";
 
+
 export default function FormDialog() {
   const [open, setOpen] = React.useState(false);
   const [currentPassword, setCurrentPassword] = useState("");
@@ -34,7 +35,7 @@ export default function FormDialog() {
   const handleClose = () => {
     setOpen(false);
   };
-  const handleSubmit = async (e) => {
+  const handleSubmit = async () => {
     const res = await AuthService.passwordChange(currentPassword, newPassword);
     alert(res.data);
     setOpen(false);

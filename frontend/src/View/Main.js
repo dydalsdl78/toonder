@@ -6,6 +6,7 @@ import { Switch, Route, useHistory } from "react-router-dom";
 import { AuthContext } from "../Context/context";
 import "./Main.css";
 
+
 function Main({ mainlist }) {
   const authContext = useContext(AuthContext);
   const history = useHistory();

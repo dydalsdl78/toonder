@@ -14,6 +14,7 @@ import { AuthContext } from "../Context/context";
 
 import "./Detail.css";
 
+
 const MainImage = styled.img`
   width: "100%";
   height: auto;

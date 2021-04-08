@@ -7,7 +7,7 @@ import HomeIcon from "@material-ui/icons/Home";
 import ThumbUpIcon from "@material-ui/icons/ThumbUp";
 import BookmarksIcon from "@material-ui/icons/Bookmarks";
 import AccountBoxIcon from "@material-ui/icons/AccountBox";
-// import styled from 'styled-components';
+
 
 const useStyles = makeStyles({
   root: {
