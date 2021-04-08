@@ -1,25 +1,21 @@
+import io
+import json
+import random
+
 from django.contrib.auth import get_user_model
-from django.http import HttpResponse, JsonResponse
-from django.shortcuts import render, get_object_or_404
-from django.core.serializers.json import DjangoJSONEncoder
 from django.shortcuts import get_object_or_404
 
 from rest_framework import status, viewsets
-from rest_framework.decorators import authentication_classes, permission_classes
+from rest_framework.decorators import api_view, authentication_classes, permission_classes
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 from rest_framework.permissions import IsAuthenticated
-from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework.renderers import JSONRenderer
 from rest_framework.parsers import JSONParser
 
-from webtoons.serializers import WebtoonSerializer
 from model import summary_recomm, genre_recomm
 from webtoons.models import Webtoon, Genre
-
-import random
-import json
-import io
+from webtoons.serializers import WebtoonSerializer
 
 
 class WebtoonOverAllViewSet(viewsets.ModelViewSet):
@@ -33,7 +29,7 @@ class WebtoonOverAllViewSet(viewsets.ModelViewSet):
     def recomm_overall(self, request):
     
     # 사용자의 좋아요 리스트에 있는 웹툰 목록
-        user = request.user
+        user = get_object_or_404(get_user_model(), pk=request.user.user_id)
         user_id = get_user_model().objects.values('user_id').filter(username=user.username)
         favorite_webtoons = Webtoon.objects.filter(like_users=user_id[0]['user_id'])
 
@@ -173,17 +169,16 @@ class LikeViewSet(viewsets.ModelViewSet):
     authentication_classes = [JSONWebTokenAuthentication]   
 
     def like(self, request, webtoon_number):
-        print(request.user)
-        if request.user.is_authenticated:
+        user = get_object_or_404(get_user_model(), pk=request.user.user_id)
+        if user.is_authenticated:
             webtoon = get_object_or_404(Webtoon, pk=webtoon_number)
         else:
             return Response(status=status.HTTP_401_UNAUTHORIZED)
 
-        if webtoon.like_users.filter(pk=request.user.user_id).exists():
-            webtoon.like_users.remove(request.user)
-
+        if webtoon.like_users.filter(pk=user.user_id).exists():
+            webtoon.like_users.remove(user)
         else:
-            webtoon.like_users.add(request.user)
+            webtoon.like_users.add(user)
         return Response(status=status.HTTP_201_CREATED)
 
 
@@ -197,15 +192,16 @@ class FavoriteViewSet(viewsets.ModelViewSet):
 
 
     def favorite(self, request, webtoon_number):
-        print(request.user)
-        if request.user.is_authenticated:
+        user = get_object_or_404(get_user_model(), pk=request.user.user_id)
+        if user.is_authenticated:
             webtoon = get_object_or_404(Webtoon, pk=webtoon_number)
-            
-        if webtoon.favorite_users.filter(pk=request.user.user_id).exists():
-            webtoon.favorite_users.remove(request.user)
-
         else:
-            webtoon.favorite_users.add(request.user)
+            return Response(status=status.HTTP_401_UNAUTHORIZED)
+            
+        if webtoon.favorite_users.filter(pk=user.user_id).exists():
+            webtoon.favorite_users.remove(user)
+        else:
+            webtoon.favorite_users.add(user)
             
         return Response(status=status.HTTP_201_CREATED)
 
@@ -220,16 +216,14 @@ class LikeListViewSet(viewsets.ModelViewSet):
 
 
     def like_list(self, request):
-        if request.user.is_authenticated:
-            user = request.user
+        user = get_object_or_404(get_user_model(), pk=request.user.user_id)
+        if user.is_authenticated:
             like_list = user.like_webtoon.all()
             genres = Genre.objects.all()
 
             webtoon_like_list = list()
 
-            i = 0
             for webtoon in like_list:
-                
                 webtoon_like = dict()
                 genres_names = []
                 webtoon_genres = webtoon.genres.all()
@@ -241,14 +235,15 @@ class LikeListViewSet(viewsets.ModelViewSet):
                         if webtoon_genre.id == genre.id:
                             genres_names.append(genre.genre_name)
                             webtoon_genre.id = genre.genre_name
-                i += 1
 
                 serializer = WebtoonSerializer(webtoon)
                 webtoon_like = serializer.data
                 webtoon_like['genres_names'] = genres_names
                 webtoon_like_list.append(webtoon_like)
 
-        return Response(webtoon_like_list, status=status.HTTP_202_ACCEPTED)
+            return Response(webtoon_like_list, status=status.HTTP_202_ACCEPTED)
+
+        return Response(status=status.HTTP_401_UNAUTHORIZED)
 
 class FavoriteListViewSet(viewsets.ModelViewSet):
     """
@@ -259,14 +254,12 @@ class FavoriteListViewSet(viewsets.ModelViewSet):
     authentication_classes = [JSONWebTokenAuthentication]   
 
     def favorite_list(self, request):
-        if request.user.is_authenticated:
-            user = request.user
+        user = get_object_or_404(get_user_model(), pk=request.user.user_id)
+        if user.is_authenticated:
             favorite_list = user.favorite_webtoon.all()
             genres = Genre.objects.all()
-
             webtoon_favorite_list = list()
 
-            i = 0
             for webtoon in favorite_list:
                 webtoon_favorite = dict()
                 genres_names = []
@@ -279,12 +272,12 @@ class FavoriteListViewSet(viewsets.ModelViewSet):
                         if webtoon_genre.id == genre.id:
                             genres_names.append(genre.genre_name)
                             webtoon_genre.id = genre.genre_name
-                i += 1
 
                 serializer = WebtoonSerializer(webtoon)
                 webtoon_favorite = serializer.data
                 webtoon_favorite['genres_names'] = genres_names
                 webtoon_favorite_list.append(webtoon_favorite)
 
-        return Response(webtoon_favorite_list, status=status.HTTP_202_ACCEPTED)
+            return Response(webtoon_favorite_list, status=status.HTTP_202_ACCEPTED)
 
+        return Response(status=status.HTTP_401_UNAUTHORIZED)
