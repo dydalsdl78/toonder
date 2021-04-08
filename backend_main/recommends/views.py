@@ -23,15 +23,14 @@ class WebtoonOverAllViewSet(viewsets.ModelViewSet):
         웹툰 추천 통합
     """
     serializer_class = WebtoonSerializer
-    # permission_classes = [IsAuthenticated]
-    # authentication_classes = [JSONWebTokenAuthentication]
+    permission_classes = [IsAuthenticated]
+    authentication_classes = [JSONWebTokenAuthentication]
 
     def recomm_overall(self, request):
     
     # 사용자의 좋아요 리스트에 있는 웹툰 목록
-        # user = get_object_or_404(get_user_model(), pk=request.user.user_id)
-        # user_id = get_user_model().objects.values('user_id').get(username=user.username)
-        user_id = get_user_model().objects.values('user_id').get(username="keith")
+        user = get_object_or_404(get_user_model(), pk=request.user.user_id)
+        user_id = get_user_model().objects.values('user_id').get(username=user.username)
         favorite_webtoons = Webtoon.objects.filter(like_users=user_id['user_id'])
         
 
