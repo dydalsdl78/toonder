@@ -2,12 +2,15 @@ import React, { useState, useEffect, useContext } from "react";
 import { Redirect } from "react-router-dom";
 import { Title } from "../Lib";
 import SwipeCard from "../Components/SwipeCard";
+import Spinner from "../Components/Spinner";
 import AuthService from "../modules/auth.api";
 import { AuthContext } from "../Context/context";
+import "./Recommendation.css";
 
 function Recommendation() {
   const [recommendations, setRecommendations] = useState([]);
   const authContext = useContext(AuthContext);
+  const [loading, setLoading] = useState(true);
 
   function shuffle(array) {
     var currentIndex = array.length,
@@ -46,13 +49,27 @@ function Recommendation() {
       }
     });
     let random_list = shuffle(recomm_list);
+    setLoading(false);
     setRecommendations(random_list);
   }, []);
 
   return authContext.isLoggedIn ? (
-    <div className="container">
-      <SwipeCard recommendations={recommendations} />
-    </div>
+    loading ? (
+      <div className="spinner">
+        <Spinner />
+        <p>좋아할만한 웹툰을 고르고 있어요!</p>
+      </div>
+    ) : (
+      <>
+        <div className="container">
+          <SwipeCard recommendations={recommendations} />
+          <div className="tutorial">
+            <p>⬆ 보러가기 ⬇ 상세페이지 </p>
+            <p>⬅ 패스~ ➡ 좋아요!</p>
+          </div>
+        </div>
+      </>
+    )
   ) : (
     <Redirect
       to={{

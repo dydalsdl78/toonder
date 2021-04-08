@@ -1,0 +1,13 @@
+.spinner {
+  margin-top: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.tutorial {
+  margin-top: 100px;
+  text-align: center;
+}

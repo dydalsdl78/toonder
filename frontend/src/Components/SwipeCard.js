@@ -32,26 +32,28 @@ export default function SwipeCard({ recommendations }) {
     <div className="cardContainer">
       {recommendations.map((recommendation) => {
         return (
-          <TinderCard
-            className="swipe"
-            key={recommendation.webtoon_name}
-            onSwipe={(dir) => onSwipe(dir, recommendation)}
-            onCardLeftScreen={() =>
-              onCardLeftScreen(recommendation.webtoon_name)
-            }
-          >
-            <p className="pcard">{recommendation.reason}</p>
-            <div
-              style={{
-                backgroundImage: "url(" + recommendation.thumbnail_url + ")",
-              }}
-              className="card"
+          <>
+            <TinderCard
+              className="swipe"
+              key={recommendation.webtoon_name}
+              onSwipe={(dir) => onSwipe(dir, recommendation)}
+              onCardLeftScreen={() =>
+                onCardLeftScreen(recommendation.webtoon_name)
+              }
             >
-              <h2>{recommendation.webtoon_score.toFixed(1)}</h2>
-              <h3>{recommendation.webtoon_name}</h3>
-              <h5>{recommendation.webtoon_writer}</h5>
-            </div>
-          </TinderCard>
+              <p className="pcard">{recommendation.reason}</p>
+              <div
+                style={{
+                  backgroundImage: "url(" + recommendation.thumbnail_url + ")",
+                }}
+                className="card"
+              >
+                <h2>{recommendation.webtoon_score.toFixed(1)}</h2>
+                <h3>{recommendation.webtoon_name}</h3>
+                <h5>{recommendation.webtoon_writer}</h5>
+              </div>
+            </TinderCard>
+          </>
         );
       })}
     </div>
