@@ -24,3 +24,4 @@ class Webtoon(models.Model):
     favorite_users = models.ManyToManyField(settings.AUTH_USER_MODEL, related_name='favorite_webtoon')
 
     genres_list = models.TextField(default='')
+    scale_loss = models.FloatField()
