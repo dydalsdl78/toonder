@@ -123,7 +123,7 @@ function MyList() {
             }}
             />
           <Tab
-            icon={<GradeIcon />}
+            icon={<FavoriteIcon />}
             label="Favorites"
             onClick={() => {
               setMode('like')
