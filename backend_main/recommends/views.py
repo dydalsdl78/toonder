@@ -50,15 +50,16 @@ class WebtoonOverAllViewSet(viewsets.ModelViewSet):
             
             # 각각의 유사도 계산
             similarity = genre_recomm.cal_similarity(user_genres_matrix, genre_mat)
-            
+
             # 유사도 순 정렬
             sorted_similarity = sorted(similarity.items(), reverse=True, key=lambda item: item[1])
 
             # id값에 해당하는 웹툰 정보 응답
             genre_result = []
             for i in range(10):
-                webtoon = Webtoon.objects.filter(webtoon_number=sorted_similarity[i][0])
-                serializer = WebtoonSerializer(webtoon[0])
+                # 유사도 높은 웹툰의 리스트는 0부터 시작하기 때문에 idx에 1씩 더해준다.
+                webtoon = Webtoon.objects.get(webtoon_number=sorted_similarity[i][0]+1)
+                serializer = WebtoonSerializer(webtoon)
                 genre_result.append(serializer.data)
         else:
             genre_result = []
