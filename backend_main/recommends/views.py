@@ -36,7 +36,6 @@ class WebtoonOverAllViewSet(viewsets.ModelViewSet):
     # 웹툰 전체 목록
         webtoons = Webtoon.objects.all()
 
-
     # 1. 사용자 장르 벡터와 웹툰 장르 벡터의 유사도가 높은 순서
 
         # 사용자의 장르 벡터
@@ -151,13 +150,35 @@ class WebtoonOverAllViewSet(viewsets.ModelViewSet):
     # 응답
         return Response(
             [
-                {"장르유사도가 높은": genre_result},
+                {"이런 장르의 작품을 좋아하시네요!": genre_result},
                 {"좋아하는 작가의 다른 작품": artists_result},
                 {"좋아하는 작품과 줄거리 유사한": summmary_result},
                 {"다른 사람들이 좋은 평가를 한": score_result},
                 {"이런건 어떤가요?": random_result},
                 {"평소에는 보지 않지만 어떠세요?": opposition_result},
             ])
+
+
+class WebtoonStyleViewSet(viewsets.ModelViewSet):
+    """
+        웹툰 그림체 추천 통합
+    """
+
+    serializer_class = WebtoonSerializer
+
+    def recomm_style(self, request):
+        webtoons = Webtoon.objects.order_by("scale_loss")
+        # 비슷한 그림체 10개
+        style_similar_webtoon = webtoons[1:16]
+        # 다른 그림체 10개
+        style_unsimilar_webtoon = webtoons[len(webtoons)-16:]
+        serializer_similar = WebtoonSerializer(style_similar_webtoon, many=True)
+        serializer_unsimilar = WebtoonSerializer(style_unsimilar_webtoon, many=True)
+
+        return Response([
+                {"그림체 비슷한 10개": serializer_similar.data},
+                {"그림체 다른 10개": serializer_unsimilar.data}
+                ])
 
 
 class LikeViewSet(viewsets.ModelViewSet):
