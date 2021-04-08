@@ -37,3 +37,36 @@ exec
 
 1. env.zip을 압축해제 해야한다
    - 비밀번호 : `rlgusdldmlclsrnemf`
+
+
+
+
+
+### 4. 배포 사이트의 오류
+
+#### 4.1 원인
+
+- 다음 웹툰 측 ssl 오류
+
+
+
+#### 4.2 해결법
+
+1. F12를 누르고, 새로고침을 한다
+
+2. 해당 위치의 주소를 복사한다
+
+   ![solution_1](README.assets/daumcomicserror_1.png)
+
+3. 주소에 붙여넣기 한 뒤, 고급 버튼을 누른다
+
+   ![solution_2](README.assets/daumcomicserror_2.png)
+
+4. 안전하지 않음으로 이동을 누른다.
+
+   ![solution_3](README.assets/daumcomicserror_3.png)
+
+5. 새로고침 한다
+
+   ![solution_4](README.assets/daumcomicserror_4.png)
+
