@@ -56,7 +56,6 @@ function App() {
   useEffect(() => {
     async function fetchData(old_token) {
       const refresh = await AuthService.refresh(old_token);
-      console.log(refresh);
       const userinfo = await AuthService.getuser(refresh);
       setEmail(userinfo.data.email);
       setUsername(userinfo.data.username);
