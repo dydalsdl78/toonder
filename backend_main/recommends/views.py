@@ -30,36 +30,38 @@ class WebtoonOverAllViewSet(viewsets.ModelViewSet):
     
     # 사용자의 좋아요 리스트에 있는 웹툰 목록
         user = get_object_or_404(get_user_model(), pk=request.user.user_id)
-        user_id = get_user_model().objects.values('user_id').filter(username=user.username)
-        favorite_webtoons = Webtoon.objects.filter(like_users=user_id[0]['user_id'])
+        user_id = get_user_model().objects.values('user_id').get(username=user.username)
+        favorite_webtoons = Webtoon.objects.filter(like_users=user_id['user_id'])
+        
 
     # 웹툰 전체 목록
         webtoons = Webtoon.objects.all()
 
     # 1. 사용자 장르 벡터와 웹툰 장르 벡터의 유사도가 높은 순서
+        if len(favorite_webtoons) != 0:
+            # 사용자의 장르 벡터
+            serializer = WebtoonSerializer(favorite_webtoons, many=True)
+            webtoon_data = serializer.data
+            user_genres_matrix = genre_recomm.user_to_matrix(webtoon_data)
 
-        # 사용자의 장르 벡터
-        serializer = WebtoonSerializer(favorite_webtoons, many=True)
-        webtoon_data = serializer.data
-        user_genres_matrix = genre_recomm.user_to_matrix(webtoon_data)
+            # 웹툰들의 장르 벡터
+            df_webtoon = genre_recomm.webtoon_to_dataframe(webtoons)
+            genre_mat =  genre_recomm.webtoon_to_matrix(df_webtoon)
+            
+            # 각각의 유사도 계산
+            similarity = genre_recomm.cal_similarity(user_genres_matrix, genre_mat)
+            
+            # 유사도 순 정렬
+            sorted_similarity = sorted(similarity.items(), reverse=True, key=lambda item: item[1])
 
-        # 웹툰들의 장르 벡터
-        webtoons = Webtoon.objects.all()
-        df_webtoon = genre_recomm.webtoon_to_dataframe(webtoons)
-        genre_mat =  genre_recomm.webtoon_to_matrix(df_webtoon)
-        
-        # 각각의 유사도 계산
-        similarity = genre_recomm.cal_similarity(user_genres_matrix, genre_mat)
-        
-        # 유사도 순 정렬
-        sorted_similarity = sorted(similarity.items(), reverse=True, key=lambda item: item[1])
-        
-        # id값에 해당하는 웹툰 정보 응답
-        genre_result = []
-        for i in range(10):
-            webtoon = Webtoon.objects.filter(webtoon_number=sorted_similarity[i][0])
-            serializer = WebtoonSerializer(webtoon[0])
-            genre_result.append(serializer.data)
+            # id값에 해당하는 웹툰 정보 응답
+            genre_result = []
+            for i in range(10):
+                webtoon = Webtoon.objects.filter(webtoon_number=sorted_similarity[i][0])
+                serializer = WebtoonSerializer(webtoon[0])
+                genre_result.append(serializer.data)
+        else:
+            genre_result = []
 
     # 2. 좋아요한 웹툰의 작가가 쓴 다른 웹툰들
         artists_result = []
@@ -175,10 +177,10 @@ class WebtoonStyleViewSet(viewsets.ModelViewSet):
         serializer_similar = WebtoonSerializer(style_similar_webtoon, many=True)
         serializer_unsimilar = WebtoonSerializer(style_unsimilar_webtoon, many=True)
 
-        return Response([
-                {"그림체 비슷한 10개": serializer_similar.data},
-                {"그림체 다른 10개": serializer_unsimilar.data}
-                ])
+        return Response({
+                "그림체 비슷한 10개": serializer_similar.data,
+                "그림체 다른 10개": serializer_unsimilar.data
+        })
 
 
 class LikeViewSet(viewsets.ModelViewSet):
