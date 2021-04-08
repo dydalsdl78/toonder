@@ -69,17 +69,13 @@ function MyList() {
   };
 
   useEffect(() => {
-    async function fetchData() {
-      if (!authContext.isLoggedIn) {
-        history.push("/login");
-      } else {
-        const likelist = await Recommend.getLikes();
-        setLikes(likelist.data);
-        const favlist = await Recommend.getFavs();
-        setFavs(favlist.data);
-        setView(likelist.data);
-        setLoading(false);
-      }
+    function fetchData() {
+      const likelist = Recommend.getLikes();
+      setLikes(likelist.data);
+      const favlist = Recommend.getFavs();
+      setFavs(favlist.data);
+      setView(likelist.data);
+      setLoading(false);
     }
     fetchData();
     return () => {
