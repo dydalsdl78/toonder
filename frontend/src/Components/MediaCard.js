@@ -23,12 +23,11 @@ export default function MediaCard({ toon }) {
   const classes = useStyles();
 
   const handleClick = () => {
-    console.log(toon.webtoon_number)
     history.push({
-      pathname: "/detail",
+      pathname: `/detail/${toon.webtoon_number}/`,
       state: {
-        number:toon.webtoon_number
-      }
+        number: toon.webtoon_number,
+      },
     });
   };
 

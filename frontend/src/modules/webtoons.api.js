@@ -17,10 +17,10 @@ const main = () => {
 };
 
 const getDetail = async (webtoon_number) => {
-  console.log(webtoon_number);
   try {
-    const res = await axios.get(API_URL + "detail/" + webtoon_number + "/");
-    console.log(res);
+    const res = await axios.get(
+      `${API_URL}/webtoons/detail/${webtoon_number}/`
+    );
     return res;
   } catch (err) {
     console.log(err);

@@ -1,5 +1,4 @@
 import React, { useState, useRef } from "react";
-import { useDispatch, useSelector } from "react-redux";
 import { withRouter, useHistory } from "react-router-dom";
 // import Avatar from '@material-ui/core/Avatar';
 // import LockOutlinedIcon from '@material-ui/icons/LockOutlined';

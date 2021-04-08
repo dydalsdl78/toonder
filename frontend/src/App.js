@@ -1,11 +1,5 @@
-import React, { useSelector, useState, useEffect } from "react";
-import {
-  Switch,
-  Redirect,
-  Route,
-  withRouter,
-  useHistory,
-} from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Switch, Route, useHistory } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Login from "./View/Login";
 import Join from "./View/Join";
@@ -22,6 +16,7 @@ import WebtoonService from "./modules/webtoons.api";
 function App() {
   const history = useHistory();
   const [token, setToken] = useState(null);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [username, setUsername] = useState("guest");
   const [email, setEmail] = useState(null);
   const [mainlist, setMainlist] = useState([]);
@@ -31,21 +26,22 @@ function App() {
     try {
       let res = await AuthService.login(email, password);
       let userinfo = await AuthService.getuser(res.token);
-      console.log("here", userinfo);
       setEmail(userinfo.data.email);
       setUsername(userinfo.data.username);
       setToken(res.token);
+      setIsLoggedIn(true);
+      setValue("/");
       history.push("/");
     } catch (e) {
       console.log(e);
+      alert("회원정보가 틀렸습니다");
     }
   };
 
-  const getuser = async (token) => {
+  const getuser = async (_token) => {
     try {
-      const res = await AuthService.getuser(token);
-      console.log('getUser', res);
-      setToken(token);
+      const res = await AuthService.getuser(_token);
+      setToken(_token);
       setEmail(res.data.email);
       setUsername(res.data.username);
     } catch (err) {
@@ -57,32 +53,29 @@ function App() {
     setToken(null);
     setEmail(null);
     setUsername("guest");
+    setIsLoggedIn(false);
     AuthService.logout();
   };
 
   useEffect(async () => {
     const old_token = JSON.parse(localStorage.getItem("user"));
-    const token = await AuthService.refresh(old_token);
-    const refresh = await AuthService.refresh(token);
-    setToken(refresh);
-    const userinfo = await AuthService.getuser(token);
-    setEmail(userinfo.data.email);
-    setUsername(userinfo.data.username);
-    if (token) {
+    if (old_token) {
       try {
-        getuser(token);
-      } catch (err) {
-        console.log(err);
+        const refresh = await AuthService.refresh(old_token);
+        setToken(refresh);
+        const userinfo = await AuthService.getuser(refresh);
+        setEmail(userinfo.data.email);
+        setUsername(userinfo.data.username);
+        setIsLoggedIn(true);
+      } catch {
+        console.log("logout");
         logout();
       }
-    } else {
-      console.log("로그인해주세요");
     }
   }, []);
 
   useEffect(async () => {
     const res = await WebtoonService.main();
-    console.log(res.data);
     setMainlist(res.data);
   }, []);
 
@@ -95,10 +88,11 @@ function App() {
 
   return (
     <>
+      {/* {!isLoggedIn ? <Redirect to="/login" /> : <Redirect to="/" />} */}
       <Banner />
       <AuthContext.Provider
         value={{
-          isLoggedIn: !!token,
+          isLoggedIn,
           login: login,
           logout: logout,
           username,

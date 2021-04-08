@@ -22,7 +22,6 @@ const login = (email, password) => {
       password,
     })
     .then((response) => {
-      console.log(response);
       if (response.data.token) {
         localStorage.setItem("user", JSON.stringify(response.data.token));
       }
@@ -48,7 +47,6 @@ const passwordChange = (current_password, new_password) => {
       config
     )
     .then((res) => {
-      console.log(res);
       return res;
     })
     .catch((err) => {
@@ -59,12 +57,11 @@ const passwordChange = (current_password, new_password) => {
 
 const refresh = (token) => {
   return axios
-    .post(`${API_URL}/accounts/api-token-refresh/`, {
-      token,
-    })
+    .post(`${API_URL}/accounts/api-token-refresh/`, { token })
     .then((res) => {
       if (res.data.token) {
         localStorage.setItem("user", JSON.stringify(res.data.token));
+        return res.data.token;
       }
     })
     .catch((err) => {
@@ -91,9 +88,7 @@ const recomm_overall = async () => {
       Authorization: `JWT ${token}`,
     },
   };
-  console.log(config);
   const res = await axios.get(`${API_URL}/recommends/recomm_overall/`, config);
-  console.log(res);
   return res;
 };
 

@@ -50,10 +50,7 @@ function Login({ value, setValue }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("login");
     await authContext.login(email, password);
-    setValue("/");
-    history.push("/");
   };
 
   const onChangeEmail = (e) => {

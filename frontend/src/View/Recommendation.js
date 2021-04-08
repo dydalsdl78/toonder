@@ -33,24 +33,25 @@ function Recommendation() {
   }
 
   useEffect(async () => {
-    const res = await AuthService.recomm_overall();
-    let recomm = res.data;
-    console.log(recomm);
-    let recomm_list = [];
-    recomm.forEach((recommReason) => {
-      for (const [reason, webtoons] of Object.entries(recommReason)) {
-        console.log(reason, webtoons);
-        if (Object.keys(webtoons).length !== 0) {
-          webtoons.forEach((webtoon) => {
-            webtoon["reason"] = reason;
-            recomm_list.push(webtoon);
-          });
+    if (authContext.isLoggedIn) {
+      const res = await AuthService.recomm_overall();
+      let recomm = res.data;
+      console.log(recomm);
+      let recomm_list = [];
+      recomm.forEach((recommReason) => {
+        for (const [reason, webtoons] of Object.entries(recommReason)) {
+          if (Object.keys(webtoons).length !== 0) {
+            webtoons.forEach((webtoon) => {
+              webtoon["reason"] = reason;
+              recomm_list.push(webtoon);
+            });
+          }
         }
-      }
-    });
-    let random_list = shuffle(recomm_list);
-    setLoading(false);
-    setRecommendations(random_list);
+      });
+      let random_list = shuffle(recomm_list);
+      setLoading(false);
+      setRecommendations(random_list);
+    }
   }, []);
 
   return authContext.isLoggedIn ? (

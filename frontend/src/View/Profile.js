@@ -101,9 +101,9 @@ const Profile = () => {
           variant="contained"
           color="primary"
           className={classes.submit}
-          onClick={(e) => {
+          onClick={async (e) => {
             e.preventDefault();
-            authContext.logout();
+            await authContext.logout();
             history.push("/login");
           }}
         >

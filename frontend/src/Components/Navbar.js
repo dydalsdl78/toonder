@@ -27,8 +27,6 @@ function Navbar({ value, setValue }) {
   const classes = useStyles();
 
   const handleChange = async (event, newValue) => {
-    const token = JSON.parse(localStorage.getItem("user"));
-    const refresh = await AuthService.refresh(token);
     setValue(newValue);
     history.push(newValue);
   };
