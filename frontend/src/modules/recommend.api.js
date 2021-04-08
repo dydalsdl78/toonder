@@ -58,11 +58,16 @@ const postLike = async (number) => {
   }
 };
 
+const recommStyle = async () => {
+  return axios.get(`${API_URL}/recommends/recomm_style/`);
+};
+
 const exports = {
   getLikes,
   getFavs,
   postLike,
   postFav,
+  recommStyle,
 };
 
 export default exports;

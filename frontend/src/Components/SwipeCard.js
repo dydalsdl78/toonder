@@ -50,10 +50,6 @@ export default function SwipeCard({ recommendations }) {
             >
               <h2>{recommendation.webtoon_score.toFixed(1)}</h2>
               <div className="card-description">
-                <h3>{recommendation.webtoon_name}</h3>
-                <br />
-                <h3>{recommendation.webtoon_writer}</h3>
-                <br />
                 {"similar_webtoon" in recommendation ? (
                   <>
                     <p>
@@ -64,6 +60,10 @@ export default function SwipeCard({ recommendations }) {
                 ) : (
                   <p>{recommendation.reason}</p>
                 )}
+                <br />
+                <h3>{recommendation.webtoon_name}</h3>
+                <br />
+                <h3>{recommendation.webtoon_writer}</h3>
               </div>
             </div>
           </TinderCard>
