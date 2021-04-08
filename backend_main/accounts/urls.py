@@ -12,6 +12,7 @@ urlpatterns = [
                                                         # 리프레쉬에 성공하면 리프레쉬 된 새로운 토큰으로 각각의 요청을 해야한다
 
     path('get_userinfo/', views.get_userinfo),          # 유저정보 얻기
+    path('cert_password', views.certify_password),      # 비밀번호 검사
     path('modify/profile/', views.modify_profile),      # 유저정보 수정
-    path('change/password', views.change_password),     # 비밀번호 변경
+    path('modify/password', views.change_password),     # 비밀번호 변경
 ]
