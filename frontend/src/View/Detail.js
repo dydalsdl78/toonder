@@ -29,10 +29,18 @@ const useStyles = makeStyles({
   likeIcon: {
     fontSize: "35px",
     marginRight: "30px",
+    cursor: "pointer",
+    // '&:hover': {
+    //   color: "red",
+    // },
   },
   favIcon: {
     fontSize: "40px",
     marginRight: "20px",
+    cursor: "pointer",
+    // '&:hover': {
+    //   color: "#ffa500",
+    // },
   },
 });
 

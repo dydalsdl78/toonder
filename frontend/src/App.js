@@ -5,6 +5,7 @@ import Login from "./View/Login";
 import Join from "./View/Join";
 import Main from "./View/Main";
 import Recommendation from "./View/Recommendation";
+import StyleRecommendation from "./View/StyleRecommendation";
 import MyList from "./View/MyList";
 import Profile from "./View/Profile";
 import Detail from "./View/Detail";
@@ -116,6 +117,9 @@ function App() {
           </Route>
           <Route path="/detail">
             <Detail />
+          </Route>
+          <Route path="/style">
+            <StyleRecommendation />
           </Route>
         </Switch>
         <Navbar value={value} setValue={setValue} />
