@@ -1,6 +1,5 @@
 import axios from "axios";
 
-
 const API_URL = process.env.REACT_APP_SERVER_URL;
 
 const join = (username, email, password, passwordConfirmation) => {
@@ -61,6 +60,7 @@ const refresh = (token) => {
       }
     })
     .catch((err) => {
+      logout();
       console.log(err);
     });
 };

@@ -15,7 +15,6 @@ import Recommend from "../modules/recommend.api";
 import { useHistory } from "react-router";
 import { AuthContext } from "../Context/context";
 
-
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
@@ -48,6 +47,18 @@ function MyList() {
   const [favs, setFavs] = useState([]);
   const [mode, setMode] = useState("like");
 
+  useEffect(() => {
+    const fetchData = async () => {
+      const likelist = await Recommend.getLikes();
+      setLikes(likelist.data);
+      const favlist = await Recommend.getFavs();
+      setFavs(favlist.data);
+      setView(likelist.data);
+      setLoading(false);
+    };
+    fetchData();
+  }, [authContext, history]);
+
   const handleClick = (number) => {
     history.push({
       pathname: `/detail/${number}`,
@@ -69,31 +80,6 @@ function MyList() {
     setFavs(favlist.data);
   };
 
-  useEffect(() => {
-    async function fetchData() {
-      if (!authContext.isLoggedIn) {
-        history.push("/login");
-      } else {
-        const likelist = await Recommend.getLikes();
-        setLikes(likelist.data);
-        const favlist = await Recommend.getFavs();
-        setFavs(favlist.data);
-        setView(likelist.data);
-        setLoading(false);
-      }
-    }
-    fetchData();
-    return () => {
-      "";
-    };
-  }, [authContext, history]);
-
-  useEffect(() => {
-    setTimeout(1000);
-    if (mode === "fav") setView(favs);
-    if (mode === "like") setView(likes);
-  }, [likes, favs, view, mode]);
-
   const likeClick = (e, number) => {
     Recommend.postLike(number);
     update1();
@@ -109,7 +95,6 @@ function MyList() {
   const handleChange = (e, newValue) => {
     setValue(newValue);
   };
-
   return authContext.isLoggedIn ? (
     loading ? (
       <div className="spinner">

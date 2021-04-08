@@ -14,7 +14,6 @@ import { AuthContext } from "./Context/context";
 import AuthService from "./modules/auth.api";
 import WebtoonService from "./modules/webtoons.api";
 
-
 function App() {
   const history = useHistory();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -55,8 +54,9 @@ function App() {
   };
 
   useEffect(() => {
-    async function fetchData() {
+    async function fetchData(old_token) {
       const refresh = await AuthService.refresh(old_token);
+      console.log(refresh);
       const userinfo = await AuthService.getuser(refresh);
       setEmail(userinfo.data.email);
       setUsername(userinfo.data.username);
