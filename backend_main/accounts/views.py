@@ -103,14 +103,24 @@ def change_password(request):
     user = get_object_or_404(get_user_model(), pk=request.user.user_id)
 
     if request.method == 'PUT':
-        userserial = ChangePasswordSerializer(user, data={
-            'password': request.data['password']
-        })
-        if userserial.is_valid(raise_exception=True):
-            user = userserial.save()
-            user.set_password(request.data['password'])
-            user.save()
-            return Response({ 'accomplished': '비밀번호를 변경 했습니다.' }, status=status.HTTP_200_OK)
+        if user.check_password(request.data['current_password']):
+            userserial = ChangePasswordSerializer(user, data={
+                'password': request.data['new_password']
+            })
+            if userserial.is_valid(raise_exception=True):
+                user = userserial.save()
+                user.set_password(request.data['new_password'])
+                user.save()
+                return Response({ 'accomplished': '비밀번호를 변경 했습니다.' }, status=status.HTTP_200_OK)
+        return Response({ 'failed': '현재 비밀번호가 틀렸습니다.' })
+        # userserial = ChangePasswordSerializer(user, data={
+        #     'password': request.data['password']
+        # })
+        # if userserial.is_valid(raise_exception=True):
+        #     user = userserial.save()
+        #     user.set_password(request.data['password'])
+        #     user.save()
+        #     return Response({ 'accomplished': '비밀번호를 변경 했습니다.' }, status=status.HTTP_200_OK)
     else: 
         user.delete()
         return Response({ 'accomplished': '성공적으로 탈퇴 되었습니다.' })
