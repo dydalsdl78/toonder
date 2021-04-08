@@ -48,15 +48,17 @@ function MyList() {
   const [mode, setMode] = useState("like");
 
   useEffect(() => {
-    const fetchData = async () => {
-      const likelist = await Recommend.getLikes();
-      setLikes(likelist.data);
-      const favlist = await Recommend.getFavs();
-      setFavs(favlist.data);
-      setView(likelist.data);
-      setLoading(false);
-    };
-    fetchData();
+    if (authContext.isLoggedIn) {
+      const fetchData = async () => {
+        const likelist = await Recommend.getLikes();
+        setLikes(likelist.data);
+        const favlist = await Recommend.getFavs();
+        setFavs(favlist.data);
+        setView(likelist.data);
+        setLoading(false);
+      };
+      fetchData();
+    }
   }, [authContext, history]);
 
   const handleClick = (number) => {
