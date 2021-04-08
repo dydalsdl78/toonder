@@ -1,6 +1,6 @@
 # Toonder
 
-주소 : https://j4a207.p.ssafy.io
+배포 주소 : https://j4a207.p.ssafy.io
 
 
 
