@@ -23,14 +23,15 @@ class WebtoonOverAllViewSet(viewsets.ModelViewSet):
         웹툰 추천 통합
     """
     serializer_class = WebtoonSerializer
-    permission_classes = [IsAuthenticated]
-    authentication_classes = [JSONWebTokenAuthentication]
+    # permission_classes = [IsAuthenticated]
+    # authentication_classes = [JSONWebTokenAuthentication]
 
     def recomm_overall(self, request):
     
     # 사용자의 좋아요 리스트에 있는 웹툰 목록
-        user = get_object_or_404(get_user_model(), pk=request.user.user_id)
-        user_id = get_user_model().objects.values('user_id').get(username=user.username)
+        # user = get_object_or_404(get_user_model(), pk=request.user.user_id)
+        # user_id = get_user_model().objects.values('user_id').get(username=user.username)
+        user_id = get_user_model().objects.values('user_id').get(username="keith")
         favorite_webtoons = Webtoon.objects.filter(like_users=user_id['user_id'])
         
 
@@ -50,15 +51,16 @@ class WebtoonOverAllViewSet(viewsets.ModelViewSet):
             
             # 각각의 유사도 계산
             similarity = genre_recomm.cal_similarity(user_genres_matrix, genre_mat)
-            
+
             # 유사도 순 정렬
             sorted_similarity = sorted(similarity.items(), reverse=True, key=lambda item: item[1])
 
             # id값에 해당하는 웹툰 정보 응답
             genre_result = []
             for i in range(10):
-                webtoon = Webtoon.objects.filter(webtoon_number=sorted_similarity[i][0])
-                serializer = WebtoonSerializer(webtoon[0])
+                # 유사도 높은 웹툰의 리스트는 0부터 시작하기 때문에 idx에 1씩 더해준다.
+                webtoon = Webtoon.objects.get(webtoon_number=sorted_similarity[i][0]+1)
+                serializer = WebtoonSerializer(webtoon)
                 genre_result.append(serializer.data)
         else:
             genre_result = []
