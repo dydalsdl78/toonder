@@ -31,6 +31,32 @@ const login = (email, password) => {
     });
 };
 
+const passwordChange = (current_password, new_password) => {
+  const token = JSON.parse(localStorage.getItem("user"));
+  const config = {
+    headers: {
+      Authorization: `JWT ${token}`,
+    },
+  };
+  return axios
+    .put(
+      `${API_URL}/accounts/modify/password`,
+      {
+        current_password,
+        new_password,
+      },
+      config
+    )
+    .then((res) => {
+      console.log(res);
+      return res;
+    })
+    .catch((err) => {
+      console.log(err);
+      return err;
+    });
+};
+
 const refresh = (token) => {
   return axios
     .post(`${API_URL}/accounts/api-token-refresh/`, {
@@ -55,6 +81,7 @@ const getuser = (token) => {
 
 const logout = () => {
   localStorage.removeItem("user");
+  alert("로그아웃 되었습니다");
 };
 
 const recomm_overall = async () => {
@@ -77,4 +104,5 @@ export default {
   getuser,
   logout,
   recomm_overall,
+  passwordChange,
 };

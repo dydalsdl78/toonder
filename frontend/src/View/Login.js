@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Login() {
+function Login({ value, setValue }) {
   const authContext = useContext(AuthContext);
   const history = useHistory();
   const classes = useStyles();
@@ -52,6 +52,7 @@ function Login() {
     e.preventDefault();
     console.log("login");
     await authContext.login(email, password);
+    setValue("/");
     history.push("/");
   };
 
