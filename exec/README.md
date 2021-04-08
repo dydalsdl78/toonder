@@ -27,7 +27,13 @@ exec
 ### 2. backend
 
 1. my_settings.zip을 압축해제 해야한다
-   - 비밀번호는 : `rlgusdldhkdkdlemf`
+   - 비밀번호 : `rlgusdldhkdkdlemf`
 
 
 
+
+
+### 3. frontend
+
+1. env.zip을 압축해제 해야한다
+   - 비밀번호 : `rlgusdldmlclsrnemf`
