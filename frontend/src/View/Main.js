@@ -2,11 +2,13 @@ import React, { useContext } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import MediaCard from "../Components/MediaCard";
-
+import { Switch, Route, useHistory } from "react-router-dom";
 import { AuthContext } from "../Context/context";
+import "./Main.css";
 
 function Main({ mainlist }) {
   const authContext = useContext(AuthContext);
+  const history = useHistory();
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -25,11 +27,18 @@ function Main({ mainlist }) {
     },
   };
 
+  const handleClick = () => {
+    history.push({
+      pathname: `/style/`,
+    });
+  };
+
   const mainList = Object.entries(mainlist).map(([genre, webtoons]) => {
     return (
       <div key={genre}>
-        <h3>{genre}</h3>
+        <h3 className="genre-title">{genre}</h3>
         <Carousel
+          className="carousel"
           swipeable={true}
           draggable={true}
           showDots={true}
@@ -57,7 +66,11 @@ function Main({ mainlist }) {
       <div>
         <p>{authContext.username}님 반갑습니다 ❤</p>
       </div>
-      {mainList}
+      <div className="hero" onClick={handleClick}></div>
+      <p className="hero-caption">
+        툰더만의 그림체 추천 서비스를 확인해보세요!
+      </p>
+      <div>{mainList}</div>
     </div>
   );
 }
