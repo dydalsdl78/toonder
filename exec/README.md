@@ -26,8 +26,10 @@ exec
 
 ### 2. backend
 
-1. my_settings.zip을 압축해제 해야한다
+1. my_settings.zip을 압축해제 해야한다.
    - 비밀번호 : `rlgusdldhkdkdlemf`
+2. 가상환경 등에서 pip install -r requirements.txt를 한다
+3. python manage.py runserver를 통해 실행한다.
 
 
 
@@ -35,8 +37,10 @@ exec
 
 ### 3. frontend
 
-1. env.zip을 압축해제 해야한다
+1. env.zip을 압축해제 해야한다.
    - 비밀번호 : `rlgusdldmlclsrnemf`
+2. 통합관리패키지인 yarn을 사용하여 install 한다.
+3. yarn start를 통해 실행한다.
 
 
 
