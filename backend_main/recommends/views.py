@@ -169,8 +169,6 @@ class WebtoonStyleViewSet(viewsets.ModelViewSet):
     """
 
     serializer_class = WebtoonSerializer
-    # permission_classes = [IsAuthenticated]
-    # authentication_classes = [JSONWebTokenAuthentication]
 
     def recomm_style(self, request):
         webtoons = Webtoon.objects.order_by("scale_loss")
