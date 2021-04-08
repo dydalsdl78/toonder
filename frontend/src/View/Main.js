@@ -5,6 +5,7 @@ import MediaCard from "../Components/MediaCard";
 
 import { AuthContext } from "../Context/context";
 
+
 function Main({ mainlist }) {
   const authContext = useContext(AuthContext);
   const responsive = {

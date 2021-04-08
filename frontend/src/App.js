@@ -13,6 +13,7 @@ import { AuthContext } from "./Context/context";
 import AuthService from "./modules/auth.api";
 import WebtoonService from "./modules/webtoons.api";
 
+
 function App() {
   const history = useHistory();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -30,9 +31,8 @@ function App() {
       setIsLoggedIn(true);
       setValue("/");
       history.push("/");
-    } catch (e) {
-      console.log(e);
-      alert("회원정보가 틀렸습니다");
+    } catch {
+      alert("회원정보가 틀렸습니다.");
     }
   };
 
@@ -66,8 +66,8 @@ function App() {
       try {
         fetchData(old_token);
       } catch {
-        console.log("logout");
         logout();
+        alert("로그아웃 되었습니다.");
       }
     }
   }, []);
@@ -82,7 +82,6 @@ function App() {
 
   return (
     <>
-      {/* {!isLoggedIn ? <Redirect to="/login" /> : <Redirect to="/" />} */}
       <Banner />
       <AuthContext.Provider
         value={{
@@ -101,7 +100,7 @@ function App() {
             <Main mainlist={mainlist} />
           </Route>
           <Route path="/login">
-            <Login value={value} setValue={setValue} />
+            <Login />
           </Route>
           <Route path="/join">
             <Join />

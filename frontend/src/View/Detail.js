@@ -14,6 +14,7 @@ import { AuthContext } from "../Context/context";
 
 import "./Detail.css";
 
+
 const MainImage = styled.img`
   width: "100%";
   height: auto;
@@ -28,16 +29,10 @@ const useStyles = makeStyles({
   likeIcon: {
     fontSize: "35px",
     marginRight: "30px",
-    // '&:hover': {
-    //   color: "red",
-    // },
   },
   favIcon: {
     fontSize: "40px",
     marginRight: "20px",
-    // '&:hover': {
-    //   color: "#ffa500",
-    // },
   },
 });
 
