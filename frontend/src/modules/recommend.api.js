@@ -60,9 +60,11 @@ const postLike = async (number) => {
   }
 };
 
-export default {
+const exports = {
   getLikes,
   getFavs,
   postLike,
   postFav,
 };
+
+export default exports;

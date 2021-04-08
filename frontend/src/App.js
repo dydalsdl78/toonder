@@ -15,7 +15,6 @@ import WebtoonService from "./modules/webtoons.api";
 
 function App() {
   const history = useHistory();
-  const [token, setToken] = useState(null);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [username, setUsername] = useState("guest");
   const [email, setEmail] = useState(null);
@@ -28,7 +27,6 @@ function App() {
       let userinfo = await AuthService.getuser(res.token);
       setEmail(userinfo.data.email);
       setUsername(userinfo.data.username);
-      setToken(res.token);
       setIsLoggedIn(true);
       setValue("/");
       history.push("/");
@@ -41,7 +39,6 @@ function App() {
   const getuser = async (_token) => {
     try {
       const res = await AuthService.getuser(_token);
-      setToken(_token);
       setEmail(res.data.email);
       setUsername(res.data.username);
     } catch (err) {
@@ -50,23 +47,24 @@ function App() {
   };
 
   const logout = () => {
-    setToken(null);
     setEmail(null);
     setUsername("guest");
     setIsLoggedIn(false);
     AuthService.logout();
   };
 
-  useEffect(async () => {
+  useEffect(() => {
+    async function fetchData() {
+      const refresh = await AuthService.refresh(old_token);
+      const userinfo = await AuthService.getuser(refresh);
+      setEmail(userinfo.data.email);
+      setUsername(userinfo.data.username);
+      setIsLoggedIn(true);
+    }
     const old_token = JSON.parse(localStorage.getItem("user"));
     if (old_token) {
       try {
-        const refresh = await AuthService.refresh(old_token);
-        setToken(refresh);
-        const userinfo = await AuthService.getuser(refresh);
-        setEmail(userinfo.data.email);
-        setUsername(userinfo.data.username);
-        setIsLoggedIn(true);
+        fetchData(old_token);
       } catch {
         console.log("logout");
         logout();
@@ -74,17 +72,13 @@ function App() {
     }
   }, []);
 
-  useEffect(async () => {
-    const res = await WebtoonService.main();
-    setMainlist(res.data);
+  useEffect(() => {
+    async function fetchData() {
+      const res = await WebtoonService.main();
+      setMainlist(res.data);
+    }
+    fetchData();
   }, []);
-
-  const theme = {
-    primary: "#00b8a9",
-    secondary: "#f8f3d4",
-    tertiary: "#f6416c",
-    quaternary: "#ffde7d",
-  };
 
   return (
     <>

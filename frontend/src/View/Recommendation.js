@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Redirect } from "react-router-dom";
-import { Title } from "../Lib";
 import SwipeCard from "../Components/SwipeCard";
 import Spinner from "../Components/Spinner";
 import AuthService from "../modules/auth.api";
@@ -32,27 +31,29 @@ function Recommendation() {
     return array;
   }
 
-  useEffect(async () => {
-    if (authContext.isLoggedIn) {
-      const res = await AuthService.recomm_overall();
-      let recomm = res.data;
-      console.log(recomm);
-      let recomm_list = [];
-      recomm.forEach((recommReason) => {
-        for (const [reason, webtoons] of Object.entries(recommReason)) {
-          if (Object.keys(webtoons).length !== 0) {
-            webtoons.forEach((webtoon) => {
-              webtoon["reason"] = reason;
-              recomm_list.push(webtoon);
-            });
+  useEffect(() => {
+    async function fetchData() {
+      if (authContext.isLoggedIn) {
+        const res = await AuthService.recomm_overall();
+        let recomm = res.data;
+        let recomm_list = [];
+        recomm.forEach((recommReason) => {
+          for (const [reason, webtoons] of Object.entries(recommReason)) {
+            if (Object.keys(webtoons).length !== 0) {
+              webtoons.forEach((webtoon) => {
+                webtoon["reason"] = reason;
+                recomm_list.push(webtoon);
+              });
+            }
           }
-        }
-      });
-      let random_list = shuffle(recomm_list);
-      setLoading(false);
-      setRecommendations(random_list);
+        });
+        let random_list = shuffle(recomm_list);
+        setLoading(false);
+        setRecommendations(random_list);
+      }
     }
-  }, []);
+    fetchData();
+  }, [authContext]);
 
   return authContext.isLoggedIn ? (
     loading ? (
@@ -65,8 +66,10 @@ function Recommendation() {
         <div className="container">
           <SwipeCard recommendations={recommendations} />
           <div className="tutorial">
-            <p>⬆ 보러가기 ⬇ 상세페이지 </p>
-            <p>⬅ 패스~ ➡ 좋아요!</p>
+            <div className="tutorial-text">⬆ 보러가기</div>
+            <div className="tutorial-text">⬇ 상세페이지 </div>
+            <div className="tutorial-text">⬅ 패스~ </div>
+            <div className="tutorial-text">➡ 좋아요!</div>
           </div>
         </div>
       </>

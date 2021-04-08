@@ -6,8 +6,6 @@ import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
-import { makeStyles } from "@material-ui/core/styles";
-import { Redirect, useHistory } from "react-router-dom";
 import AuthService from "../modules/auth.api";
 
 export default function FormDialog() {
@@ -41,26 +39,7 @@ export default function FormDialog() {
     alert(res.data);
     setOpen(false);
   };
-  const useStyles = makeStyles((theme) => ({
-    paper: {
-      marginTop: theme.spacing(8),
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-    },
-    avatar: {
-      margin: theme.spacing(1),
-      backgroundColor: theme.palette.secondary.main,
-    },
-    form: {
-      width: "100%", // Fix IE 11 issue.
-      marginTop: theme.spacing(1),
-    },
-    submit: {
-      marginTop: "20px",
-    },
-  }));
-  const classes = useStyles();
+
   return (
     <>
       <Button variant="outlined" color="primary" onClick={handleClickOpen}>

@@ -1,7 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
-import SearchBar from "../Components/SearchBar";
-import { Title } from "../Lib";
-import CarouselLine from "../Components/CarouselLine";
+import React, { useContext } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import MediaCard from "../Components/MediaCard";

@@ -1,26 +1,16 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { Redirect, useHistory } from "react-router-dom";
 import { AuthContext } from "../Context/context";
-import { Title } from "../Lib";
-
 import Avatar from "@material-ui/core/Avatar";
 import Button from "@material-ui/core/Button";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import TextField from "@material-ui/core/TextField";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import Checkbox from "@material-ui/core/Checkbox";
-import Link from "@material-ui/core/Link";
 import Grid from "@material-ui/core/Grid";
-import Box from "@material-ui/core/Box";
 import FaceIcon from "@material-ui/icons/Face";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 
-import ProfileCard from "../Components/ProfileCard";
 import FormDialog from "../Components/FormDialog";
-
-import AuthService from "../modules/auth.api";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -45,18 +35,6 @@ const useStyles = makeStyles((theme) => ({
 const Profile = () => {
   const history = useHistory();
   const authContext = useContext(AuthContext);
-
-  useEffect(async () => {
-    const old_token = JSON.parse(localStorage.getItem("user"));
-    const token = await AuthService.refresh(old_token);
-    if (token) {
-      try {
-        authContext.getuser(token);
-      } catch (err) {
-        console.log(err);
-      }
-    }
-  }, []);
   const classes = useStyles();
 
   return authContext.isLoggedIn ? (

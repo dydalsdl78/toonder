@@ -48,7 +48,6 @@ function MyList() {
   const [mode, setMode] = useState("like");
 
   const handleClick = (number) => {
-    console.log(number);
     history.push({
       pathname: `/detail/${number}`,
       state: { number: number },
@@ -69,24 +68,30 @@ function MyList() {
     setFavs(favlist.data);
   };
 
-  useEffect(async () => {
-    if (!authContext.isLoggedIn) {
-      history.push("/login");
-    } else {
-      const likelist = await Recommend.getLikes();
-      setLikes(likelist.data);
-      const favlist = await Recommend.getFavs();
-      setFavs(favlist.data);
-      setView(likelist.data);
-      setLoading(false);
+  useEffect(() => {
+    async function fetchData() {
+      if (!authContext.isLoggedIn) {
+        history.push("/login");
+      } else {
+        const likelist = await Recommend.getLikes();
+        setLikes(likelist.data);
+        const favlist = await Recommend.getFavs();
+        setFavs(favlist.data);
+        setView(likelist.data);
+        setLoading(false);
+      }
     }
-  }, []);
+    fetchData();
+    return () => {
+      "";
+    };
+  }, [authContext, history]);
 
   useEffect(() => {
     setTimeout(1000);
     if (mode === "fav") setView(favs);
     if (mode === "like") setView(likes);
-  }, [likes, favs, view]);
+  }, [likes, favs, view, mode]);
 
   const likeClick = (e, number) => {
     Recommend.postLike(number);
@@ -111,7 +116,7 @@ function MyList() {
         <p>좋아요 리스트 불러오는 중!</p>
       </div>
     ) : (
-      <>
+      <div className="container">
         <Paper sqaure="true" className={classes.tabBar}>
           <Tabs
             value={value}
@@ -191,7 +196,7 @@ function MyList() {
             ))}
           </GridList>
         </div>
-      </>
+      </div>
     )
   ) : (
     <Redirect

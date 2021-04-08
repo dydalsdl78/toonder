@@ -19,7 +19,6 @@
   width: 80vw;
   max-width: 400px;
   height: 500px;
-  box-shadow: 0px 0px 60px 0px rgba(228, 224, 30, 0.1);
   border-radius: 20px;
   background-size: cover;
   background-position: center;
@@ -41,7 +40,26 @@
   background-color: yellow;
   border-radius: 20%;
 }
-.card h3 {
+
+.card-description {
+  position: absolute;
+  bottom: 0;
+  margin: 10px;
+  margin-bottom: 40px;
+  color: white;
+  text-align: left;
+}
+
+.card-description h3 {
+  display: inline;
+  background-color: black;
+}
+.card-description p {
+  display: inline;
+  background-color: black;
+}
+
+/* .card h3 {
   position: absolute;
   bottom: 0;
   margin: 10px;
@@ -55,7 +73,7 @@
   margin: 10px;
   color: white;
   background-color: black;
-}
+} */
 
 .pcard {
   text-align: center;

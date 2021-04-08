@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { withRouter, useHistory } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
@@ -7,7 +7,6 @@ import HomeIcon from "@material-ui/icons/Home";
 import ThumbUpIcon from "@material-ui/icons/ThumbUp";
 import BookmarksIcon from "@material-ui/icons/Bookmarks";
 import AccountBoxIcon from "@material-ui/icons/AccountBox";
-import AuthService from "../modules/auth.api";
 // import styled from 'styled-components';
 
 const useStyles = makeStyles({

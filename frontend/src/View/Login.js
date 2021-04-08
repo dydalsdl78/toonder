@@ -1,9 +1,5 @@
-import React, { useState, useRef, useContext } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React, { useState, useContext } from "react";
 import { Redirect, withRouter, useHistory } from "react-router-dom";
-import { useForm } from "react-hook-form";
-// import Avatar from '@material-ui/core/Avatar';
-// import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 
 import Button from "@material-ui/core/Button";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -16,7 +12,6 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import { AuthContext } from "../Context/context";
-import AuthService from "../modules/auth.api";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -44,7 +39,6 @@ function Login({ value, setValue }) {
   const classes = useStyles();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [loading, setLoading] = useState(false);
 
   // const { message } = useSelector(state => state.message);
 
@@ -118,10 +112,9 @@ function Login({ value, setValue }) {
             fullWidth
             variant="contained"
             color="primary"
-            disabled={loading}
             className={classes.submit}
           >
-            {loading ? "Loading" : "로그인"}
+            로그인
           </Button>
           <Grid container>
             <Grid item>

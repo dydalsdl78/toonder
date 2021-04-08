@@ -6,16 +6,14 @@ import { useHistory } from "react-router";
 
 export default function SwipeCard({ recommendations }) {
   const history = useHistory();
+
   const onSwipe = async (direction, recommendation) => {
-    console.log("You swiped: " + direction, recommendation.webtoon_number);
     if (direction === "right") {
       Recommend.postLike(recommendation.webtoon_number);
     } else if (direction === "left") {
-      console.log("left");
     } else if (direction === "up") {
       goWatch(recommendation.webtoon_link);
     } else if (direction === "down") {
-      console.log("down");
       const number = recommendation.webtoon_number;
       history.push({
         pathname: `/detail/${number}`,
@@ -26,9 +24,7 @@ export default function SwipeCard({ recommendations }) {
     }
   };
 
-  const onCardLeftScreen = (myIdentifier) => {
-    console.log(myIdentifier + " left the screen");
-  };
+  const onCardLeftScreen = (myIdentifier) => {};
 
   const goWatch = (url) => {
     window.open(url);
@@ -45,7 +41,6 @@ export default function SwipeCard({ recommendations }) {
               onCardLeftScreen(recommendation.webtoon_name)
             }
           >
-            <p className="pcard">{recommendation.reason}</p>
             <div
               style={{
                 backgroundImage: "url(" + recommendation.thumbnail_url + ")",
@@ -53,8 +48,22 @@ export default function SwipeCard({ recommendations }) {
               className="card"
             >
               <h2>{recommendation.webtoon_score.toFixed(1)}</h2>
-              <h3>{recommendation.webtoon_name}</h3>
-              <h5>{recommendation.webtoon_writer}</h5>
+              <div className="card-description">
+                <h3>{recommendation.webtoon_name}</h3>
+                <br />
+                <h3>{recommendation.webtoon_writer}</h3>
+                <br />
+                {"similar_webtoon" in recommendation ? (
+                  <>
+                    <p>
+                      좋아하시는 작품 {recommendation.similar_webtoon}과(와)
+                      비슷한 줄거리의 작품입니다
+                    </p>
+                  </>
+                ) : (
+                  <p>{recommendation.reason}</p>
+                )}
+              </div>
             </div>
           </TinderCard>
         );

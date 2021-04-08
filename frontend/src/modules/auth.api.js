@@ -1,5 +1,4 @@
 import axios from "axios";
-import authHeader from "./auth-header";
 
 // for local test
 const API_URL = process.env.REACT_APP_SERVER_URL;
@@ -92,7 +91,7 @@ const recomm_overall = async () => {
   return res;
 };
 
-export default {
+const exports = {
   join,
   login,
   refresh,
@@ -101,3 +100,5 @@ export default {
   recomm_overall,
   passwordChange,
 };
+
+export default exports;

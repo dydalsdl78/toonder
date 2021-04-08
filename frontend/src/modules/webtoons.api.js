@@ -4,13 +4,6 @@ import axios from "axios";
 const API_URL = process.env.REACT_APP_SERVER_URL;
 // for release
 // const API_URL = "";
-const token = JSON.parse(localStorage.getItem("user"));
-
-const config = {
-  headers: {
-    Authorization: `JWT ${token}`,
-  },
-};
 
 const main = () => {
   return axios.get(`${API_URL}/webtoons/main/`);
@@ -27,7 +20,9 @@ const getDetail = async (webtoon_number) => {
   }
 };
 
-export default {
+const exports = {
   main,
   getDetail,
 };
+
+export default exports;

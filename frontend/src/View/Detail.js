@@ -7,10 +7,11 @@ import BookmarkIcon from "@material-ui/icons/Bookmark";
 import PlayCircleFilledIcon from "@material-ui/icons/PlayCircleFilled";
 import Recommend from "../modules/recommend.api";
 import Webtoons from "../modules/webtoons.api";
+import Spinner from "../Components/Spinner";
 import { makeStyles } from "@material-ui/core";
 import { useLocation } from "react-router";
 import { AuthContext } from "../Context/context";
-import { useHistory } from "react-router";
+
 import "./Detail.css";
 
 const MainImage = styled.img`
@@ -43,7 +44,6 @@ const useStyles = makeStyles({
 function Detail() {
   const classes = useStyles();
   const location = useLocation();
-  const history = useHistory();
   const authContext = useContext(AuthContext);
   const [webtoon, setWebtoon] = useState(null);
   const [likes, setLikes] = useState([]);
@@ -67,8 +67,22 @@ function Detail() {
   };
 
   useEffect(() => {
-    update();
-  }, []);
+    async function fetchData() {
+      const response = await Webtoons.getDetail(location.state.number);
+      if (response) {
+        setWebtoon(response.data);
+      } else {
+        console.log("no response");
+      }
+      if (authContext.isLoggedIn) {
+        const likelist = await Recommend.getLikes();
+        setLikes(likelist.data);
+        const favlist = await Recommend.getFavs();
+        setFavs(favlist.data);
+      }
+    }
+    fetchData();
+  }, [authContext.isLoggedIn, location.state.number]);
 
   useEffect(() => {
     setTimeout(1000);
@@ -83,7 +97,7 @@ function Detail() {
     )
       setIsFav(true);
     else setIsFav(false);
-  }, [likes, favs]);
+  }, [likes, favs, webtoon]);
 
   const likeClick = () => {
     Recommend.postLike(webtoon.webtoon_number);
@@ -99,7 +113,12 @@ function Detail() {
     window.open(webtoon.webtoon_link);
   };
 
-  if (!webtoon) return <p>loading...</p>;
+  if (!webtoon)
+    return (
+      <div className="spinner">
+        <Spinner />
+      </div>
+    );
   return (
     <div className="container detail-card">
       <MainImage className={classes.mainImage} src={webtoon.thumbnail_url} />

@@ -8,6 +8,11 @@
 }
 
 .tutorial {
-  margin-top: 100px;
   text-align: center;
+  margin-top: 20px;
+}
+
+.tutorial-text {
+  display: inline;
+  margin-right: 20px;
 }
