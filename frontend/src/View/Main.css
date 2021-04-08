@@ -1,0 +1,27 @@
+.hero {
+  height: 230px;
+  background-image: url("https://i.pinimg.com/564x/ee/ef/d5/eeefd5a4e3f7882e54029a7ebdff6149.jpg");
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+}
+
+.hero-caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+}
+
+.container {
+  margin-bottom: 200px;
+}
+
+.carousel {
+  margin-top: 10px;
+}
+
+.genre-title {
+  margin-top: 30px;
+}
