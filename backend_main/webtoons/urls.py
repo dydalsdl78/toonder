@@ -1,5 +1,7 @@
 from django.urls import path
+
 from .views import MainViewSet, SearchViewSet, DetailViewSet
+
 
 urlpatterns = [
     path('main/', MainViewSet.as_view({"get": "main"})),

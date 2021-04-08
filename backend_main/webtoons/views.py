@@ -4,14 +4,15 @@ from django.shortcuts import get_object_or_404
 
 from rest_framework import status, viewsets
 from rest_framework.response import Response
-from rest_framework.decorators import api_view
 
-from rest_framework.decorators import authentication_classes, permission_classes
+from rest_framework.decorators import api_view, authentication_classes, permission_classes
 from rest_framework_jwt.authentication import JSONWebTokenAuthentication
 from rest_framework.permissions import IsAuthenticated
 
+from accounts.models import User
 from .models import Webtoon, Genre
 from .serializers import WebtoonSerializer, GenreSerializer
+
 
 class MainViewSet(viewsets.ModelViewSet):
 # @api_view(['GET'])
@@ -28,12 +29,10 @@ class MainViewSet(viewsets.ModelViewSet):
         genre_ids = list(genres.values('id'))
         
         for genre_id in sample(genre_ids, 8):
-            # print(list(genres[genre_id['id'] - 1].webtoons.all().order_by('-webtoon_score')[:10].values()))
             results[genres[genre_id['id'] - 1].genre_name] = list(genres[genre_id['id'] - 1].webtoons.all().order_by('-webtoon_score')[:10].values())
 
-        # print(results.keys())
-
         return Response(results, status=status.HTTP_200_OK)
+
 
 class SearchViewSet(viewsets.ModelViewSet):
     """
@@ -57,9 +56,36 @@ class SearchViewSet(viewsets.ModelViewSet):
             overview__contains=keyword
         ))
 
-        webtoon_serializer = WebtoonSerializer(webtoons, many=True)
+        # 장르 데이터 추가하는 코드
+        genres = Genre.objects.all()
+        
+        webtoon_list = list()
+        serializer = WebtoonSerializer(webtoons, many=True)
+        print(webtoons)
+        for webtoon in webtoons:
+            print(webtoon)
+            print(webtoon.genres.all())
 
-        return Response(webtoon_serializer.data, status=status.HTTP_200_OK)
+            webtoon_info = dict()
+            genres_names = []
+            webtoon_genres = webtoon.genres.all()
+
+            for webtoon_genre in webtoon_genres:
+                for genre in genres:
+                    genre_name = genre.genre_name
+
+                    if webtoon_genre.id == genre.id:
+                        genres_names.append(genre.genre_name)
+
+
+            serializer = WebtoonSerializer(webtoon)
+            webtoon_info = serializer.data
+            webtoon_info['genres_names'] = genres_names
+            webtoon_list.append(webtoon_info)
+
+        return Response(webtoon_list, status=status.HTTP_200_OK)
+
+
 
 class DetailViewSet(viewsets.ModelViewSet):
 # @api_view(['GET'])
@@ -74,4 +100,25 @@ class DetailViewSet(viewsets.ModelViewSet):
 
         webtoon_serializer = WebtoonSerializer(webtoon)
 
-        return Response(webtoon_serializer.data, status=status.HTTP_200_OK)
+        # 장르 데이터 추가하는 코드
+        genres = Genre.objects.all()
+        
+
+        webtoon_info = dict()
+        genres_names = []
+        webtoon_genres = webtoon.genres.all()
+
+        for webtoon_genre in webtoon_genres:
+            for genre in genres:
+                genre_name = genre.genre_name
+
+                if webtoon_genre.id == genre.id:
+                    genres_names.append(genre.genre_name)
+
+
+        serializer = WebtoonSerializer(webtoon)
+        webtoon_info = serializer.data
+        webtoon_info['genres_names'] = genres_names
+
+
+        return Response(webtoon_info, status=status.HTTP_200_OK)
