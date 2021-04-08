@@ -1,0 +1,2440 @@
+,title,genres,genres_literal
+0,학사재생,<QuerySet [{'genre_name': '무협'}]>,무협
+1,환율이 바뀌었나요?,<QuerySet [{'genre_name': '드라마'}]>,드라마
+2,무지개다리 파수꾼,<QuerySet [{'genre_name': '드라마'}]>,드라마
+3,서천화원,<QuerySet [{'genre_name': '순정'}]>,순정
+4,승리호,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '액션'}]>",드라마 액션
+5,봄날의 팔광,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+6,뱀파이어님의 대리식사,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+7,현세이의 보이는 라디오,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '일상'}]>",드라마 일상
+8,강호표사,"<QuerySet [{'genre_name': '무협'}, {'genre_name': '액션'}]>",무협 액션
+9,사귄 건 아닌데,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+10,하나밖에 안 보여!,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '학원'}]>",순정 학원
+11,쓰레기 머학생,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '학원'}]>",일상 학원
+12,흑우,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스릴러'}]>",드라마 스릴러
+13,타원을 그리는 법,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '미스터리'}]>",드라마 미스터리
+14,교수님을 빚는 중,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+15,조류공포증,"<QuerySet [{'genre_name': '공포'}, {'genre_name': '스릴러'}]>",공포 스릴러
+16,이대로 멈출 순 없다,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '학원'}]>",코믹 학원
+17,그라티아,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+18,집행자여,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스릴러'}]>",드라마 스릴러
+19,일단 질러! 질렐루야,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+20,유부녀의 탄생,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+21,골드핸즈,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+22,개목걸이,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '학원'}]>",액션 학원
+23,신랑이 사라졌다,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+24,악마의 편집,"<QuerySet [{'genre_name': '공포'}, {'genre_name': '스릴러'}]>",공포 스릴러
+25,대선비쇼에 어서오세요!,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '코믹'}]>",드라마 코믹
+26,사랑하는 존재,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+27,비밀 사이,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+28,아싸클럽,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+29,너를 만나다,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '학원'}]>",순정 학원
+30,뱀파이어 신드롬,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+31,화폐개혁,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스릴러'}]>",드라마 스릴러
+32,닥터 파인의 하루,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}, {'genre_name': '판타지'}]>",드라마 순정 판타지
+33,해오와 사라,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+34,"신성한, 이혼","<QuerySet [{'genre_name': '드라마'}, {'genre_name': '지식'}]>",드라마 지식
+35,멸종인간,"<QuerySet [{'genre_name': '공포'}, {'genre_name': '스릴러'}]>",공포 스릴러
+36,우리집이거든요!,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+37,학교대표,"<QuerySet [{'genre_name': '스포츠'}, {'genre_name': '학원'}]>",스포츠 학원
+38,미래의 너에게,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+39,아비무쌍,"<QuerySet [{'genre_name': '무협'}, {'genre_name': '판타지'}]>",무협 판타지
+40,지옥사원,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+41,왕 그리고 황제,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '코믹'}]>",드라마 코믹
+42,나빌레라,<QuerySet [{'genre_name': '드라마'}]>,드라마
+43,방구석 여포,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '학원'}]>",액션 학원
+44,사랑하는 가족에게,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스릴러'}]>",드라마 스릴러
+45,수린당 -비늘 고치는 집-,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+46,미드나잇 블루,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+47,악녀의 탄생,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+48,두번째 썸,<QuerySet [{'genre_name': '순정'}]>,순정
+49,저승사자 온라인,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+50,CELL,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '학원'}]>",액션 학원
+51,아버지의 복수는 끝이 없어라,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스릴러'}]>",드라마 스릴러
+52,노력의 卍(만),"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+53,죽어도! 치우,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+54,금수친구들,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+55,설공찬전,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+56,말하지 말까,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+57,하나하나둘,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+58,콜로세움,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '액션'}]>",스릴러 액션
+59,키스해주세요,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+60,쌍갑포차,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+61,블랙 베히모스,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+62,쑥,<QuerySet [{'genre_name': '드라마'}]>,드라마
+63,나를 지켜줘,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+64,백로식당,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+65,함께 춤을,<QuerySet [{'genre_name': '순정'}]>,순정
+66,백의사자,<QuerySet [{'genre_name': '판타지'}]>,판타지
+67,시간이 머문 집,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+68,마이셀프,"<QuerySet [{'genre_name': '공포'}, {'genre_name': '스릴러'}]>",공포 스릴러
+69,록산,"<QuerySet [{'genre_name': '미스터리'}, {'genre_name': '스릴러'}]>",미스터리 스릴러
+70,논현동 장사꾼,<QuerySet [{'genre_name': '드라마'}]>,드라마
+71,중고거래,"<QuerySet [{'genre_name': '미스터리'}, {'genre_name': '스릴러'}]>",미스터리 스릴러
+72,고교호구왕,"<QuerySet [{'genre_name': '스포츠'}, {'genre_name': '학원'}]>",스포츠 학원
+73,스타의 학교생활,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '학원'}]>",드라마 학원
+74,신의 태궁,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+75,재벌과의 인터뷰,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+76,이담,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스릴러'}]>",드라마 스릴러
+77,샬롯에게는 다섯 명의 제자가 있다,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+78,저기요 손님,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '코믹'}]>",드라마 코믹
+79,블랙윈터,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+80,경이로운 소문,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '판타지'}]>",스릴러 판타지
+81,단짠남녀,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+82,프레너미,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스포츠'}]>",드라마 스포츠
+83,날씨의 요정,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+84,체벌교사,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '학원'}]>",액션 학원
+85,전생에 나라를 구한 자,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '코믹'}, {'genre_name': '학원'}]>",액션 코믹 학원
+86,지금은 연애를 쉽니다,<QuerySet [{'genre_name': '순정'}]>,순정
+87,우리가 헤어진 사이에,<QuerySet [{'genre_name': '순정'}]>,순정
+88,파륜아이,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스릴러'}]>",드라마 스릴러
+89,나비는 세 번 변태한다,<QuerySet [{'genre_name': '순정'}]>,순정
+90,불러줘 내 이름만,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+91,쓰레기 머학생,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '학원'}]>",일상 학원
+92,열무와 알타리,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+93,닭은 의외로 위대하다,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+94,인스타러브,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '학원'}]>",순정 학원
+95,너에게 투 혼(魂)!,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '학원'}]>",액션 학원
+96,키몽의 호구로운 생활,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+97,바리공주,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+98,소녀신선,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+99,정의는 죽지 않는다,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '학원'}]>",액션 학원
+100,구슬의 주인,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '학원'}]>",순정 학원
+101,허약선생,"<QuerySet [{'genre_name': '무협'}, {'genre_name': '코믹'}]>",무협 코믹
+102,우리반 숙경이,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '학원'}]>",드라마 학원
+103,후궁공략,<QuerySet [{'genre_name': '판타지'}]>,판타지
+104,유부녀 킬러,<QuerySet [{'genre_name': '드라마'}]>,드라마
+105,피치 (PITCH),"<QuerySet [{'genre_name': '스포츠'}, {'genre_name': '학원'}]>",스포츠 학원
+106,흔한 환생녀의 사정,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+107,오늘은 꼭 고백할 거야!,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '학원'}]>",순정 학원
+108,어린 (물고기 비늘),<QuerySet [{'genre_name': '드라마'}]>,드라마
+109,너에게 가는 거리 2091km,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+110,이세계 전담반,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+111,너를 기다리는 날,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+112,순정 히포크라테스,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+113,악역의 구원자,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+114,풍검,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+115,주말 도미 시식회,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '액션'}]>",드라마 액션
+116,반지하셋방,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+117,멀리서 보면 푸른 봄,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+118,천연 天緣,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+119,크라우드,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '학원'}]>",액션 학원
+120,질투유발자들,<QuerySet [{'genre_name': '순정'}]>,순정
+121,퍼펙트 마인,<QuerySet [{'genre_name': '순정'}]>,순정
+122,내 친구는 선녀보살,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '미스터리'}]>",드라마 미스터리
+123,형제가 사랑한 마녀,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+124,음란마귀지만 괜찮아!,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '코믹'}]>",순정 코믹
+125,남궁세가 소공자,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '무협'}]>",드라마 무협
+126,나 홀로 버그로 꿀빠는 플레이어,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+127,씨방것들,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+128,내일도 출근!,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+129,대마법사의 딸,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+130,하렘생존기,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+131,바니와 오빠들,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '코믹'}]>",순정 코믹
+132,당신도 보정해 드릴까요?,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+133,하필 너야?!,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+134,요괴백정,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+135,슬프게도 이게 내 인생,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+136,취향저격 그녀,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+137,버닝 이펙트,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+138,그 남자의 하이힐,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '코믹'}]>",드라마 코믹
+139,유성이 내리는 거리,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+140,유색의 멜랑꼴리,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '일상'}]>",드라마 일상
+141,화목한 가족,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '학원'}]>",드라마 학원
+142,보글보글챱챱,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '일상'}]>",드라마 일상
+143,옆집남자,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+144,픽셀 오브 라이프,<QuerySet [{'genre_name': '순정'}]>,순정
+145,같은 방에서,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '코믹'}]>",순정 코믹
+146,특별직,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '액션'}]>",드라마 액션
+147,용의주도 황비,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+148,내추럴 리드미칼 2,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+149,경성야상곡,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+150,괴물아기,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+151,심장에게 주다,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+152,냥냐라냥냥,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+153,구리의 구리구리 컴백,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+154,카페 보문,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '일상'}]>",드라마 일상
+155,일생에 변태를 세 번 만날 확률,"<QuerySet [{'genre_name': '탐정'}, {'genre_name': '학원'}]>",탐정 학원
+156,묘씨맥주점,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '일상'}]>",드라마 일상
+157,백스테이지 키스신,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+158,바리왕자,<QuerySet [{'genre_name': '순정'}]>,순정
+159,여자만화 구두,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+160,너와 나의 거리,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '학원'}]>",순정 학원
+161,우리학교 김선생님,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+162,라즈베리 샌드위치,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+163,큐레이터,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+164,구경하는 들러리양,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+165,하테마테,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+166,"폐하, 옥체 보존하세요!","<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+167,그림자정원,"<QuerySet [{'genre_name': '공포'}, {'genre_name': '드라마'}]>",공포 드라마
+168,안녕은하세요,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+169,아무것도 하고 싶지 않아,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+170,오디세이,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+171,할매,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '액션'}]>",스릴러 액션
+172,나만 아는 사랑,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+173,오늘도 꽐랄라라,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+174,내 남편의 스토커,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+175,트레이스,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+176,조우,"<QuerySet [{'genre_name': '공포'}, {'genre_name': '스릴러'}]>",공포 스릴러
+177,애신록,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '코믹'}]>",드라마 코믹
+178,사내 맞선,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '코믹'}]>",순정 코믹
+179,크라이시스,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+180,닥터 퀸,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+181,진심이 닿다,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+182,레드스톰,"<QuerySet [{'genre_name': '무협'}, {'genre_name': '액션'}]>",무협 액션
+183,겉과 속의 아지랑이,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '학원'}]>",드라마 학원
+184,후크,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+185,혼돈검신,"<QuerySet [{'genre_name': '무협'}, {'genre_name': '액션'}]>",무협 액션
+186,방탕일기,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '일상'}]>",드라마 일상
+187,주간소년열애사,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+188,꽃같은 인생,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+189,2020 전남콘랩 웹툰 창작 아카데미,<QuerySet [{'genre_name': '드라마'}]>,드라마
+190,뮤지션,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+191,다리 위 차차,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+192,우리 집에 왜 왔니,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+193,복수는 우리의 것,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+194,우리가 사랑하는 방법,<QuerySet [{'genre_name': '순정'}]>,순정
+195,창백한 말,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+196,뱀파이어 셰프,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+197,퀴퀴한 일기,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+198,심봉사전,"<QuerySet [{'genre_name': '무협'}, {'genre_name': '액션'}]>",무협 액션
+199,표류감옥,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '액션'}]>",스릴러 액션
+200,너의 돈이 보여,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+201,어름치,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '코믹'}]>",드라마 코믹
+202,미래의 사진,"<QuerySet [{'genre_name': '미스터리'}, {'genre_name': '순정'}]>",미스터리 순정
+203,뜨거운 웬수,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+204,작약만가 : 불환곡,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '판타지'}]>",스릴러 판타지
+205,주정,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+206,오무라이스 잼잼,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+207,세로토닌,"<QuerySet [{'genre_name': '공포'}, {'genre_name': '스릴러'}]>",공포 스릴러
+208,어렴풋이,"<QuerySet [{'genre_name': '판타지'}, {'genre_name': '학원'}]>",판타지 학원
+209,굿바이 악마,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+210,180cm 그녀를 사랑해!,<QuerySet [{'genre_name': '순정'}]>,순정
+211,망고의 뼈,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '학원'}]>",순정 학원
+212,천생연분,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+213,민트 러브,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '학원'}]>",순정 학원
+214,여의주,<QuerySet [{'genre_name': '드라마'}]>,드라마
+215,질풍의 노도,<QuerySet [{'genre_name': '드라마'}]>,드라마
+216,어둠이 걷힌 자리엔,"<QuerySet [{'genre_name': '미스터리'}, {'genre_name': '판타지'}]>",미스터리 판타지
+217,왕자님이 있다,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+218,아만자,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '일상'}]>",드라마 일상
+219,평범해지고 싶어,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+220,고양이 신부,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+221,내 일진이 이렇게 귀여울리가 없어,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+222,딩스뚱스,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+223,랑데부,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+224,요조신사 마초숙녀,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+225,그녀의 앵무새,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+226,찬란한 액션 유치원,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '코믹'}]>",액션 코믹
+227,이태원 클라쓰,<QuerySet [{'genre_name': '드라마'}]>,드라마
+228,빌린 몸,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+229,리프루터,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '판타지'}]>",스릴러 판타지
+230,인간을 먹는 성,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+231,저녁 같이 드실래요?,<QuerySet [{'genre_name': '순정'}]>,순정
+232,메모리스트,"<QuerySet [{'genre_name': '미스터리'}, {'genre_name': '스릴러'}]>",미스터리 스릴러
+233,니브,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '미스터리'}]>",드라마 미스터리
+234,취준진담,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '일상'}]>",드라마 일상
+235,스위트 허니 트랩,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+236,독립만화 특별전,<QuerySet [{'genre_name': '드라마'}]>,드라마
+237,기인록,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+238,볍신을 부탁해,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+239,뿔뿔뿔뿔,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+240,글과 그림 사이,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+241,모기전쟁,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+242,까락,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '액션'}]>",드라마 액션
+243,대나무숲에서 알립니다,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '학원'}]>",스릴러 학원
+244,아가씨가 너무해!,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+245,나는 엄마다,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '일상'}]>",드라마 일상
+246,인생막장,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '액션'}]>",드라마 액션
+247,드래곤 시터,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+248,도리도심,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+249,노동본색,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+250,달달한 지구,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+251,개같은 세상,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+252,겨울과 봄사이,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '학원'}]>",순정 학원
+253,리라이프 -Relife-,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+254,그녀와 썸남들,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+255,돈나무,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스릴러'}]>",드라마 스릴러
+256,The Tale (더 테일),"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '미스터리'}]>",드라마 미스터리
+257,명검,"<QuerySet [{'genre_name': '무협'}, {'genre_name': '액션'}]>",무협 액션
+258,어바웃 제인,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+259,배고픈 자들의 도시,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+260,식귀,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+261,캔디맨,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+262,네버다이 : 변이자들,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+263,연목구애,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+264,드림사이드,<QuerySet [{'genre_name': '판타지'}]>,판타지
+265,그녀는 흡!혈귀,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+266,그다이,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스릴러'}]>",드라마 스릴러
+267,히어로즈 오브 레전드,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+268,뽀짜툰,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+269,헬로 마이 안드로이드,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+270,망자의 서,<QuerySet [{'genre_name': '미스터리'}]>,미스터리
+271,달리는 여자,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+272,울트라 비서,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+273,계약우정,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '학원'}]>",드라마 학원
+274,하녀와 흡혈귀,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+275,노이정 로코특집,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+276,달달한 그녀,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+277,지켜라 여의주,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+278,호림무사,"<QuerySet [{'genre_name': '무협'}, {'genre_name': '액션'}]>",무협 액션
+279,수의 계절,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+280,징벌소녀,"<QuerySet [{'genre_name': '판타지'}, {'genre_name': '학원'}]>",판타지 학원
+281,스틸레인3 : 정상회담,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '액션'}]>",드라마 액션
+282,연애소설 읽는 교수,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+283,헤븐즈 소울,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+284,우리사이느은,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+285,아싸가 알아버렸다,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '학원'}]>",코믹 학원
+286,채널뽁스,"<QuerySet [{'genre_name': '지식'}, {'genre_name': '코믹'}]>",지식 코믹
+287,유리의 벽,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+288,나의 하늘,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '스릴러'}]>",순정 스릴러
+289,유물 읽는 감정사,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '미스터리'}]>",드라마 미스터리
+290,애늙은이,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+291,차피,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+292,별똥별이 떨어지는 그 곳에서 기다려,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+293,ONE,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '학원'}]>",액션 학원
+294,아빠는 변태중,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '코믹'}]>",드라마 코믹
+295,그녀의 심청,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+296,누나팬닷컴,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+297,드림캐처,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+298,해치지않아,<QuerySet [{'genre_name': '드라마'}]>,드라마
+299,동쪽으로,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+300,여혜,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+301,한밤의 공생,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+302,4학년,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스릴러'}]>",드라마 스릴러
+303,오디션,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+304,거울 죽이기,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스릴러'}]>",드라마 스릴러
+305,사귀자,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+306,매의 검,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+307,Breaker.Drawing,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+308,우리집에 왜 왔니,"<QuerySet [{'genre_name': '공포'}, {'genre_name': '스릴러'}]>",공포 스릴러
+309,겟 레디 위드 미,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '지식'}]>",순정 지식
+310,공부하는 고양이,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+311,오만과 낭만,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+312,식물인간,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+313,화류 (花柳),"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+314,오! 나의 왕자님,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+315,DVD,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+316,신룡의 주인,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+317,굿바이 사돈!,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+318,100%의 그녀,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+319,아티스트,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '코믹'}]>",드라마 코믹
+320,아는 귀신,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+321,서브미션,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '액션'}]>",드라마 액션
+322,SAVAGE,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '액션'}]>",스릴러 액션
+323,부딪치다,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+324,끼리끼리,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '학원'}]>",코믹 학원
+325,나비소리,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+326,안개숲,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스릴러'}]>",드라마 스릴러
+327,소년이여,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '학원'}]>",액션 학원
+328,오피스텔,"<QuerySet [{'genre_name': '공포'}, {'genre_name': '스릴러'}]>",공포 스릴러
+329,예쁜 남자,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+330,덕후의 여자,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+331,네 살 차이,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+332,모아세 (모두가 아름다워진 세상),"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스릴러'}]>",드라마 스릴러
+333,들쥐,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '미스터리'}, {'genre_name': '스릴러'}]>",드라마 미스터리 스릴러
+334,대디보이,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '학원'}]>",드라마 학원
+335,빌런즈,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '액션'}]>",드라마 액션
+336,하이힐을 신은 소녀,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '학원'}]>",순정 학원
+337,그 고양이가 통치하는 세상,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+338,체이서,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '코믹'}]>",액션 코믹
+339,껍데기,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스릴러'}]>",드라마 스릴러
+340,나와 그녀삼신과 호러맨스,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+341,강경옥 환상집 BEST,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스릴러'}]>",드라마 스릴러
+342,Go Bananas,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+343,괴담도시,"<QuerySet [{'genre_name': '공포'}, {'genre_name': '드라마'}]>",공포 드라마
+344,진심으로 심쿵,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+345,그대로 좋아!,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+346,조숙의 맛,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '일상'}]>",드라마 일상
+347,CAT (캣),"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+348,모든 순간이 너였다,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+349,난 하마 안 될거야,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+350,도둑맞은 책,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스릴러'}]>",드라마 스릴러
+351,풀 뜯어먹는 소리,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+352,싸움의 기술2,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '학원'}]>",액션 학원
+353,유사과학 탐구영역,"<QuerySet [{'genre_name': '지식'}, {'genre_name': '코믹'}]>",지식 코믹
+354,노인의 집,<QuerySet [{'genre_name': '드라마'}]>,드라마
+355,식탁 아래 Blue,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '일상'}]>",드라마 일상
+356,애매하게 또,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+357,노말시티,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+358,밤에 사는 소녀,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '학원'}]>",드라마 학원
+359,트라이앵글,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+360,난 짱이야,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '학원'}]>",코믹 학원
+361,나를 깨우러 온,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+362,부산 신인작가 단편선,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '일상'}]>",드라마 일상
+363,악연,"<QuerySet [{'genre_name': '공포'}, {'genre_name': '스릴러'}]>",공포 스릴러
+364,러브 시그널,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+365,머리 위로 부는 바람,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+366,징크스의 연인,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+367,유치원의 하루,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+368,"프롬, 스타","<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+369,51번째 남자,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+370,피그맨,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+371,혼담별곡,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+372,물고기의 밤,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+373,에덴의 왕,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스릴러'}]>",드라마 스릴러
+374,꼼짝마 스파이,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+375,취준생물,<QuerySet [{'genre_name': '드라마'}]>,드라마
+376,과격자매단,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+377,대치동 일타강사,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '학원'}]>",드라마 학원
+378,남은 고양이,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+379,시동,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '코믹'}]>",드라마 코믹
+380,월하노인,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+381,더블랙LABEL,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스릴러'}]>",드라마 스릴러
+382,흑룡연인,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+383,메시아 콤플렉스,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '액션'}]>",스릴러 액션
+384,뿔,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+385,한복이 너무해,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+386,마애(磨崖),"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '지식'}]>",드라마 지식
+387,스페이스 차이나 드레스,"<QuerySet [{'genre_name': '무협'}, {'genre_name': '액션'}]>",무협 액션
+388,사라지지마,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+389,미래에서 온 그이,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+390,카운터,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '학원'}]>",액션 학원
+391,경성이 서울을 만났을 때,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+392,"솔미솔파, 나의 노래","<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+393,맛있는 스캔들,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '코믹'}]>",순정 코믹
+394,N번째 연애,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+395,시크릿 스타,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+396,헬헌터,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+397,크라임 퍼즐,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스릴러'}]>",드라마 스릴러
+398,광세영웅,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+399,그그그,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+400,어떻게든 중간만 간다면,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+401,젠틀한 야수,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '코믹'}]>",순정 코믹
+402,분홍분홍해,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+403,심해의 조각들,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+404,은빛고릴라,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+405,보통사이,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+406,어이상실의 시대,<QuerySet [{'genre_name': '순정'}]>,순정
+407,마왕비 납시오,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+408,나홀로 주부,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '학원'}]>",드라마 학원
+409,그림자 밟기,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '학원'}]>",순정 학원
+410,늑대는 꽃의 향기,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+411,화양연화,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+412,청소부 K,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '액션'}]>",드라마 액션
+413,단지,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '일상'}]>",드라마 일상
+414,남자 셋 친칠라 하나,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+415,몸,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스릴러'}]>",드라마 스릴러
+416,0.0MHz,<QuerySet [{'genre_name': '공포'}]>,공포
+417,가깝다고 생각하면 가까운,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '일상'}]>",드라마 일상
+418,디어 마이 유니버스,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+419,괜찮아! 골드미스,<QuerySet [{'genre_name': '순정'}]>,순정
+420,먼지소녀,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+421,드라이 플라워 (Dry flower),"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+422,코에코이,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '학원'}]>",순정 학원
+423,치삼 탐정 사무소,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '탐정'}]>",코믹 탐정
+424,어쩌다 발견한 7월,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+425,두근두근! 스테이지,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '학원'}]>",드라마 학원
+426,스텔라 프린스,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+427,너도 나랑,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+428,천사의 집,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스릴러'}]>",드라마 스릴러
+429,1호선,"<QuerySet [{'genre_name': '공포'}, {'genre_name': '스릴러'}]>",공포 스릴러
+430,통 엣지,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '학원'}]>",액션 학원
+431,드리밍,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+432,다정한 겨울,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+433,태양의 시,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+434,이안에 나,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+435,면사포를 쓰고픈 남자,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+436,그놈의 스캔들,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+437,레이디 프로젝트,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+438,로미오가 줄리엣,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '학원'}]>",순정 학원
+439,위험한 동거,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '학원'}]>",스릴러 학원
+440,허세남길들이기,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '코믹'}]>",드라마 코믹
+441,햄스터와 그녀,"<QuerySet [{'genre_name': '공포'}, {'genre_name': '스릴러'}]>",공포 스릴러
+442,두근두근 근육소녀♡,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '코믹'}]>",순정 코믹
+443,호아전,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+444,말괄량이 길들이기,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+445,날라리,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+446,이웃잔혹사,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스릴러'}]>",드라마 스릴러
+447,러브 앤 위시,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+448,미래의 시간,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스릴러'}]>",드라마 스릴러
+449,빛나는 손을,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+450,진주,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+451,좋아한다는 걸 잊지마,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+452,그래도 되는가,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+453,사립갱생고교,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '학원'}]>",액션 학원
+454,엘리제를 위해,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+455,포 더 프린세스,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+456,"안녕, 엄마","<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+457,"수수, 한","<QuerySet [{'genre_name': '드라마'}, {'genre_name': '일상'}]>",드라마 일상
+458,사생,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스릴러'}]>",드라마 스릴러
+459,발자국이 녹기 전에,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+460,아귀,"<QuerySet [{'genre_name': '공포'}, {'genre_name': '미스터리'}]>",공포 미스터리
+461,인연을 바라다 : 희연,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+462,검은 방주,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+463,도나스 학교괴담,"<QuerySet [{'genre_name': '공포'}, {'genre_name': '코믹'}]>",공포 코믹
+464,행복한 낙원의 당신,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+465,이병 일학년,<QuerySet [{'genre_name': '드라마'}]>,드라마
+466,이토록 완벽한 짝사랑,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+467,환상숲,"<QuerySet [{'genre_name': '미스터리'}, {'genre_name': '판타지'}]>",미스터리 판타지
+468,지배,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '액션'}]>",스릴러 액션
+469,아쿠아맨,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+470,사수생도 연애를 한다,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+471,그녀는 VIP,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+472,사채,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스릴러'}]>",드라마 스릴러
+473,너에게 도달하는 방법,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+474,블리즈니치,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+475,환희의 초상,"<QuerySet [{'genre_name': '미스터리'}, {'genre_name': '순정'}]>",미스터리 순정
+476,휴니멀,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+477,위대한 로맨스,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+478,반드시 잡는다!,<QuerySet [{'genre_name': '일상'}]>,일상
+479,밥 해주는 남자,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+480,죽어도 좋아♡,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+481,여고생 임연수,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '학원'}]>",드라마 학원
+482,돌아갈 귀,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '액션'}]>",드라마 액션
+483,우리 남매의 일상은,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+484,"쉼없이 시간을 거슬러, 너에게","<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+485,용한 남자,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '스릴러'}]>",순정 스릴러
+486,도깨비언덕에 왜 왔니?,<QuerySet [{'genre_name': '판타지'}]>,판타지
+487,무능력자,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+488,귀신을 보는 남자,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+489,우두커니,<QuerySet [{'genre_name': '드라마'}]>,드라마
+490,라인업,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스포츠'}]>",드라마 스포츠
+491,블링커,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+492,호접몽,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+493,옥탑빵,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '일상'}]>",드라마 일상
+494,간이역에 겨울이 오면,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+495,영하의 온도,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+496,백은아란전,"<QuerySet [{'genre_name': '무협'}, {'genre_name': '액션'}]>",무협 액션
+497,레이디 앤 젠틀맨,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+498,은상은상,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '코믹'}]>",순정 코믹
+499,그녀는 나를 싫어해,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '코믹'}]>",순정 코믹
+500,그렇고 그런 사이,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+501,홍도,"<QuerySet [{'genre_name': '무협'}, {'genre_name': '판타지'}]>",무협 판타지
+502,처음 뵙겠습니다,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+503,다음웹툰 팬클럽 모집,<QuerySet [{'genre_name': '일상'}]>,일상
+504,박살소녀,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '학원'}]>",순정 학원
+505,하데스쿨,"<QuerySet [{'genre_name': '판타지'}, {'genre_name': '학원'}]>",판타지 학원
+506,완벽한 저녁,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+507,빈둥빈둥 환타스틱 유럽 여행기,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+508,우렁각시,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+509,20세 보고서,<QuerySet [{'genre_name': '드라마'}]>,드라마
+510,서울협객전,"<QuerySet [{'genre_name': '무협'}, {'genre_name': '액션'}]>",무협 액션
+511,메린;인어이야기,<QuerySet [{'genre_name': '순정'}]>,순정
+512,인피의상,"<QuerySet [{'genre_name': '공포'}, {'genre_name': '스릴러'}]>",공포 스릴러
+513,미드나잇 파트너,<QuerySet [{'genre_name': '판타지'}]>,판타지
+514,티라레,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+515,너클걸 러스티,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '학원'}]>",액션 학원
+516,싱싱해요,<QuerySet [{'genre_name': '순정'}]>,순정
+517,크리스마스는 쨈과 함께,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+518,어제 오늘 그리고 내일,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+519,어디에서든 널 원해,<QuerySet [{'genre_name': '순정'}]>,순정
+520,대작,<QuerySet [{'genre_name': '드라마'}]>,드라마
+521,밤 10시에 만나,<QuerySet [{'genre_name': '일상'}]>,일상
+522,달이 뜨면 만나요,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+523,공기심장,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+524,공자님 거기 있어 줄래요,<QuerySet [{'genre_name': '순정'}]>,순정
+525,새벽날개,<QuerySet [{'genre_name': '드라마'}]>,드라마
+526,리버트 디디,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+527,수상한 레시피,<QuerySet [{'genre_name': '순정'}]>,순정
+528,차이니즈 봉봉클럽 광저우편,"<QuerySet [{'genre_name': '지식'}, {'genre_name': '코믹'}]>",지식 코믹
+529,340일간의 유예,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '스릴러'}]>",순정 스릴러
+530,언더그라운드 블러드팩,<QuerySet [{'genre_name': '액션'}]>,액션
+531,완벽한 교실,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '학원'}]>",스릴러 학원
+532,사랑은 앵초색,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '학원'}]>",순정 학원
+533,오랑캐,"<QuerySet [{'genre_name': '무협'}, {'genre_name': '판타지'}]>",무협 판타지
+534,죽기 살기로,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스릴러'}]>",드라마 스릴러
+535,겨울밤,<QuerySet [{'genre_name': '판타지'}]>,판타지
+536,함치르르,<QuerySet [{'genre_name': '드라마'}]>,드라마
+537,고양이 마마님,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+538,크로싱 코드,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+539,고등패왕전기,<QuerySet [{'genre_name': '액션'}]>,액션
+540,하늘에서 떨어진 폴,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+541,환상을 팝니다,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+542,곤조 스트릿 - 갱스터의 시대,<QuerySet [{'genre_name': '액션'}]>,액션
+543,11년 후 우리는,<QuerySet [{'genre_name': '순정'}]>,순정
+544,영웅의 변수,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+545,아인슈타인 브릿지,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+546,애휴,<QuerySet [{'genre_name': '드라마'}]>,드라마
+547,무신,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '무협'}]>",드라마 무협
+548,하면 좋습니까?,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '일상'}]>",드라마 일상
+549,옥탑방 표류기,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+550,헬로 브리,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '일상'}]>",드라마 일상
+551,삐꾸래봉,<QuerySet [{'genre_name': '드라마'}]>,드라마
+552,연옥학원,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+553,얌얌숲 당근길 토요요,<QuerySet [{'genre_name': '일상'}]>,일상
+554,저승GO,<QuerySet [{'genre_name': '판타지'}]>,판타지
+555,오리지널 씬2,<QuerySet [{'genre_name': '액션'}]>,액션
+556,낮은 곳으로,<QuerySet [{'genre_name': '드라마'}]>,드라마
+557,첫사랑은 죽었다,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+558,에스키스,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+559,"안녕, 겨울","<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+560,방랑시인 김삿갓,<QuerySet [{'genre_name': '드라마'}]>,드라마
+561,오만상과 편견,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+562,내 땅 한 조각,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '판타지'}]>",코믹 판타지
+563,더블캐스팅 2014,<QuerySet [{'genre_name': '액션'}]>,액션
+564,절레절레 전래동화,<QuerySet [{'genre_name': '코믹'}]>,코믹
+565,이끼,<QuerySet [{'genre_name': '스릴러'}]>,스릴러
+566,화음의 정원,<QuerySet [{'genre_name': '순정'}]>,순정
+567,동궁왕후,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+568,익명의 독서중독자들,"<QuerySet [{'genre_name': '지식'}, {'genre_name': '코믹'}]>",지식 코믹
+569,나는 달린다,<QuerySet [{'genre_name': '드라마'}]>,드라마
+570,어쿠스틱 라이프,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+571,놈들의 도시,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '액션'}]>",드라마 액션
+572,어둠의 속도,"<QuerySet [{'genre_name': '공포'}, {'genre_name': '스릴러'}]>",공포 스릴러
+573,스킬,<QuerySet [{'genre_name': '드라마'}]>,드라마
+574,보이지 않는 세계,"<QuerySet [{'genre_name': '미스터리'}, {'genre_name': '스릴러'}]>",미스터리 스릴러
+575,삼각김밥을 까는 법,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '코믹'}]>",드라마 코믹
+576,사막의 이방인,<QuerySet [{'genre_name': '순정'}]>,순정
+577,화자,"<QuerySet [{'genre_name': '공포'}, {'genre_name': '미스터리'}]>",공포 미스터리
+578,신림동 뱀파이어,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+579,키몽툰,<QuerySet [{'genre_name': '코믹'}]>,코믹
+580,너클걸,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '학원'}]>",액션 학원
+581,유럽에서 100일,<QuerySet [{'genre_name': '순정'}]>,순정
+582,나의 마녀,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+583,산신,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+584,영수의 봄,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '코믹'}]>",순정 코믹
+585,그림형제 잔혹동화,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스릴러'}]>",드라마 스릴러
+586,은밀하게 위대하게,<QuerySet [{'genre_name': '액션'}]>,액션
+587,다시피는 꽃,<QuerySet [{'genre_name': '드라마'}]>,드라마
+588,단지 그것 뿐,<QuerySet [{'genre_name': '드라마'}]>,드라마
+589,채홍사,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+590,트리니티 원더,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+591,위기의 애송이,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+592,붉은 밤의 각인,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+593,피그말리온 컴플렉스,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '학원'}]>",순정 학원
+594,작가의 사생활,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+595,오늘의 초능력,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '판타지'}]>",코믹 판타지
+596,리와 구,<QuerySet [{'genre_name': '드라마'}]>,드라마
+597,나우,"<QuerySet [{'genre_name': '무협'}, {'genre_name': '액션'}]>",무협 액션
+598,고블린로얄,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+599,강철강,"<QuerySet [{'genre_name': '무협'}, {'genre_name': '액션'}]>",무협 액션
+600,골든왈츠,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+601,위 아 애니멀스,<QuerySet [{'genre_name': '드라마'}]>,드라마
+602,신무월 : DIVINE,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+603,The 윷놀리스트,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스포츠'}]>",드라마 스포츠
+604,천랑열전,"<QuerySet [{'genre_name': '무협'}, {'genre_name': '액션'}]>",무협 액션
+605,인랑:프리퀄,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '액션'}]>",스릴러 액션
+606,돗가비 감투,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+607,개밥도토리,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '코믹'}]>",드라마 코믹
+608,찬! 평범한 그녀석,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '학원'}]>",액션 학원
+609,벨트 위 벨트 아래,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '코믹'}]>",드라마 코믹
+610,남동공단,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '코믹'}]>",드라마 코믹
+611,블레이드2 : THE RETURN OF EVIL,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+612,곱게 자란 자식,<QuerySet [{'genre_name': '드라마'}]>,드라마
+613,귀신이면 어때,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+614,엄마들,<QuerySet [{'genre_name': '드라마'}]>,드라마
+615,스틸레인2 : 강철비,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '액션'}]>",스릴러 액션
+616,TEN,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '학원'}]>",액션 학원
+617,미생,<QuerySet [{'genre_name': '드라마'}]>,드라마
+618,연애싫어,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '학원'}]>",코믹 학원
+619,궁 안에 살다,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+620,가슴도 리콜이 되나요,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+621,사장님과 금비서,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+622,가내수공업 Ent.,<QuerySet [{'genre_name': '순정'}]>,순정
+623,화요일에 죽는 남자,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스릴러'}]>",드라마 스릴러
+624,도깨비훈장,<QuerySet [{'genre_name': '드라마'}]>,드라마
+625,죽고 못사는 연애,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+626,구리의 구리구리,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+627,정육면체의 비밀,<QuerySet [{'genre_name': '미스터리'}]>,미스터리
+628,썸머 테이스트,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '학원'}]>",순정 학원
+629,초상화,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+630,내 자식의 사생활,<QuerySet [{'genre_name': '드라마'}]>,드라마
+631,19세기말 비망록,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '스릴러'}]>",순정 스릴러
+632,풍월주 - 바람과 달의 주인,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+633,온더힐,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+634,파워맨,<QuerySet [{'genre_name': '코믹'}]>,코믹
+635,2018 다음웹툰 능력고사,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '학원'}]>",코믹 학원
+636,허식당,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+637,연민의 굴레,<QuerySet [{'genre_name': '학원'}]>,학원
+638,초월(初月),"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+639,매분구,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+640,파파 투 파파,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+641,아수라발발타,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '코믹'}]>",드라마 코믹
+642,공대에는 아름이가 없다,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}, {'genre_name': '코믹'}]>",드라마 순정 코믹
+643,내 사랑 마리아,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+644,가랑가랑,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+645,총수,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '액션'}]>",드라마 액션
+646,혼자를 기르는 법,<QuerySet [{'genre_name': '일상'}]>,일상
+647,이프 1,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '액션'}]>",스릴러 액션
+648,이프 2,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '액션'}]>",스릴러 액션
+649,내가 안했어요,<QuerySet [{'genre_name': '스릴러'}]>,스릴러
+650,그 녀석이 찾아왔다,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+651,두번째 집,<QuerySet [{'genre_name': '드라마'}]>,드라마
+652,라그나로크,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+653,독고 플라워,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '학원'}]>",액션 학원
+654,독고 리와인드,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '학원'}]>",액션 학원
+655,독고,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '학원'}]>",액션 학원
+656,통 3부 유아독존,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '학원'}]>",액션 학원
+657,통 2부 비밀,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '학원'}]>",액션 학원
+658,통 1부,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '학원'}]>",액션 학원
+659,매생이가 나타났다,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '코믹'}]>",순정 코믹
+660,어른의 취미,<QuerySet [{'genre_name': '드라마'}]>,드라마
+661,금빛도깨비 쿠비,<QuerySet [{'genre_name': '판타지'}]>,판타지
+662,네크로맨서,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+663,옥탑의 전설,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}, {'genre_name': '코믹'}]>",드라마 순정 코믹
+664,가딩 : 그녀는 나의 웬수,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '판타지'}]>",코믹 판타지
+665,대새녀의 메이크업 이야기,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '지식'}]>",순정 지식
+666,마귀,"<QuerySet [{'genre_name': '미스터리'}, {'genre_name': '스릴러'}]>",미스터리 스릴러
+667,실,<QuerySet [{'genre_name': '순정'}]>,순정
+668,고등학쌤,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '학원'}]>",드라마 학원
+669,대나무숲,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스릴러'}]>",드라마 스릴러
+670,브릿지,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '액션'}]>",드라마 액션
+671,미씽 : 비 오는 날마다,<QuerySet [{'genre_name': '스릴러'}]>,스릴러
+672,월령관 살인사건 ,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스릴러'}]>",드라마 스릴러
+673,마이 러블리 투투,<QuerySet [{'genre_name': '드라마'}]>,드라마
+674,사랑스러운 복희씨,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+675,게임회사 여직원들,<QuerySet [{'genre_name': '일상'}]>,일상
+676,눈을 감다,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스릴러'}]>",드라마 스릴러
+677,MR!P : 어둠의 씨앗,<QuerySet [{'genre_name': '판타지'}]>,판타지
+678,풍뎅이뎅이,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+679,더스크 하울러,<QuerySet [{'genre_name': '판타지'}]>,판타지
+680,라디오 갤럭시,<QuerySet [{'genre_name': '판타지'}]>,판타지
+681,케덴독,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+682,무장,"<QuerySet [{'genre_name': '무협'}, {'genre_name': '판타지'}]>",무협 판타지
+683,블랙 마리아,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+684,살아말아,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+685,인천상륙작전,<QuerySet [{'genre_name': '드라마'}]>,드라마
+686,고교대장부,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '학원'}]>",코믹 학원
+687,아띠아띠,<QuerySet [{'genre_name': '일상'}]>,일상
+688,신수의 주인,<QuerySet [{'genre_name': '판타지'}]>,판타지
+689,퍼펙트 게임,<QuerySet [{'genre_name': '스포츠'}]>,스포츠
+690,애완견의 법칙,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+691,피치핏치핑크,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '학원'}]>",순정 학원
+692,기적의 앱스토어,<QuerySet [{'genre_name': '판타지'}]>,판타지
+693,백 투 더 하이틴,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '학원'}]>",순정 학원
+694,달콩분식,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+695,어떤 거짓말,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+696,웹툰작가 살인사건,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '탐정'}]>",스릴러 탐정
+697,음양사,"<QuerySet [{'genre_name': '무협'}, {'genre_name': '판타지'}]>",무협 판타지
+698,일진의 크기,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '학원'}]>",드라마 학원
+699,가디언즈 오브 갤럭시 :  죽음의 보석,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+700,잉어왕,<QuerySet [{'genre_name': '코믹'}]>,코믹
+701,장산범 : 거부할 수 없는 목소리,"<QuerySet [{'genre_name': '공포'}, {'genre_name': '스릴러'}]>",공포 스릴러
+702,썸머드림,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스포츠'}]>",드라마 스포츠
+703,마샬아츠,"<QuerySet [{'genre_name': '스포츠'}, {'genre_name': '액션'}]>",스포츠 액션
+704,궁상가족,<QuerySet [{'genre_name': '코믹'}]>,코믹
+705,도플,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+706,랫츠,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '미스터리'}]>",드라마 미스터리
+707,로렌스를 구해줘,<QuerySet [{'genre_name': '드라마'}]>,드라마
+708,아 지갑놓고나왔다,<QuerySet [{'genre_name': '드라마'}]>,드라마
+709,못 잡아먹어 안달,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+710,용이라고 불러줘,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+711,Dr.브레인,"<QuerySet [{'genre_name': '미스터리'}, {'genre_name': '스릴러'}]>",미스터리 스릴러
+712,에비츄,<QuerySet [{'genre_name': '코믹'}]>,코믹
+713,당신의 소원은 무엇입니까,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '일상'}]>",드라마 일상
+714,트레져헌터3,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+715,Rule makers,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '액션'}]>",드라마 액션
+716,중인클럽,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '코믹'}]>",드라마 코믹
+717,술꾼도시처녀들,<QuerySet [{'genre_name': '일상'}]>,일상
+718,애프터눈 히어로즈,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+719,키스앤코리아,<QuerySet [{'genre_name': '드라마'}]>,드라마
+720,결혼복권,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '코믹'}]>",드라마 코믹
+721,낯선 거울,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스릴러'}]>",드라마 스릴러
+722,부암동 복수자 소셜클럽,<QuerySet [{'genre_name': '드라마'}]>,드라마
+723,"아이오, 아이티!",<QuerySet [{'genre_name': '코믹'}]>,코믹
+724,70,<QuerySet [{'genre_name': '액션'}]>,액션
+725,"어쩌면, 사랑","<QuerySet [{'genre_name': '순정'}, {'genre_name': '학원'}]>",순정 학원
+726,빅토리아처럼 감아차라,"<QuerySet [{'genre_name': '스포츠'}, {'genre_name': '코믹'}]>",스포츠 코믹
+727,아스팔트 정원,<QuerySet [{'genre_name': '순정'}]>,순정
+728,올드독의 맛있는 제주일기,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+729,파도를 걷는 소녀,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+730,조상님이 돌아왔다,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+731,신시,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+732,Last Test,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+733,작약만가 : 서리꽃,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '판타지'}]>",스릴러 판타지
+734,아시안 하이웨이,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '액션'}]>",드라마 액션
+735,답은 이미 정해져있다,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '코믹'}]>",순정 코믹
+736,19년 뽀삐,<QuerySet [{'genre_name': '드라마'}]>,드라마
+737,뷰티풀 라이어,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+738,세자전,<QuerySet [{'genre_name': '코믹'}]>,코믹
+739,그놈은 여고생,<QuerySet [{'genre_name': '코믹'}]>,코믹
+740,놀러와 마이홈,<QuerySet [{'genre_name': '판타지'}]>,판타지
+741,아담,<QuerySet [{'genre_name': '지식'}]>,지식
+742,페이머스맨,<QuerySet [{'genre_name': '드라마'}]>,드라마
+743,"회색 방, 소녀","<QuerySet [{'genre_name': '드라마'}, {'genre_name': '미스터리'}]>",드라마 미스터리
+744,소년 가라사대,<QuerySet [{'genre_name': '드라마'}]>,드라마
+745,무균격리구역 AA아파트,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '미스터리'}]>",드라마 미스터리
+746,여우는 같은 덫에 두 번 걸리지 않는다,<QuerySet [{'genre_name': '드라마'}]>,드라마
+747,밤의 베란다,<QuerySet [{'genre_name': '순정'}]>,순정
+748,부탁해요 이별귀,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+749,보에,<QuerySet [{'genre_name': '드라마'}]>,드라마
+750,웰컴 투 고스트시티,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+751,캐셔로,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '코믹'}]>",드라마 코믹
+752,오빠의 향기,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+753,사랑하는 나의 엄마에게,<QuerySet [{'genre_name': '일상'}]>,일상
+754,하푸하푸,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+755,국민사형투표,<QuerySet [{'genre_name': '스릴러'}]>,스릴러
+756,멈춰있는 동안에,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+757,던전오브다단계,<QuerySet [{'genre_name': '지식'}]>,지식
+758,학교를 떠나다,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '일상'}]>",드라마 일상
+759,우리 집에 사는 남자,<QuerySet [{'genre_name': '드라마'}]>,드라마
+760,지구방위연구소,<QuerySet [{'genre_name': '코믹'}]>,코믹
+761,더 헌터,<QuerySet [{'genre_name': '무협'}]>,무협
+762,죽어 마땅한 자,<QuerySet [{'genre_name': '스릴러'}]>,스릴러
+763,양말도깨비,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+764,아빠는 16세,<QuerySet [{'genre_name': '코믹'}]>,코믹
+765,백조만화방,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+766,계마로의 블로그,<QuerySet [{'genre_name': '일상'}]>,일상
+767,생존인간,"<QuerySet [{'genre_name': '공포'}, {'genre_name': '스릴러'}]>",공포 스릴러
+768,집떠난 개고생,<QuerySet [{'genre_name': '드라마'}]>,드라마
+769,청춘극장,<QuerySet [{'genre_name': '드라마'}]>,드라마
+770,별신마을 각시,<QuerySet [{'genre_name': '판타지'}]>,판타지
+771,마야비,"<QuerySet [{'genre_name': '무협'}, {'genre_name': '액션'}]>",무협 액션
+772,[특집] 15인의 반전만화,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '코믹'}]>",드라마 코믹
+773,스타워즈 : 깨어난 포스 그 이전의 이야기,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+774,오버 스팀,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+775,장기대출,"<QuerySet [{'genre_name': '미스터리'}, {'genre_name': '스릴러'}]>",미스터리 스릴러
+776,아유고삼,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '학원'}]>",드라마 학원
+777,스타캣의 힐링툰,<QuerySet [{'genre_name': '일상'}]>,일상
+778,감염,"<QuerySet [{'genre_name': '미스터리'}, {'genre_name': '액션'}]>",미스터리 액션
+779,루드비코의 움짤 일상,<QuerySet [{'genre_name': '일상'}]>,일상
+780,루리웹 괴담썰,"<QuerySet [{'genre_name': '공포'}, {'genre_name': '미스터리'}]>",공포 미스터리
+781,달세즈,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+782,설련화,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+783,2015 동물농장,<QuerySet [{'genre_name': '일상'}]>,일상
+784,아메리칸 유령잭,"<QuerySet [{'genre_name': '공포'}, {'genre_name': '순정'}]>",공포 순정
+785,여기 고수 추가요!,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '코믹'}]>",액션 코믹
+786,잡초 이야기 : LIVE,<QuerySet [{'genre_name': '코믹'}]>,코믹
+787,무(武)림수사대2,"<QuerySet [{'genre_name': '무협'}, {'genre_name': '판타지'}]>",무협 판타지
+788,치삼만화,<QuerySet [{'genre_name': '코믹'}]>,코믹
+789,50픽셀 데이즈,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+790,꽃드림,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+791,타고난 사람들,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+792,점핑걸,<QuerySet [{'genre_name': '순정'}]>,순정
+793,마늘오리무중,<QuerySet [{'genre_name': '코믹'}]>,코믹
+794,용비개천가,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+795,아메리칸 유령잭 : 무빙툰,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+796,친구엄마,<QuerySet [{'genre_name': '드라마'}]>,드라마
+797,달콤쌀쌀한 신혼부부,<QuerySet [{'genre_name': '일상'}]>,일상
+798,[PC개편특집] 달라진 그녀석,<QuerySet [{'genre_name': '코믹'}]>,코믹
+799,조난! 에로로,<QuerySet [{'genre_name': '코믹'}]>,코믹
+800,물빛에 빠져죽다,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+801,잉여인생,<QuerySet [{'genre_name': '일상'}]>,일상
+802,귀신,<QuerySet [{'genre_name': '공포'}]>,공포
+803,셜록 : 여왕폐하의 탐정 2,"<QuerySet [{'genre_name': '탐정'}, {'genre_name': '판타지'}]>",탐정 판타지
+804,무빙,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '액션'}]>",드라마 액션
+805,묘진전,<QuerySet [{'genre_name': '판타지'}]>,판타지
+806,치삼만화 더빙툰,<QuerySet [{'genre_name': '코믹'}]>,코믹
+807,하푸하푸 더빙툰,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+808,가족의 초상,<QuerySet [{'genre_name': '드라마'}]>,드라마
+809,들숨날숨,<QuerySet [{'genre_name': '판타지'}]>,판타지
+810,지하철도의 밤,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '일상'}]>",드라마 일상
+811,파인,<QuerySet [{'genre_name': '드라마'}]>,드라마
+812,연애가 제일 쉬웠어요,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '코믹'}]>",순정 코믹
+813,새나라의 어린이들,<QuerySet [{'genre_name': '일상'}]>,일상
+814,하숙집 도로시,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+815,왈퐈,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '미스터리'}]>",드라마 미스터리
+816,데미지 오버 타임,<QuerySet [{'genre_name': '공포'}]>,공포
+817,소소한가,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+818,양말도깨비 더빙툰,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+819,관찰인간,"<QuerySet [{'genre_name': '공포'}, {'genre_name': '스릴러'}]>",공포 스릴러
+820,까칠한 임작가의 만화그리기,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '지식'}]>",일상 지식
+821,와인드업 아이돌,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '스포츠'}]>",순정 스포츠
+822,구여친클럽,<QuerySet [{'genre_name': '드라마'}]>,드라마
+823,PT맨 강코치,"<QuerySet [{'genre_name': '지식'}, {'genre_name': '코믹'}]>",지식 코믹
+824,동네의사 닥터쿡,<QuerySet [{'genre_name': '드라마'}]>,드라마
+825,엘리베이터에 낀 그 남자는 어떻게 되었나,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '미스터리'}]>",드라마 미스터리
+826,찡한 일상단편,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '일상'}]>",순정 일상
+827,나의 빛나는 세계,<QuerySet [{'genre_name': '순정'}]>,순정
+828,오늘은 자체 휴강,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '학원'}]>",코믹 학원
+829,에스탄시아 3,<QuerySet [{'genre_name': '판타지'}]>,판타지
+830,브레이커2,"<QuerySet [{'genre_name': '무협'}, {'genre_name': '액션'}]>",무협 액션
+831,새싹툰,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+832,늑대처럼 울어라,<QuerySet [{'genre_name': '액션'}]>,액션
+833,안녕! 바북아,<QuerySet [{'genre_name': '일상'}]>,일상
+834,괴담콜렉터,<QuerySet [{'genre_name': '공포'}]>,공포
+835,에이스 하이,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '판타지'}]>",코믹 판타지
+836,어벤져스 : 일렉트릭 레인,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+837,상상고양이,<QuerySet [{'genre_name': '일상'}]>,일상
+838,"<연애가 제일 쉬웠어요> 실전, 연애노트",<QuerySet [{'genre_name': '순정'}]>,순정
+839,도대체 무슨 일이야,<QuerySet [{'genre_name': '순정'}]>,순정
+840,그녀와 32분의 1,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '코믹'}]>",순정 코믹
+841,유턴,<QuerySet [{'genre_name': '코믹'}]>,코믹
+842,"비긴, 짜릿하게 이뤄져라",<QuerySet [{'genre_name': '드라마'}]>,드라마
+843,천국에 깃들다,<QuerySet [{'genre_name': '순정'}]>,순정
+844,지킬박사는 하이드씨,<QuerySet [{'genre_name': '순정'}]>,순정
+845,하이드,<QuerySet [{'genre_name': '미스터리'}]>,미스터리
+846,암묵적 동의,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+847,<저녁같이 드실래요> 그들의 대화,<QuerySet [{'genre_name': '순정'}]>,순정
+848,호구의 사랑,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+849,슈퍼스타 마광길,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '판타지'}]>",코믹 판타지
+850,순간,<QuerySet [{'genre_name': '순정'}]>,순정
+851,괴물 같은 아이돌,<QuerySet [{'genre_name': '순정'}]>,순정
+852,부엉이 식당,<QuerySet [{'genre_name': '드라마'}]>,드라마
+853,체리보이 그녀,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '학원'}]>",순정 학원
+854,청둥아 진정해!,<QuerySet [{'genre_name': '드라마'}]>,드라마
+855,취미학배틀,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+856,레테,<QuerySet [{'genre_name': '드라마'}]>,드라마
+857,모험의 꿈동산,<QuerySet [{'genre_name': '코믹'}]>,코믹
+858,이장본색,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '판타지'}]>",코믹 판타지
+859,연무,<QuerySet [{'genre_name': '미스터리'}]>,미스터리
+860,언더시티2,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+861,기래믹스,<QuerySet [{'genre_name': '코믹'}]>,코믹
+862,PEAK ,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스포츠'}]>",드라마 스포츠
+863,동재네 식구들,<QuerySet [{'genre_name': '드라마'}]>,드라마
+864,개와 토끼의 주인,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '일상'}]>",드라마 일상
+865,로봇이 상냥해,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+866,신사의 집,<QuerySet [{'genre_name': '드라마'}]>,드라마
+867,청소년 영화,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '미스터리'}]>",드라마 미스터리
+868,모르모트 인 더 시티,<QuerySet [{'genre_name': '코믹'}]>,코믹
+869,장난감의 사정,<QuerySet [{'genre_name': '순정'}]>,순정
+870,셜록 : 여왕폐하의 탐정 1,"<QuerySet [{'genre_name': '탐정'}, {'genre_name': '판타지'}]>",탐정 판타지
+871,제비전,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+872,아네미아,"<QuerySet [{'genre_name': '공포'}, {'genre_name': '미스터리'}]>",공포 미스터리
+873,한성 1905,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+874,팬더댄스,<QuerySet [{'genre_name': '코믹'}]>,코믹
+875,은밀하게 위대하게2,<QuerySet [{'genre_name': '액션'}]>,액션
+876,여행해도 똑같네,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+877,포착! 락스캔들,<QuerySet [{'genre_name': '코믹'}]>,코믹
+878,루드비코의 만화일기,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+879,마왕을 위한 동화,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+880,육갑 : 여섯개의 갑,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '판타지'}]>",코믹 판타지
+881,포코알레그레토,<QuerySet [{'genre_name': '드라마'}]>,드라마
+882,달이 내린 산기슭,<QuerySet [{'genre_name': '드라마'}]>,드라마
+883,망치를 부수는 변호사,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '미스터리'}]>",드라마 미스터리
+884,잘 먹겠습니다,<QuerySet [{'genre_name': '순정'}]>,순정
+885,꽃처럼 산다,<QuerySet [{'genre_name': '드라마'}]>,드라마
+886,포션매니아,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+887,쓸개,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '액션'}]>",드라마 액션
+888,트러블 메이커 어게인,<QuerySet [{'genre_name': '코믹'}]>,코믹
+889,공긔 엇더하니잇고,<QuerySet [{'genre_name': '스포츠'}]>,스포츠
+890,지구 전세냈냐,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '판타지'}]>",코믹 판타지
+891,카산드라,<QuerySet [{'genre_name': '드라마'}]>,드라마
+892,빌어먹을 것들,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스릴러'}]>",드라마 스릴러
+893,군대라면,<QuerySet [{'genre_name': '코믹'}]>,코믹
+894,명탐정 포우,"<QuerySet [{'genre_name': '미스터리'}, {'genre_name': '탐정'}]>",미스터리 탐정
+895,동거,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+896,기세기세2,"<QuerySet [{'genre_name': '판타지'}, {'genre_name': '학원'}]>",판타지 학원
+897,아름다운 선,<QuerySet [{'genre_name': '드라마'}]>,드라마
+898,오토마타,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+899,러브메이커,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+900,더 퀸 : 침묵의 교실 ,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '학원'}]>",스릴러 학원
+901,삼풍,<QuerySet [{'genre_name': '드라마'}]>,드라마
+902,탐묘인간,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '일상'}]>",드라마 일상
+903,외발로 살다,<QuerySet [{'genre_name': '무협'}]>,무협
+904,CCTV,"<QuerySet [{'genre_name': '미스터리'}, {'genre_name': '일상'}]>",미스터리 일상
+905,미 앤 아이,<QuerySet [{'genre_name': '코믹'}]>,코믹
+906,마녀,"<QuerySet [{'genre_name': '미스터리'}, {'genre_name': '순정'}]>",미스터리 순정
+907,왕자의 조건,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '판타지'}]>",코믹 판타지
+908,설국열차 : 프리퀄,<QuerySet [{'genre_name': '드라마'}]>,드라마
+909,십이야,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+910,라임 오딧세이,<QuerySet [{'genre_name': '판타지'}]>,판타지
+911,짐승수컷고등학교,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '판타지'}]>",코믹 판타지
+912,9교시엔  XOXO,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+913,벼랑 끝의 디저트,<QuerySet [{'genre_name': '순정'}]>,순정
+914,오!솔로,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+915,저스트 원 샷,<QuerySet [{'genre_name': '미스터리'}]>,미스터리
+916,인기 있는 남자,<QuerySet [{'genre_name': '드라마'}]>,드라마
+917,폐어,<QuerySet [{'genre_name': '순정'}]>,순정
+918,제 0시 : 대통령을 죽여라,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+919,수사전,<QuerySet [{'genre_name': '판타지'}]>,판타지
+920,가우시안 블러,<QuerySet [{'genre_name': '드라마'}]>,드라마
+921,파수꾼의 왈츠,<QuerySet [{'genre_name': '순정'}]>,순정
+922,결혼해도 똑같네,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+923,0.1초의 설렘,<QuerySet [{'genre_name': '순정'}]>,순정
+924,지옥철,"<QuerySet [{'genre_name': '공포'}, {'genre_name': '미스터리'}]>",공포 미스터리
+925,우리집 새새끼,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+926,안되는 건 안되는 거다,"<QuerySet [{'genre_name': '미스터리'}, {'genre_name': '판타지'}]>",미스터리 판타지
+927,은밀하게 위대하게 : 슬럼버,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '액션'}]>",드라마 액션
+928,검둥이 이야기,<QuerySet [{'genre_name': '드라마'}]>,드라마
+929,피노키오,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+930,바람을 가르며,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+931,다이아몬드 더스트,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+932,사일런트 스마일,<QuerySet [{'genre_name': '미스터리'}]>,미스터리
+933,3M,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+934,헌티드 스쿨,"<QuerySet [{'genre_name': '공포'}, {'genre_name': '학원'}]>",공포 학원
+935,세상 밖으로,<QuerySet [{'genre_name': '스릴러'}]>,스릴러
+936,커밍업!,<QuerySet [{'genre_name': '순정'}]>,순정
+937,그루밍 선데이,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+938,돼지고기 동동,<QuerySet [{'genre_name': '코믹'}]>,코믹
+939,한여름밤의 꿈,<QuerySet [{'genre_name': '드라마'}]>,드라마
+940,영혼을 위한 드래곤 수프,<QuerySet [{'genre_name': '지식'}]>,지식
+941,나쁜 여자들,<QuerySet [{'genre_name': '순정'}]>,순정
+942,루드비코의 만화영화,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+943,파이팅 스타,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+944,"다시, 봄","<QuerySet [{'genre_name': '드라마'}, {'genre_name': '미스터리'}]>",드라마 미스터리
+945,언더시티,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+946,올망동은 평화롭습니다,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '판타지'}]>",코믹 판타지
+947,트릭코드,"<QuerySet [{'genre_name': '미스터리'}, {'genre_name': '판타지'}]>",미스터리 판타지
+948,애썸,<QuerySet [{'genre_name': '순정'}]>,순정
+949,트레이스 : 향수,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+950,미궁의 숲,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+951,웨이크 업 데드맨,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '판타지'}]>",코믹 판타지
+952,오세요 타로샵,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '지식'}]>",드라마 지식
+953,아수라연,"<QuerySet [{'genre_name': '무협'}, {'genre_name': '학원'}]>",무협 학원
+954,노루 ,<QuerySet [{'genre_name': '판타지'}]>,판타지
+955,청춘이 청춘일때,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '지식'}]>",일상 지식
+956,황야의 무법자들,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+957,아코르,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+958,다이어터,<QuerySet [{'genre_name': '코믹'}]>,코믹
+959,굿모닝 사회인 야구,"<QuerySet [{'genre_name': '스포츠'}, {'genre_name': '지식'}]>",스포츠 지식
+960,나는 매일 그를 훔쳐본다,<QuerySet [{'genre_name': '순정'}]>,순정
+961,고.흔.연,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+962,4월의 눈을 가진 소녀,"<QuerySet [{'genre_name': '미스터리'}, {'genre_name': '순정'}]>",미스터리 순정
+963,가디언스2,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+964,돌발영상,<QuerySet [{'genre_name': '공포'}]>,공포
+965,레이어즈 아나키,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+966,오! 마이 레이스,<QuerySet [{'genre_name': '순정'}]>,순정
+967,어떤 교집합,<QuerySet [{'genre_name': '드라마'}]>,드라마
+968,위나암림,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '무협'}]>",드라마 무협
+969,란의 공식,"<QuerySet [{'genre_name': '판타지'}, {'genre_name': '학원'}]>",판타지 학원
+970,코알랄라,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+971,용사에게 소중한 것,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '판타지'}]>",코믹 판타지
+972,빨간봉투,<QuerySet [{'genre_name': '드라마'}]>,드라마
+973,미세스 선녀,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '액션'}]>",드라마 액션
+974,도사랜드,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+975,흰둥이,<QuerySet [{'genre_name': '드라마'}]>,드라마
+976,바람개비 소년의꿈,<QuerySet [{'genre_name': '일상'}]>,일상
+977,낙오여군복귀기,<QuerySet [{'genre_name': '드라마'}]>,드라마
+978,모든걸 걸었어,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스포츠'}]>",드라마 스포츠
+979,지혜가 쫀득쫀득,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+980,순정큐피트,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+981,비굴해도 괜찮아,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+982,후크는 악당이다,<QuerySet [{'genre_name': '판타지'}]>,판타지
+983,날 좋아해줘,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '코믹'}]>",드라마 코믹
+984,사춘기 메들리,<QuerySet [{'genre_name': '드라마'}]>,드라마
+985,소녀K,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+986,남자들의 수다,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+987,사라세니아,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '판타지'}]>",일상 판타지
+988,환상의 파트너,<QuerySet [{'genre_name': '순정'}]>,순정
+989,쏘쏘리,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+990,라스트,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '액션'}]>",스릴러 액션
+991,오늘의 히어로,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '판타지'}]>",코믹 판타지
+992,스틸레인,<QuerySet [{'genre_name': '스릴러'}]>,스릴러
+993,별호도감,<QuerySet [{'genre_name': '판타지'}]>,판타지
+994,보고 있으면 기분 좋아져라 ,<QuerySet [{'genre_name': '일상'}]>,일상
+995,조명가게,"<QuerySet [{'genre_name': '공포'}, {'genre_name': '미스터리'}]>",공포 미스터리
+996,낭만오피스,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+997,창작의 고통,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '지식'}]>",일상 지식
+998,돼지털,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '판타지'}]>",코믹 판타지
+999,아침에 시 한 수,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+1000,커피와 하루 the start,<QuerySet [{'genre_name': '드라마'}]>,드라마
+1001,바나나 트위스트,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '코믹'}]>",드라마 코믹
+1002,메트로놈,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+1003,무한도전,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+1004,무늬만 사람,<QuerySet [{'genre_name': '드라마'}]>,드라마
+1005,잡초이야기,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+1006,더 파이브,"<QuerySet [{'genre_name': '미스터리'}, {'genre_name': '스릴러'}]>",미스터리 스릴러
+1007,블랙윈드,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+1008,기춘씨에게도 봄은 오는가,<QuerySet [{'genre_name': '코믹'}]>,코믹
+1009,77번째 돌연변이,<QuerySet [{'genre_name': '판타지'}]>,판타지
+1010,그녀의 수염,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+1011,학원기이야담,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '학원'}]>",코믹 학원
+1012,에어리어제로,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+1013,창공의 코코,<QuerySet [{'genre_name': '판타지'}]>,판타지
+1014,여섯살 엄마,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+1015,피NO키오,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+1016,인터뷰,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '미스터리'}]>",드라마 미스터리
+1017,데드크로스,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '액션'}]>",드라마 액션
+1018,언더스터디,<QuerySet [{'genre_name': '코믹'}]>,코믹
+1019,레이어즈,"<QuerySet [{'genre_name': '판타지'}, {'genre_name': '학원'}]>",판타지 학원
+1020,냥군의 서울맛집,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '지식'}]>",일상 지식
+1021,광해이야기2,<QuerySet [{'genre_name': '공포'}]>,공포
+1022,보지 못하고 듣지 못하고 사랑해,<QuerySet [{'genre_name': '드라마'}]>,드라마
+1023,트레져헌터2,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+1024,나선의 젠투,"<QuerySet [{'genre_name': '무협'}, {'genre_name': '판타지'}]>",무협 판타지
+1025,거울아씨전,<QuerySet [{'genre_name': '판타지'}]>,판타지
+1026,기다림이 설렘이 되는 숫자2,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+1027,꿈꾸는 고양이 바림,<QuerySet [{'genre_name': '순정'}]>,순정
+1028,파라다이스,<QuerySet [{'genre_name': '순정'}]>,순정
+1029,야옹이와 흰둥이,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '일상'}]>",드라마 일상
+1030,이너 다이어리,<QuerySet [{'genre_name': '드라마'}]>,드라마
+1031,가디언스,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+1032,고마워 다행이야,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+1033,수심 3000m에 닿으면,<QuerySet [{'genre_name': '판타지'}]>,판타지
+1034,마왕의 성,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+1035,녹색인간,<QuerySet [{'genre_name': '드라마'}]>,드라마
+1036,기네스 세계기록 세우기,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '학원'}]>",코믹 학원
+1037,조선협객유랑기 솔개편,"<QuerySet [{'genre_name': '무협'}, {'genre_name': '코믹'}]>",무협 코믹
+1038,럭키미,<QuerySet [{'genre_name': '순정'}]>,순정
+1039,라이오트,<QuerySet [{'genre_name': '미스터리'}]>,미스터리
+1040,대박소녀,<QuerySet [{'genre_name': '지식'}]>,지식
+1041,벌총총,<QuerySet [{'genre_name': '드라마'}]>,드라마
+1042,시간을 지배하는 김대리,<QuerySet [{'genre_name': '지식'}]>,지식
+1043,마노'S 패밀리,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '판타지'}]>",코믹 판타지
+1044,배추걸의 우아한 일상,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+1045,비산,<QuerySet [{'genre_name': '드라마'}]>,드라마
+1046,아쉬탕가,"<QuerySet [{'genre_name': '스포츠'}, {'genre_name': '코믹'}]>",스포츠 코믹
+1047,커피와 하루 ternate,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '지식'}]>",드라마 지식
+1048,킨더삼국,<QuerySet [{'genre_name': '코믹'}]>,코믹
+1049,인생이장난2,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '코믹'}]>",액션 코믹
+1050,암브로시아,<QuerySet [{'genre_name': '코믹'}]>,코믹
+1051,가론피,<QuerySet [{'genre_name': '공포'}]>,공포
+1052,모르모트,<QuerySet [{'genre_name': '코믹'}]>,코믹
+1053,사랑이야기,<QuerySet [{'genre_name': '일상'}]>,일상
+1054,똥벌레,<QuerySet [{'genre_name': '드라마'}]>,드라마
+1055,노숙자 블루스,<QuerySet [{'genre_name': '드라마'}]>,드라마
+1056,좀비의 시간2,<QuerySet [{'genre_name': '공포'}]>,공포
+1057,차이니즈 봉봉클럽 북경편,"<QuerySet [{'genre_name': '지식'}, {'genre_name': '코믹'}]>",지식 코믹
+1058,아는 동화,<QuerySet [{'genre_name': '드라마'}]>,드라마
+1059,앞으로 나란히,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스릴러'}]>",드라마 스릴러
+1060,겨울하나,<QuerySet [{'genre_name': '판타지'}]>,판타지
+1061,마당에 데굴데굴 열매,<QuerySet [{'genre_name': '드라마'}]>,드라마
+1062,커피와하루,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '지식'}]>",드라마 지식
+1063,페어리하트,<QuerySet [{'genre_name': '순정'}]>,순정
+1064,무채색 가족,<QuerySet [{'genre_name': '코믹'}]>,코믹
+1065,프리스타일 풋볼,<QuerySet [{'genre_name': '스포츠'}]>,스포츠
+1066,당신의 모든 순간,"<QuerySet [{'genre_name': '공포'}, {'genre_name': '순정'}]>",공포 순정
+1067,얼렁뚱땅 사무소,<QuerySet [{'genre_name': '코믹'}]>,코믹
+1068,신입사원 김이병씨,<QuerySet [{'genre_name': '코믹'}]>,코믹
+1069,엄마 찾아 우주선,<QuerySet [{'genre_name': '판타지'}]>,판타지
+1070,당신과 당신의 도서관,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+1071,마리오네트,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+1072,디스라이크,<QuerySet [{'genre_name': '순정'}]>,순정
+1073,미소식가,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '코믹'}]>",드라마 코믹
+1074,수퍼우먼2,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+1075,메신저,<QuerySet [{'genre_name': '순정'}]>,순정
+1076,몌별,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+1077,기찰비록,<QuerySet [{'genre_name': '탐정'}]>,탐정
+1078,슴셋,<QuerySet [{'genre_name': '순정'}]>,순정
+1079,빵굽는고양이,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '일상'}]>",드라마 일상
+1080,환상주사위,"<QuerySet [{'genre_name': '판타지'}, {'genre_name': '학원'}]>",판타지 학원
+1081,GONE,<QuerySet [{'genre_name': '순정'}]>,순정
+1082,만화가 말합니다,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '지식'}]>",일상 지식
+1083,트레져헌터1,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+1084,에스탄시아2,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+1085,에스탄시아1,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+1086,위대한 캣츠비,<QuerySet [{'genre_name': '드라마'}]>,드라마
+1087,아일랜드,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '판타지'}]>",스릴러 판타지
+1088,브레이커1,"<QuerySet [{'genre_name': '무협'}, {'genre_name': '액션'}]>",무협 액션
+1089,장마,<QuerySet [{'genre_name': '스릴러'}]>,스릴러
+1090,이스크라,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+1091,매지컬,<QuerySet [{'genre_name': '코믹'}]>,코믹
+1092,풋프린트,<QuerySet [{'genre_name': '드라마'}]>,드라마
+1093,팬더댄스와 차봉클럽,<QuerySet [{'genre_name': '코믹'}]>,코믹
+1094,샤논,<QuerySet [{'genre_name': '판타지'}]>,판타지
+1095,실버볼2,<QuerySet [{'genre_name': '스포츠'}]>,스포츠
+1096,12단곡괭이,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '코믹'}]>",액션 코믹
+1097,아리동 라스트 카우보이,<QuerySet [{'genre_name': '액션'}]>,액션
+1098,주선,"<QuerySet [{'genre_name': '무협'}, {'genre_name': '판타지'}]>",무협 판타지
+1099,스윗로드,<QuerySet [{'genre_name': '드라마'}]>,드라마
+1100,광해이야기,<QuerySet [{'genre_name': '공포'}]>,공포
+1101,스트리트,"<QuerySet [{'genre_name': '무협'}, {'genre_name': '액션'}]>",무협 액션
+1102,크레이지,<QuerySet [{'genre_name': '드라마'}]>,드라마
+1103,우리동네에 왜 왔니,<QuerySet [{'genre_name': '코믹'}]>,코믹
+1104,셔틀맨,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '학원'}]>",코믹 학원
+1105,헌티드스쿨 원더러즈 에이스,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '학원'}]>",코믹 학원
+1106,To.From,<QuerySet [{'genre_name': '판타지'}]>,판타지
+1107,탄,<QuerySet [{'genre_name': '코믹'}]>,코믹
+1108,신화전설,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+1109,MIC,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '액션'}]>",드라마 액션
+1110,실버볼1,"<QuerySet [{'genre_name': '스포츠'}, {'genre_name': '코믹'}]>",스포츠 코믹
+1111,반짝반짝 컬링부,<QuerySet [{'genre_name': '스포츠'}]>,스포츠
+1112,시계태엽,<QuerySet [{'genre_name': '순정'}]>,순정
+1113,카메라ON,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '학원'}]>",코믹 학원
+1114,울고싶을 때 날 봐,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '학원'}]>",순정 학원
+1115,종달새가 말했다,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '학원'}]>",순정 학원
+1116,지옥에서 ,"<QuerySet [{'genre_name': '공포'}, {'genre_name': '액션'}]>",공포 액션
+1117,고백,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+1118,모델,<QuerySet [{'genre_name': '순정'}]>,순정
+1119,흩날리는,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+1120,펜트하우스,<QuerySet [{'genre_name': '코믹'}]>,코믹
+1121,수퍼우먼1,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+1122,그녀방위군,<QuerySet [{'genre_name': '코믹'}]>,코믹
+1123,R에 관해서,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+1124,룬의 이야기,<QuerySet [{'genre_name': '판타지'}]>,판타지
+1125,까야제맛,<QuerySet [{'genre_name': '코믹'}]>,코믹
+1126,인생이장난,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '코믹'}]>",액션 코믹
+1127,세브리깡,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+1128,비행접시 ,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '판타지'}]>",코믹 판타지
+1129,탁구공,<QuerySet [{'genre_name': '드라마'}]>,드라마
+1130,사랑보험,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+1131,죽이는 노래방,"<QuerySet [{'genre_name': '공포'}, {'genre_name': '미스터리'}]>",공포 미스터리
+1132,환상스케치,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '학원'}]>",순정 학원
+1133,삼백이론,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '학원'}]>",코믹 학원
+1134,어게인,"<QuerySet [{'genre_name': '공포'}, {'genre_name': '스릴러'}]>",공포 스릴러
+1135,업그레이드 ,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '판타지'}]>",드라마 판타지
+1136,SO MANY PEOPLE,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '판타지'}]>",코믹 판타지
+1137,무차별! 강팀장,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '코믹'}]>",드라마 코믹
+1138,미확인거주물체,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '판타지'}]>",스릴러 판타지
+1139,파페포포,<QuerySet [{'genre_name': '순정'}]>,순정
+1140,방벽동,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+1141,밤12시 ,<QuerySet [{'genre_name': '공포'}]>,공포
+1142,염라공주 모모레,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '판타지'}]>",코믹 판타지
+1143,술,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+1144,12월 ,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+1145,고양이 장례식,<QuerySet [{'genre_name': '순정'}]>,순정
+1146,향연상자,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '학원'}]>",스릴러 학원
+1147,박대리는 사회 부적응자,<QuerySet [{'genre_name': '코믹'}]>,코믹
+1148,항해1,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+1149,해골택시,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '판타지'}]>",코믹 판타지
+1150,마음이 만든 것,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}, {'genre_name': '판타지'}]>",드라마 순정 판타지
+1151,이웃사람,"<QuerySet [{'genre_name': '미스터리'}, {'genre_name': '스릴러'}]>",미스터리 스릴러
+1152,샴,<QuerySet [{'genre_name': '학원'}]>,학원
+1153,천사의 섬,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '판타지'}]>",코믹 판타지
+1154,데이지2,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '일상'}]>",순정 일상
+1155,무림수사대,"<QuerySet [{'genre_name': '무협'}, {'genre_name': '액션'}]>",무협 액션
+1156,페퍼민트 ,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+1157,교수인형,"<QuerySet [{'genre_name': '공포'}, {'genre_name': '미스터리'}]>",공포 미스터리
+1158,데자뷰,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+1159,공길동전,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '판타지'}]>",코믹 판타지
+1160,울트라병장,"<QuerySet [{'genre_name': '코믹'}, {'genre_name': '판타지'}]>",코믹 판타지
+1161,블러드 오션,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+1162,"봄, 가을","<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+1163,큐브릭,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '판타지'}]>",순정 판타지
+1164,커피 앤 페이퍼,<QuerySet [{'genre_name': '순정'}]>,순정
+1165,모니 앤 스토리,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '판타지'}]>",일상 판타지
+1166,도로시밴드,<QuerySet [{'genre_name': '판타지'}]>,판타지
+1167,브이,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+1168,천년동화,"<QuerySet [{'genre_name': '미스터리'}, {'genre_name': '순정'}]>",미스터리 순정
+1169,그대를 사랑합니다,<QuerySet [{'genre_name': '순정'}]>,순정
+1170,오리우리,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '코믹'}]>",순정 코믹
+1171,도깨비,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '판타지'}]>",액션 판타지
+1172,죽는남자,<QuerySet [{'genre_name': '드라마'}]>,드라마
+1173,스멜스 라이크 30 스피릿,"<QuerySet [{'genre_name': '일상'}, {'genre_name': '코믹'}]>",일상 코믹
+1174,로맨스 킬러,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '스릴러'}]>",순정 스릴러
+1175,26년,<QuerySet [{'genre_name': '드라마'}]>,드라마
+1176,제갈주먹,<QuerySet [{'genre_name': '액션'}]>,액션
+1177,심인애씨의 소유,<QuerySet [{'genre_name': '순정'}]>,순정
+1178,돈까스취업,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '일상'}]>",드라마 일상
+1179,남아돌아,"<QuerySet [{'genre_name': '순정'}, {'genre_name': '코믹'}]>",순정 코믹
+1180,타이밍,<QuerySet [{'genre_name': '미스터리'}]>,미스터리
+1181,놀아죠 패밀리,<QuerySet [{'genre_name': '일상'}]>,일상
+1182,바보,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+1183,데이지1,<QuerySet [{'genre_name': '일상'}]>,일상
+1184,아파트,"<QuerySet [{'genre_name': '공포'}, {'genre_name': '미스터리'}]>",공포 미스터리
+1185,순정만화,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '순정'}]>",드라마 순정
+1186,참교육,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1187,뷰티풀 군바리,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1188,윈드브레이커,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '스포츠'}]>",스토리 스포츠
+1189,소녀의 세계,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1190,장씨세가 호위무사,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '시대극'}]>",스토리 시대극
+1191,파이게임,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1192,만렙돌파,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1193,앵무살수,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1194,유일무이 로맨스,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1195,착한건 돈이된다,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1196,백수세끼,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1197,칼가는 소녀,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '에피소드'}]>",드라마 에피소드
+1198,브랜든,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1199,요리GO,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1200,싸이코 리벤지,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1201,히어로메이커,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '판타지'}]>",옴니버스 판타지
+1202,오늘의 순정망화,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+1203,평범한 8반,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1204,결혼생활 그림일기,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '일상'}]>",옴니버스 일상
+1205,삶이 우리를 속일지라도,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1206,리턴 투 플레이어,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1207,야생천사 보호구역,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1208,마지막 지수,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1209,"선배, 그 립스틱 바르지 마요","<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1210,아는 여자애,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1211,바이러스X,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1212,순정말고 순종,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1213,사장님을 잠금해제,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+1214,꿈의 기업,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1215,오로지 오로라,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1216,그림자 신부,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1217,트리거,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1218,서브 콤플렉스,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '에피소드'}]>",로맨스 에피소드
+1219,침범,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1220,피플,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1221,왕따협상,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1222,두근두근 네가 좋아서,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1223,와이키키 뱀파이어,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1224,라서드,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1225,정보전사 202,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1226,개밥 먹는 남자,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1227,이탄국의 자청비,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1228,안녕 나의 모모로,"<QuerySet [{'genre_name': '감성'}, {'genre_name': '스토리'}]>",감성 스토리
+1229,도플갱어의 게임,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1230,이중첩자,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1231,뱀파이어의 꽃,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1232,원하는 건 너 하나,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1233,백호랑,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1234,여기 악마가 있어,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1235,드로잉 레시피,"<QuerySet [{'genre_name': '감성'}, {'genre_name': '스토리'}]>",감성 스토리
+1236,인간의 온도,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1237,하슬라,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1238,보살님이 캐리해!,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1239,헬로맨스,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1240,여신강림,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1241,한림체육관,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '에피소드'}]>",액션 에피소드
+1242,엽총소년,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1243,바른연애 길잡이,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1244,하루만 네가 되고 싶어,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1245,랜덤채팅의 그녀!,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1246,사신소년,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1247,헬58,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1248,신도림,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1249,중증외상센터 : 골든 아워,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1250,호랑이 들어와요,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '판타지'}]>",에피소드 판타지
+1251,위아더좀비,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1252,원주민 공포만화,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1253,악인,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1254,달콤살벌한 부부,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1255,집이 없어,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1256,빌런투킬,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1257,태시트,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1258,오피스 누나 이야기,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1259,윌유메리미,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+1260,아이레,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1261,견우와 선녀,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1262,아이즈,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1263,용왕님의 셰프가 되었습니다,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1264,하우스키퍼,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1265,성인초딩,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1266,"플레이, 플리","<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1267,한강예찬,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1268,3cm 헌터,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1269,빅맨,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '스포츠'}]>",스토리 스포츠
+1270,제로게임,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1271,별종,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1272,연우의 순정,"<QuerySet [{'genre_name': '감성'}, {'genre_name': '스토리'}]>",감성 스토리
+1273,정년이,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1274,오파츠,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1275,숲속의 담,"<QuerySet [{'genre_name': '감성'}, {'genre_name': '스토리'}]>",감성 스토리
+1276,빛빛빛,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1277,열녀박씨 계약결혼뎐,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1278,풋내기들,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1279,조선홍보대행사 조대박,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+1280,은주의 방 2~3부,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1281,자판귀,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '에피소드'}]>",스릴러 에피소드
+1282,완벽한 가족,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1283,도를 아십니까,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1284,나의 플랏메이트,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1285,안식의 밤,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1286,필살VS로맨스,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+1287,언메이크,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1288,피로만땅,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+1289,장단에 맞춰줘!,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1290,인문학적 감수성,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1291,고수,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1292,전지적 독자 시점,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1293,급식아빠,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1294,복학왕,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1295,모죠의 일지,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+1296,격기3반,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '스포츠'}]>",스토리 스포츠
+1297,튜토리얼 탑의 고인물,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1298,캐슬,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1299,세상은 돈과 권력,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '에피소드'}]>",드라마 에피소드
+1300,노곤하개,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+1301,남주의 첫날밤을 가져버렸다,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1302,여주실격!,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1303,원수를 사랑하라,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1304,연놈,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1305,일렉시드,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1306,고삼무쌍,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1307,닥터앤닥터 육아일기,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+1308,나쁜사람,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+1309,판타지 여동생!,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1310,엔딩 후 서브남을 주웠다,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1311,미래의 골동품 가게,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1312,빌드업,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '스포츠'}]>",스토리 스포츠
+1313,마른 가지에 바람처럼,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1314,반귀,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1315,마녀와 용의 신혼일기,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1316,귀곡의 문,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1317,각자의 디데이,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1318,언덕 위의 제임스,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+1319,사상최강,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1320,방탈출,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1321,아도나이,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1322,범이올시다!,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+1323,로어 올림푸스,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1324,새벽 두 시의 신데렐라,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1325,럭키언럭키,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1326,더 트웰브,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1327,말하는대로,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1328,얼굴천재,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1329,속보입니다,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1330,당신의 향수,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '옴니버스'}]>",드라마 옴니버스
+1331,인터셉트,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '에피소드'}]>",로맨스 에피소드
+1332,해귀,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1333,스캔들,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1334,노선도,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1335,시효완성,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1336,천도,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1337,저승사자 출입금지,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1338,평화선도부,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1339,스몰,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1340,기억흔적,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1341,칼부림,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '시대극'}]>",스토리 시대극
+1342,독립일기,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+1343,연애혁명,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1344,더 복서,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1345,기기괴괴,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '옴니버스'}]>",스릴러 옴니버스
+1346,이두나!,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1347,화이트 블러드,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1348,나노마신,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1349,노답소녀,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1350,정글쥬스,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1351,하드캐리,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1352,전자오락수호대,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1353,무사만리행,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1354,마계인섬,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1355,꽃만 키우는데 너무강함,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1356,당신의 과녁,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1357,트롤트랩,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1358,쿠베라,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1359,신비,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1360,던전 씹어먹는 아티팩트,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1361,어차피 남편은!,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1362,최강전설 강해효,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1363,그 황제가 시곗바늘을 되돌린 사연,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1364,선의의 경쟁,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1365,달의 요람,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1366,만물의 영장,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+1367,시월드 판타지,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1368,자취방 신선들,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1369,별을 삼킨 너에게,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1370,롤랑롤랑,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1371,오일머니,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1372,로그아웃,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '옴니버스'}]>",스릴러 옴니버스
+1373,성스러운 아이돌,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1374,겟라이프,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1375,안개무덤,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1376,셈하는 사이,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1377,소녀180,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1378,집사레인저,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1379,유리와 유리와 유리,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1380,미드나잇 체이서,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '스포츠'}]>",스토리 스포츠
+1381,불릿 6미리,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '스포츠'}]>",스토리 스포츠
+1382,스테어스,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1383,카루나,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1384,밤하늘에 구름운,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1385,바른탕진 프로젝트,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '에피소드'}]>",드라마 에피소드
+1386,헬프미,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '에피소드'}]>",스릴러 에피소드
+1387,겟백,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '에피소드'}]>",드라마 에피소드
+1388,악령주의보,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1389,킬더킹,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1390,외모지상주의,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1391,갓 오브 하이스쿨,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1392,데드퀸,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1393,재혼 황후,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1394,여성전용헬스장 진달래짐,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1395,1초,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1396,개를 낳았다,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1397,똑똑한 나 인증,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '일상'}]>",옴니버스 일상
+1398,사람의 조각,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1399,환상의 용,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '에피소드'}]>",드라마 에피소드
+1400,스포,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1401,더 게이머,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1402,세기말 풋사과 보습학원,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1403,낙향문사전,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1404,히어로 킬러,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1405,살人스타그램,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '옴니버스'}]>",스릴러 옴니버스
+1406,뫼신 사냥꾼,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1407,걸어서 30분,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1408,플레이어,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1409,난약,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1410,상남자,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1411,복학생 정순이,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1412,A.I. 닥터,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1413,그 기사가 레이디로 사는 법,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1414,구남친이 내게 반했다,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1415,고래별,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1416,성경의 역사,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1417,가슴털 로망스,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+1418,감자마을,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+1419,금혼령-조선혼인금지령,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1420,소심한 팔레트,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1421,빨리감기,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1422,닥터 프로스트 시즌 3~4,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1423,피와 나비,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1424,후덜덜덜 남극전자,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '코믹'}]>",옴니버스 코믹
+1425,도롱이,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1426,꽃 피우는 남자,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1427,몽홀,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '시대극'}]>",스토리 시대극
+1428,감히,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1429,도무지 그애는,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1430,구독금지,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1431,진짜 정말 맹세코 좋아해,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '에피소드'}]>",로맨스 에피소드
+1432,트럼프,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1433,나쁜 쪽으로,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1434,버그: 스티그마,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1435,히트포인트,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1436,스윗솔티,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1437,강림전기 개정기,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '에피소드'}]>",액션 에피소드
+1438,구주의 시간,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1439,매지컬 메디컬,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1440,프리드로우,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1441,호랑이형님,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1442,취사병 전설이 되다,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1443,욕망일기,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '옴니버스'}]>",스릴러 옴니버스
+1444,초인의 시대,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1445,광장,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1446,힙한남자,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1447,스터디그룹,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1448,지옥급식,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '에피소드'}]>",액션 에피소드
+1449,청춘 블라썸,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '옴니버스'}]>",로맨스 옴니버스
+1450,민간인 통제구역,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1451,아홉수 우리들,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1452,토끼대왕,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1453,나이트런,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1454,율리,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1455,나를 바꿔줘,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1456,어글리후드,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1457,갓핑크,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1458,탑코너,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '스포츠'}]>",스토리 스포츠
+1459,피라미드 게임,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1460,두번째 생일,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1461,동트는 로맨스,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1462,단편.zip,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '옴니버스'}]>",드라마 옴니버스
+1463,군주,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '스포츠'}]>",스토리 스포츠
+1464,틴맘,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1465,남자주인공의 여자사람친구입니다,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1466,홍시는 날 좋아해!,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '에피소드'}]>",로맨스 에피소드
+1467,광해의 연인,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1468,먹이,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '옴니버스'}]>",스릴러 옴니버스
+1469,태백 : 튜토리얼 맨,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1470,웰캄투실버라이프,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+1471,좋은데 어떡해,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1472,내게 필요한 NO맨스,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1473,왕세자 입학도,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1474,"저무는 해, 시린 눈","<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1475,동네몬스터,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1476,압락사스,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1477,팔려 온 신부,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1478,모두 너였다,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1479,아테나 컴플렉스,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1480,오늘부터 천생연분,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1481,후아유!,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1482,도사 가온,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1483,손 잡아 볼래?,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1484,"안녕, 이바다씨","<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1485,친구의 비밀계정,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1486,언플래시레슨,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1487,아침을 지나 밤으로,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1488,인간졸업,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1489,커피도둑,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1490,누군가의 로섬,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1491,함부로 대해줘,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1492,먹지마세요,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1493,어른의 계절,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '에피소드'}]>",드라마 에피소드
+1494,싸움독학,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1495,약한영웅,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '에피소드'}]>",액션 에피소드
+1496,열렙전사,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1497,이번 생도 잘 부탁해,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1498,입학용병,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1499,테러대부활,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1500,맘마미안,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1501,도망자,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1502,소녀재판,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1503,천하제일인,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1504,나만 보여!,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1505,"곱게 키웠더니, 짐승","<QuerySet [{'genre_name': '드라마'}, {'genre_name': '에피소드'}]>",드라마 에피소드
+1506,오로지 너를 이기고 싶어,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '에피소드'}]>",로맨스 에피소드
+1507,사람은 고쳐 쓰는 게 아니야!,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1508,경비 배두만,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1509,살아남은 로맨스,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1510,행성인간,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1511,합격시켜주세용,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1512,마법스크롤 상인 지오,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1513,인어를 위한 수영교실,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1514,구름이 피워낸 꽃,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1515,가비지타임,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '스포츠'}]>",스토리 스포츠
+1516,별이삼샵,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1517,AI가 세상을 지배한다면,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '판타지'}]>",옴니버스 판타지
+1518,다이스(DICE),"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1519,벚꽃이 흩날릴 무렵,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1520,판사 이한영,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1521,강남도깨비,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1522,내일,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '옴니버스'}]>",드라마 옴니버스
+1523,조선여우스캔들,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1524,학교정벌,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1525,평행도시,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1526,결혼까지 망상했어!,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1527,아르세니아의 마법사,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1528,라일락 200%,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1529,데빌샷,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1530,불발소년,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '에피소드'}]>",드라마 에피소드
+1531,오른눈이 보는 세계,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1532,두근두근 연극부,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1533,잉여특공대,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1534,오늘 밤만 재워줘,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1535,"라커, 오프너","<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1536,신이 담긴 아이,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1537,소녀 해미,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1538,여름은 뜨겁다,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1539,위험한 신입사원,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1540,데이즈,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1541,스트러글,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1542,죽여주는 탐정님,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1543,샤인 스타,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1544,호시탐탐,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1545,캡틴 비앙카,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1546,리안소울의 엑소클럽,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1547,냐한남자,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1548,신상 미스터리 극장,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '옴니버스'}]>",스릴러 옴니버스
+1549,그놈은 흑염룡,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1550,공방의 마녀,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1551,얌전한 사이,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1552,셧업앤댄스,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1553,Here U Are,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1554,오늘도 사랑하세요,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1555,저세상 클라스!,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1556,모럴센스,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1557,지구멸망버튼,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1558,간 떨어지는 동거,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1559,손아귀,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1560,그날 죽은 나는,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1561,블루투스,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1562,관계의 종말,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1563,지랄발광,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1564,신의 언어,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1565,후기,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1566,9등급 뒤집기,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1567,FM보이,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1568,비스타,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1569,남다른 신부름,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1570,미스테리오소,"<QuerySet [{'genre_name': '감성'}, {'genre_name': '스토리'}]>",감성 스토리
+1571,아이고 아이고,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1572,너에게만 보이는,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1573,이것도 친구라고,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1574,모락모락 왕세자님,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1575,비질란테,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1576,합법해적 파르페,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1577,우리는 요정!,"<QuerySet [{'genre_name': '감성'}, {'genre_name': '옴니버스'}]>",감성 옴니버스
+1578,온새미로,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1579,너에게 나를 던진다,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1580,우리는 여기!,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1581,4층복도끝천국,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1582,무주의 맹시,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1583,공유몽,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1584,병의 기록,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '에피소드'}]>",드라마 에피소드
+1585,깁스맨,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1586,날 가져요,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1587,체크포인트,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1588,사냥개들,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1589,옆집친구,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1590,스크립토리움,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '판타지'}]>",옴니버스 판타지
+1591,우리 사장님은 개,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+1592,헬 인 파라다이스,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1593,차가운 장례식,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1594,열불 로맨스,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1595,나의 첫번째 새벽,"<QuerySet [{'genre_name': '감성'}, {'genre_name': '스토리'}]>",감성 스토리
+1596,갓물주,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1597,죽어도 로맨스,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1598,극야,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1599,선녀야 야옹해봐!,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1600,커넥트,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1601,연하의 맛,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1602,인생존망,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '에피소드'}]>",액션 에피소드
+1603,일진이 사나워,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1604,너의 미소가 함정,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1605,봉이 김선달,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '시대극'}]>",스토리 시대극
+1606,잭슨의 관,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1607,인싸라이프,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1608,에리타,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1609,꼬맹이를 부탁해!,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1610,무모협지,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+1611,레사 시즌2~3,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1612,하늘아래 우체부,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1613,라라파루자,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1614,괴물신부,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1615,언데드,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1616,화장 지워주는 남자,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '에피소드'}]>",드라마 에피소드
+1617,악마와 계약연애,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1618,땅 보고 걷는 아이,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1619,사이드킥 2~3,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1620,물레,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1621,유비님께 투자하겠어,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1622,유미의 세포들,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '에피소드'}]>",로맨스 에피소드
+1623,현혹,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1624,이웃집의 훈훈한 스토커군,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1625,회춘,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '에피소드'}]>",드라마 에피소드
+1626,헌팅,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1627,반중력소녀,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1628,물고기가 보이는 남자,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1629,결백한 사람은 없다,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1630,링크보이,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1631,사우러스,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1632,미스터 해녀,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+1633,그녀는 무사다,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1634,세상과 하늘 사이,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '에피소드'}]>",로맨스 에피소드
+1635,선녀님은 휴가중,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '에피소드'}]>",로맨스 에피소드
+1636,노력의 결과,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1637,운수 오진 날,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1638,그녀의 버킷리스트,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1639,헬퍼 2 : 킬베로스,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1640,형의 그녀,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1641,나랑 살래?,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1642,가난을 등에 업은 소녀,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1643,오컬트,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1644,교환일기,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1645,8월의 눈보라,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1646,웅이는 배고파,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+1647,데드라이프,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1648,거미,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1649,개미,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1650,가타부타타,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1651,어쩔꼰대,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1652,갑자기 커피,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+1653,가담항설,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1654,떨림,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1655,중독연구소,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '옴니버스'}]>",드라마 옴니버스
+1656,오버더문,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1657,패밀리 사이즈,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+1658,비스트사인,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1659,가족의 초상,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '에피소드'}]>",드라마 에피소드
+1660,닥터 하운드,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1661,2020 최애캐의 MBTI,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+1662,열등의 조건,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1663,야자괴담,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '옴니버스'}]>",스릴러 옴니버스
+1664,지옥,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '에피소드'}]>",스릴러 에피소드
+1665,신선비,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1666,공포단편선X,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '에피소드'}]>",스릴러 에피소드
+1667,데빌카운터,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1668,보글보글,"<QuerySet [{'genre_name': '감성'}, {'genre_name': '에피소드'}]>",감성 에피소드
+1669,빨강,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1670,만찢남녀,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1671,친애하는 X,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1672,11me,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1673,천사가 아니야,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1674,POGO 공포단편선 - 혼집,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1675,문래빗,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+1676,꽃 피는 날,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1677,우주최강대스타,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1678,법대로 사랑하라,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1679,어글리 피플즈,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1680,모범택시,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1681,세대전쟁,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1682,호야,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1683,갓도령스,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1684,텃밭부 사건일지,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1685,피와 살,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1686,파리대왕,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1687,영광의 교실,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1688,골든 체인지,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1689,특수 영능력 수사반,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1690,이모네 집에 갔는데 이모는 없고,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1691,로딩,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1692,니편내편,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1693,낢이 사는 이야기,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+1694,귀신이지만 사랑하고 싶어,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1695,좋아하게 해줘,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1696,체인지,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1697,너에게 하고 싶은 말,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1698,요괴대전,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1699,유령극단,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1700,하루,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1701,김왕짱,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1702,개미잡이,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1703,닭강정,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+1704,머리카락을 뽑으면,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1705,그 판타지 세계에서 사는 법,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1706,어쩐지 수상하더라,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+1707,마음의소리,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+1708,귀전구담,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '옴니버스'}]>",스릴러 옴니버스
+1709,하르모니아,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1710,"안녕, 나는 너를 좋아해","<QuerySet [{'genre_name': '감성'}, {'genre_name': '스토리'}]>",감성 스토리
+1711,레이디악숀,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1712,그래서 나는 안티팬과 결혼했다,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1713,에이머,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1714,속삭이는 e로맨스,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1715,마음의 숙제,"<QuerySet [{'genre_name': '감성'}, {'genre_name': '스토리'}]>",감성 스토리
+1716,이제 곧 죽습니다,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1717,방 안의 코끼리,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1718,밀웜,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1719,빙탕후루,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '판타지'}]>",에피소드 판타지
+1720,뚝배기 깨러 왔습니다,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1721,최후의 만찬,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1722,102030,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '일상'}]>",스토리 일상
+1723,진정친구,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+1724,살의,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1725,우리 안의 주,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+1726,검은인간,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1727,여고전설,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1728,오라존미,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1729,열정호구,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '에피소드'}]>",드라마 에피소드
+1730,사소한 냐냐,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+1731,[드라마원작] 스위트홈,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1732,오빠야 누나야,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+1733,신의한수,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1734,조선방랑야사,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '시대극'}]>",스토리 시대극
+1735,좀비소녀,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1736,환생소녀,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1737,데이빗,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1738,푸른사막 아아루,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1739,신의 탑,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1740,갓!김치,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+1741,좀비딸,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1742,203호 저승사자,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+1743,돼지우리,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1744,Yes my boss(예스마이보스),"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '에피소드'}]>",드라마 에피소드
+1745,플라워(FLOWAR),"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '에피소드'}]>",드라마 에피소드
+1746,한스와 에밀리,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '에피소드'}]>",드라마 에피소드
+1747,태릉좀비촌,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '에피소드'}]>",드라마 에피소드
+1748,토니와 함께,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '에피소드'}]>",드라마 에피소드
+1749,영월동 534번지,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '에피소드'}]>",드라마 에피소드
+1750,고인의 명복,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1751,루시퍼의 경호원,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1752,악취,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1753,금붕어,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1754,냄새를 보는 소녀,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1755,언럭키 맨션,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '에피소드'}]>",드라마 에피소드
+1756,창공의 타이양사무소,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '에피소드'}]>",드라마 에피소드
+1757,견원지간 로맨스,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+1758,악마에게 은총을,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1759,텍사스홀덤,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+1760,테러맨,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1761,같은도장,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1762,호곡,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1763,호랭총각,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '코믹'}]>",옴니버스 코믹
+1764,대표님이 구독하셨습니다,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1765,타인의 로맨스,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1766,두근두근 마감 중,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1767,자취로운 생활,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+1768,아이키우는만화,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+1769,블랙엔젤,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1770,블러드레인,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1771,스퍼맨: 현자단의 역습,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '에피소드'}]>",드라마 에피소드
+1772,2인용 인간,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '판타지'}]>",에피소드 판타지
+1773,신을 죽이는 방법,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1774,마루한 - 구현동화전,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '옴니버스'}]>",액션 옴니버스
+1775,구원자,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1776,스퍼맨 시즌2,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '판타지'}]>",에피소드 판타지
+1777,수평선,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1778,점핑오버,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1779,씬커,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1780,"열렬하게, 단하나","<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1781,이계 무슨 황비,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1782,모퉁이 뜨개방,"<QuerySet [{'genre_name': '감성'}, {'genre_name': '스토리'}]>",감성 스토리
+1783,어서와,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1784,다함께 이겨내요,"<QuerySet [{'genre_name': '감성'}, {'genre_name': '에피소드'}]>",감성 에피소드
+1785,동토의 여명,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1786,꽃미남 저승사자,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1787,아르마,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1788,용이산다,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1789,마왕이 되는 중2야,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1790,우리 오빠는 아이돌,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1791,소녀 연대기,"<QuerySet [{'genre_name': '감성'}, {'genre_name': '스토리'}]>",감성 스토리
+1792,용비불패 완전판,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1793,내 어린고양이와 늙은개,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+1794,참새는 새!신부,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1795,플랫다이어리,"<QuerySet [{'genre_name': '감성'}, {'genre_name': '스토리'}]>",감성 스토리
+1796,Doll 체인지,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1797,가령의 정체불명 이야기,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '옴니버스'}]>",드라마 옴니버스
+1798,내 여자친구는 상남자,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '에피소드'}]>",로맨스 에피소드
+1799,귀인,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '시대극'}]>",스토리 시대극
+1800,헬프탑,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1801,금요일 베스트,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '옴니버스'}]>",스릴러 옴니버스
+1802,라스트 서브미션,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1803,5kg을 위하여,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1804,옆반의 인어,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1805,꿀벌과 아카시아,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1806,머니게임,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1807,부로콜리왕자,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+1808,백귀야행지,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+1809,개장수,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1810,덴마,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '판타지'}]>",옴니버스 판타지
+1811,부활남,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1812,신석기녀,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1813,냥하무인,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+1814,MZ-레이징 인페르노,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1815,치즈인더트랩,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1816,쎈놈,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1817,퓨리스틱,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '판타지'}]>",옴니버스 판타지
+1818,살인자o난감,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '에피소드'}]>",스릴러 에피소드
+1819,킬러분식,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1820,2019 루키 단편선-지옥캠프,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '에피소드'}]>",드라마 에피소드
+1821,늑대와 빨간모자,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1822,타인은 지옥이다,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1823,츄억보정,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1824,그랜드 배틀 토너먼트,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1825,수능일기,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+1826,위장불륜 (僞裝不倫),"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1827,숨:킬더바디,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1828,돼지만화,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+1829,푸들과 Dog거중,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+1830,한남동 케이하우스,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1831,썸머 브리즈,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1832,가우스전자 시즌3~4,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+1833,신시의 손님,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1834,성공한 덕후,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '에피소드'}]>",드라마 에피소드
+1835,"안녕, 대학생","<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1836,메이크 업 드림 - Make Up Dream,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '에피소드'}]>",드라마 에피소드
+1837,10월 27일,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '에피소드'}]>",드라마 에피소드
+1838,호러와 로맨스,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1839,좋아하는 부분,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1840,천리마 네버다이,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '코믹'}]>",옴니버스 코믹
+1841,신암행어사,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1842,식스틴,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1843,2019 귀신사용설명서 - 괴담의 재구성,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1844,여기가 씨름부입니까?,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+1845,타인지옥 - 연쇄살묘사건,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1846,소유,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1847,둥굴레차!,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1848,허니허니 웨딩,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1849,12차원 소년들,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '코믹'}]>",옴니버스 코믹
+1850,연애의 정령,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+1851,몽연,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1852,허니버니,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1853,하늘쌤은 피곤해,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1854,밥 먹고 갈래요?,"<QuerySet [{'genre_name': '감성'}, {'genre_name': '에피소드'}]>",감성 에피소드
+1855,창궐,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1856,조선팔도 최강아이돌,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1857,하나의 하루,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1858,클로즈업,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1859,언원티드,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1860,오직 나의 주인님,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1861,데우스 엑스 마키나,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '에피소드'}]>",드라마 에피소드
+1862,한국만화 또 다른 시선,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+1863,고교생을 환불해 주세요,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1864,미시령,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1865,조의 영역,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1866,왕으로 살다,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '시대극'}]>",스토리 시대극
+1867,파리의 우리동네,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1868,첫사랑입니다만,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1869,공복의 저녁식사,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1870,놓지마 정신줄 시즌2,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+1871,알파,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1872,나는 남 너는 녀,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+1873,꼬리,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1874,오늘도 사랑스럽개,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1875,결계녀,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1876,파도를 찾아라!,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '스포츠'}]>",스토리 스포츠
+1877,사라지다,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1878,구구까까,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+1879,수학 잘하는 법,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1880,화양연화 Pt.0 ＜SAVE ME＞,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1881,캉타우,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1882,에이틴,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1883,대학일기,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+1884,35cm,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1885,찬란하지 않아도 괜찮아,"<QuerySet [{'genre_name': '감성'}, {'genre_name': '스토리'}]>",감성 스토리
+1886,강변살다,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1887,비둘기가 물고 온 남자,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1888,이상하고 아름다운,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1889,2019 병영일기,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+1890,홍차리브레,"<QuerySet [{'genre_name': '감성'}, {'genre_name': '에피소드'}]>",감성 에피소드
+1891,귀각시,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1892,방백남녀,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1893,와장창창! 자취맨,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+1894,아메리카노 엑소더스,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1895,암흑도시,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+1896,병의 맛,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1897,혈투,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '시대극'}]>",스토리 시대극
+1898,환상적인 소년,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1899,2D남친 별책부록,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '에피소드'}]>",로맨스 에피소드
+1900,엔드리스,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '에피소드'}]>",스릴러 에피소드
+1901,신과함께,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1902,황금의 핸드메이커,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1903,노블레스,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1904,열대어,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+1905,펀브로커,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1906,완벽하지 않은 키스,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1907,나노리스트,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1908,반투명인간,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1909,나의 짝사랑 고백법,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1910,불괴,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '에피소드'}]>",액션 에피소드
+1911,2018 루키 단편선-지옥캠프,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '옴니버스'}]>",드라마 옴니버스
+1912,하이브 3,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1913,조선왕조실톡,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+1914,파우스트 인 러브,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1915,일진에게 회초리,"<QuerySet [{'genre_name': '액션'}, {'genre_name': '에피소드'}]>",액션 에피소드
+1916,귀도호가록,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1917,연의 편지,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1918,마이너스의 손,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1919,만 화 고,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+1920,간질간질,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1921,1인용 기분,"<QuerySet [{'genre_name': '감성'}, {'genre_name': '에피소드'}]>",감성 에피소드
+1922,피에는 피,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1923,에피소드칵테일,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1924,진눈깨비 소년,"<QuerySet [{'genre_name': '감성'}, {'genre_name': '스토리'}]>",감성 스토리
+1925,야채호빵의 봄방학,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1926,죽음에 관하여,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '옴니버스'}]>",드라마 옴니버스
+1927,모태솔로수용소 시즌2~3,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1928,2018 재생금지,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1929,스피릿 핑거스,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1930,ㄹㅇ 관종,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1931,이말년씨리즈 2018,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '코믹'}]>",옴니버스 코믹
+1932,퍼스트 미션,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1933,하루 3컷,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '일상'}]>",옴니버스 일상
+1934,환생동물학교,"<QuerySet [{'genre_name': '감성'}, {'genre_name': '에피소드'}]>",감성 에피소드
+1935,감염자,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1936,지금 이 순간 마법처럼,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1937,고류 진,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1938,연애학,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1939,공대생 너무만화,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+1940,내 ID는 강남미인! - 둘만의 시간,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '에피소드'}]>",로맨스 에피소드
+1941,아기낳는만화,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '일상'}]>",스토리 일상
+1942,심연의 하늘 시즌5,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1943,팀 피닉스,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1944,뱀이 앉은 자리,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1945,금수저,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1946,여중생A-우리들의 축제,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1947,마스크걸,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1948,10월 28일,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1949,Penguin loves Mev,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+1950,한국만화 1990,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '일상'}]>",스토리 일상
+1951,첩보의 별 시즌2,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+1952,우리집에 곰이 이사왔다,"<QuerySet [{'genre_name': '감성'}, {'genre_name': '에피소드'}]>",감성 에피소드
+1953,미스터리 호러 지하철,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1954,오!주예수여,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1955,기로,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1956,탈(TAL),"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1957,네버랜 연대기,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1958,이별만화 완성도,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+1959,갸오오와 사랑꾼들,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+1960,한번 더 해요,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1961,계룡선녀전,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1962,그들에게 사면초가,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1963,선천적 얼간이들,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+1964,마술사,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1965,돌아온 럭키짱,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1966,MZ-퓨어 이블,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+1967,아일랜드 2부,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1968,인간의 숲,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1969,슈퍼 시크릿,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '에피소드'}]>",로맨스 에피소드
+1970,구름의 이동속도,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '에피소드'}]>",드라마 에피소드
+1971,조선좀비실록,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1972,목욕의 신,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1973,마주쳤다,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1974,내 ID는 강남미인!,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1975,2017 루키 단편선-지옥캠프,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '옴니버스'}]>",드라마 옴니버스
+1976,동네변호사 조들호 시즌2,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1977,오늘부터 주군,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1978,오늘도 핸드메이드!,"<QuerySet [{'genre_name': '감성'}, {'genre_name': '에피소드'}]>",감성 에피소드
+1979,DEY 호러채널,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '옴니버스'}]>",스릴러 옴니버스
+1980,파도의 주인,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1981,데모니악,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1982,달콤한 인생_스페셜 에피소드,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1983,천국의 신화 6부,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '시대극'}]>",스토리 시대극
+1984,야부리맨,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+1985,킬러 김빵빵,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '코믹'}]>",옴니버스 코믹
+1986,차원이 다른 만화,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '코믹'}]>",옴니버스 코믹
+1987,2017 멋진 신세계,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '옴니버스'}]>",스릴러 옴니버스
+1988,당신만 몰라!,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+1989,군인RPG,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+1990,문유,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1991,웃지 않는 코믹반 시즌3,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+1992,이런 영웅은 싫어,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+1993,생활의참견,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+1994,송곳 4~5부,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1995,낮에 뜨는 달,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+1996,달수 이야기,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+1997,오늘도 형제는 평화롭다,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+1998,절벽귀,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+1999,시노딕,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2000,녹두전,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2001,열일곱,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2002,잡다한컷,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+2003,나는 귀머거리다,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+2004,미라클! 용사님,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2005,여중생A,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2006,부부생활,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+2007,완벽한 허니문,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2008,우리들은 푸르다,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '코믹'}]>",옴니버스 코믹
+2009,원티드,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2010,오즈랜드,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2011,"이기자, 그린","<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2012,컨트롤제트,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2013,블랙수트,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2014,바로잡는 순애보,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2015,언터처블,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2016,참치와 돌고래,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2017,2017 사이다를 부탁해!,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '일상'}]>",옴니버스 일상
+2018,투명한 동거,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2019,찌질의 역사,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2020,원 뿔러스 원,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2021,MZ,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+2022,숲 속의 미마,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2023,인챈트-나람이야기,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2024,윈터우즈,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2025,대작,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2026,하나(HANA),"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2027,스퍼맨 시즌1,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2028,2016 루키 단편선-지옥캠프,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '옴니버스'}]>",드라마 옴니버스
+2029,악의는 없다,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2030,우바우,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '일상'}]>",옴니버스 일상
+2031,심연의 하늘 시즌4,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2032,매지컬 고삼즈,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2033,한국만화거장전 : 만화보물섬,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '에피소드'}]>",드라마 에피소드
+2034,레코닝,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2035,만렙소녀 오오라,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+2036,3P,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2037,폰령,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2038,소녀더와일즈,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+2039,귀도,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '옴니버스'}]>",스릴러 옴니버스
+2040,아일랜드 1부,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2041,죽은 마법사의 도시,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2042,크리퍼스큘,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2043,3인칭,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '에피소드'}]>",드라마 에피소드
+2044,첩보의 별,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+2045,썸남,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '에피소드'}]>",드라마 에피소드
+2046,2016 비명,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '옴니버스'}]>",스릴러 옴니버스
+2047,천년구미호,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2048,상중하,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+2049,독신으로 살겠다,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2050,이말년 서유기,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+2051,밥풀때기,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+2052,아이소포스 3부,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '시대극'}]>",스토리 시대극
+2053,놓지마 정신줄,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+2054,중립디자인구역,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2055,판다독,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+2056,아이돌 연구소,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+2057,놓정동화,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '코믹'}]>",옴니버스 코믹
+2058,뱀피르,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2059,모던패밀리 2,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+2060,해피,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2061,소곤소곤,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '옴니버스'}]>",스릴러 옴니버스
+2062,적생,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2063,우렁집사,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2064,전설의 레전드,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+2065,후레자식,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2066,레드돌,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2067,2016 학교 다녀오겠습니다,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+2068,프린스의 왕자 - 카페 드 쇼콜라 -,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2069,소울카르텔,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2070,국립자유경제고등학교 세실고 2학기,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2071,마야고,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2072,스페이스 킹,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2073,엄마와 딸 x2,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+2074,샌프란시스코 화랑관,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2075,오성X한음,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '시대극'}]>",스토리 시대극
+2076,동네변호사 조들호 시즌1,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2077,삼국전투기,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '코믹'}]>",옴니버스 코믹
+2078,손의 흔적,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2079,후유증 2,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2080,천적,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '일상'}]>",옴니버스 일상
+2081,2호선 세입자,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2082,화이트멜로우,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2083,오빠 왔다,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+2084,하이브 1~2,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2085,어빌리티,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2086,철벽! 연애 시뮬레이션,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2087,마녀사냥,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2088,아이덴티티,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2089,오민혁 단편선,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '옴니버스'}]>",드라마 옴니버스
+2090,프린세스 5부,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2091,가우스전자 시즌1~2,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+2092,사또(토to),"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2093,천국의 신화,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '시대극'}]>",스토리 시대극
+2094,2015 루키 단편선-지옥캠프,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '옴니버스'}]>",드라마 옴니버스
+2095,스페이스 차이나드레스,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+2096,나는 너를 보았다,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2097,늘 푸른 찻집,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2098,미래소녀,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2099,리얼주주,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '코믹'}]>",옴니버스 코믹
+2100,고고고,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2101,라크리모사,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2102,데드데이즈(DEAD DAYS),"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2103,"아이소포스 1, 2부","<QuerySet [{'genre_name': '스토리'}, {'genre_name': '시대극'}]>",스토리 시대극
+2104,장미아파트 공경비,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2105,공주는 잠 못 이루고,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2106,안 돼요 마왕님!,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2107,바람이 머무는 난,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2108,시큼새큼,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2109,크레이터,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+2110,심연의 하늘 시즌 1~3,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2111,남과 여,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2112,2015 소름,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '옴니버스'}]>",스릴러 옴니버스
+2113,두근거려요,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2114,일등당첨,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2115,Ho!,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2116,신령,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2117,저승에서 만난 사람들,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2118,낚시신공,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+2119,블랙시저스,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2120,우리 헤어졌어요,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2121,모태솔로수용소,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2122,언더클래스 히어로,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2123,조석축구만화,"<QuerySet [{'genre_name': '스포츠'}, {'genre_name': '에피소드'}]>",스포츠 에피소드
+2124,웃지 않는 코믹반 시즌1~2,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+2125,프린스의 왕자,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+2126,노네임드(NoNameD),"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2127,지새는 달,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2128,버닝헬,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2129,불만시대,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2130,차차차,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '옴니버스'}]>",드라마 옴니버스
+2131,재앙은 미묘하게,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2132,빨간책,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '에피소드'}]>",스릴러 에피소드
+2133,한국만화거장전 : 순정만화특집,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2134,언더프린,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2135,플로우,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2136,딥(DEEP),"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2137,질풍기획 시즌2,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+2138,버퍼링,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2139,일사부재리,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2140,제페토,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2141,헬퍼,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+2142,낢 부럽지 않은 신혼여행기,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+2143,문아,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '시대극'}]>",스토리 시대극
+2144,올해의 벚꽃도 함께,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2145,붉은 실,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2146,영수의 봄,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2147,여탕보고서,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+2148,MY OH,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2149,알게뭐야,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2150,격투기특성화사립고교 극지고,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+2151,스튜디오 짭쪼롬,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2152,오늘 밤은 어둠이 무서워요,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+2153,송곳 1~3부,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2154,파라다이스,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2155,혈액형에 관한 간단한 고찰,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+2156,사이드킥,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2157,퇴마전쟁,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+2158,2015 우주특집 단편,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '판타지'}]>",옴니버스 판타지
+2159,모두에게 완자가,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+2160,빙의,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2161,미선 임파서블,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2162,뱀파이어,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2163,싸귀2 : 퇴마록,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2164,프린세스 1~4부,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2165,미결,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2166,리즌,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2167,SM 플레이어,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+2168,출격! 반보트,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2169,아프니까 병원이다,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+2170,운빨로맨스,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2171,미쳐 날뛰는 생활툰,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '일상'}]>",스토리 일상
+2172,2014 루키 단편선-지옥캠프,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '옴니버스'}]>",드라마 옴니버스
+2173,소년들은 무엇을 하고 있을까,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+2174,모디파이,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2175,꽃가족,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+2176,버프소녀 오오라,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+2177,"2014 네이버 웹툰, 왓 이프?","<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '일상'}]>",옴니버스 일상
+2178,시타를 위하여,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2179,시간의 섬,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2180,킥,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+2181,역전! 야매요리,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+2182,레드카펫,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2183,어른스러운 철구,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2184,헬로 미스터 테디,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+2185,강시대소동,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2186,섀도우,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2187,은주의 방,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2188,드래곤레시피,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2189,투엔티스,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2190,피리부는 남자,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2191,기적! 우리에게 일어난 일들,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2192,열무가 익어간다,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2193,아이들은 즐겁다,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2194,너와 너 사이,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2195,와라! 편의점,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+2196,죄의 파편,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2197,실질객관영화,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+2198,우리의 이상한 여행,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2199,코끼리를 끌어안는 방법,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2200,네가 없는 세상,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2201,판타지스케치 - 더 게임,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2202,새와 같이,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2203,그녀는 흡!혈귀,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2204,한국만화거장전,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '일상'}]>",옴니버스 일상
+2205,모던패밀리,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+2206,닥터 프로스트 시즌 1~2,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '옴니버스'}]>",드라마 옴니버스
+2207,빵점동맹,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2208,국립자유경제 고등학교 세실고,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2209,악플게임,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2210,한줌물망초,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2211,좀비를 위한 나라는 없다,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2212,그날의 생존자들,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2213,소나기야,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2214,2013 루키 단편선-지옥캠프,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '옴니버스'}]>",드라마 옴니버스
+2215,라이징패스트볼,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '스포츠'}]>",스토리 스포츠
+2216,키드갱 시즌2,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+2217,터치! 메리크리스마스,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+2218,기사도,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+2219,ENT.,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2220,내일은 웹툰,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+2221,고고루키루,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '옴니버스'}]>",드라마 옴니버스
+2222,아랫집 시누이,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+2223,방과 후 전쟁활동,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2224,미숙한 친구는 G구인,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+2225,"OH, MY GOD!","<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2226,맛집남녀,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+2227,네로의 실험실,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '판타지'}]>",옴니버스 판타지
+2228,월남특급,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2229,아이들의 권 선생님,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '옴니버스'}]>",드라마 옴니버스
+2230,기태류,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2231,수업시간그녀,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2232,움비처럼,"<QuerySet [{'genre_name': '감성'}, {'genre_name': '에피소드'}]>",감성 에피소드
+2233,아빠를 찾습니다,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2234,위아더 능력자!,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+2235,2013 전설의고향,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '옴니버스'}]>",스릴러 옴니버스
+2236,바람의 색,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2237,사랑의 아쿠아리움,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2238,레인보우 로즈,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '판타지'}]>",옴니버스 판타지
+2239,진진돌이 제로,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+2240,타임인조선,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+2241,레사 시즌1,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2242,삵의 발톱,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '시대극'}]>",스토리 시대극
+2243,카오스어택,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2244,새벽9시,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2245,나의 목소리를 들어라,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+2246,사랑일까?,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2247,소년전[Limit],"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2248,우주전함 몰라몰라,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+2249,사랑을 연기하다,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2250,기타맨,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2251,인형의 기사,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+2252,아는사람 이야기,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2253,패션왕,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2254,오늘의 낭만부,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2255,닭통령 계양반,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2256,그린보이,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '스포츠'}]>",스토리 스포츠
+2257,일상날개짓,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+2258,비흔,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '시대극'}]>",스토리 시대극
+2259,무한동력,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2260,달콤한 인생,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+2261,경운기를 탄 왕자님,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+2262,스펙트럼 분석기,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2263,꽃밭에솔,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2264,심심한 마왕,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+2265,고삼이 집나갔다,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2266,길에서 만나다,"<QuerySet [{'genre_name': '감성'}, {'genre_name': '스토리'}]>",감성 스토리
+2267,스마트폰 게임 개발 이야기,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+2268,스쿨홀릭,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+2269,이말년씨리즈,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '코믹'}]>",옴니버스 코믹
+2270,후유증,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2271,MLB카툰,"<QuerySet [{'genre_name': '스포츠'}, {'genre_name': '에피소드'}]>",스포츠 에피소드
+2272,웨스트우드 비브라토,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '옴니버스'}]>",드라마 옴니버스
+2273,한 살이라도 어릴 때,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '일상'}]>",옴니버스 일상
+2274,삼봉이발소,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2275,S라인,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '판타지'}]>",옴니버스 판타지
+2276,2012 루키 단편선-지옥캠프,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '옴니버스'}]>",드라마 옴니버스
+2277,오란씨100,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2278,네이버 앱피소드,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+2279,진진돌이 에볼루션,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2280,옆집화랑,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2281,방울토마토,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2282,아부쟁이,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2283,크레이지 커피 캣,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2284,악당의 사연,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+2285,2012 지구가 멸망한다면?,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '판타지'}]>",옴니버스 판타지
+2286,비바 산티아고,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '일상'}]>",스토리 일상
+2287,연 시즌2,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2288,아스란영웅전,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '판타지'}]>",옴니버스 판타지
+2289,봉봉오쇼콜라,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2290,리버스,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2291,한섬세대,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '시대극'}]>",스토리 시대극
+2292,초록인간,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2293,wish-마녀의 시간,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2294,투명살인,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2295,실질객관동화,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+2296,플라스틱 걸,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2297,자율공상축구탐구만화,"<QuerySet [{'genre_name': '스포츠'}, {'genre_name': '옴니버스'}]>",스포츠 옴니버스
+2298,MODERN BOYS,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2299,질풍기획 시즌1,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+2300,슈퍼트리오 시즌2,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+2301,국가의 탄생,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '코믹'}]>",옴니버스 코믹
+2302,별의 유언,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2303,폭풍의 전학생 - 리부트,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+2304,키드갱,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+2305,멍순이,"<QuerySet [{'genre_name': '감성'}, {'genre_name': '스토리'}]>",감성 스토리
+2306,고시생툰,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '일상'}]>",스토리 일상
+2307,커피우유신화,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2308,부토,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+2309,그런지,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2310,블라인드 메르헨,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2311,연애세포,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2312,유토피아,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2313,뜨거운 것이 좋아.,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2314,나란의사 그런의사,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2315,얼룩말,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2316,봄이여 오라,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2317,개판,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+2318,콘스탄쯔 이야기,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2319,요리대마왕,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+2320,LOST,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2321,지상 최악의 소년,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2322,만화사랑 캠페인,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+2323,폭풍의 전학생,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+2324,야! 오이,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+2325,지원,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '액션'}]>",스토리 액션
+2326,수사9단,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '옴니버스'}]>",스릴러 옴니버스
+2327,2011 루키 단편선-지옥캠프,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '에피소드'}]>",드라마 에피소드
+2328,우연일까?,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2329,세개의시간,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2330,지금 우리 학교는,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2331,남기한엘리트만들기,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '옴니버스'}]>",드라마 옴니버스
+2332,레드초콜릿,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2333,다욤이의 다이어트 다이어리,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2334,단군할배요,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2335,어서오세요.305호에,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2336,단편 할머니/나는내일죽는다,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2337,2011 미스테리 단편,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '옴니버스'}]>",스릴러 옴니버스
+2338,까치우는 날,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2339,잉잉잉,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+2340,굿모닝 스페이스,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2341,멜로홀릭,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2342,불량 뱀파이어,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2343,스토커,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2344,"스마일 브러시, 오래된 사진.","<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+2345,프로젝트 X,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2346,테제,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2347,은하연인전,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2348,묵회,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '시대극'}]>",스토리 시대극
+2349,뷰티플 게임,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '스포츠'}]>",스토리 스포츠
+2350,바이올린처럼.,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2351,견우와 직녀,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2352,징글정글,"<QuerySet [{'genre_name': '감성'}, {'genre_name': '에피소드'}]>",감성 에피소드
+2353,리턴,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '스포츠'}]>",스토리 스포츠
+2354,흐드러지다,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '시대극'}]>",스토리 시대극
+2355,혜성같은 소년,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2356,핑크레이디 클래식,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '옴니버스'}]>",드라마 옴니버스
+2357,힘내요 일본!-[릴레이웹툰],"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+2358,그린스마일,"<QuerySet [{'genre_name': '감성'}, {'genre_name': '스토리'}]>",감성 스토리
+2359,보톡스,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2360,오렌지 마말레이드,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2361,열쇠줍는아이,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2362,키스우드,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2363,입시명문사립 정글고등학교,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '코믹'}]>",옴니버스 코믹
+2364,미호이야기,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2365,안나라수마나라,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2366,열아홉스물하나,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2367,차라리 만나지 않았더라면,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2368,이별의 품격,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2369,동경소녀,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+2370,심부름센터 K,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '코믹'}]>",옴니버스 코믹
+2371,거상 김만덕,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2372,증거,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2373,의령수,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2374,공부하기 좋은 날,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '옴니버스'}]>",스릴러 옴니버스
+2375,피터팬날다,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+2376,소설가J,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2377,심장이뛰다,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2378,싸우자귀신아,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '옴니버스'}]>",드라마 옴니버스
+2379,패밀리맨,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2380,낢에게와요,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '일상'}]>",옴니버스 일상
+2381,구름의 노래,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '옴니버스'}]>",드라마 옴니버스
+2382,스마일브러시,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+2383,연옥님이 보고계셔,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2384,"17살, 그 여름날의 기적","<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2385,몽타주,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2386,탐구생활4-그대와 함께 하이킹,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '코믹'}]>",옴니버스 코믹
+2387,판타스틱 어른백서,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+2388,악연,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2389,겨울동화,"<QuerySet [{'genre_name': '감성'}, {'genre_name': '에피소드'}]>",감성 에피소드
+2390,색으로 말하다,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '옴니버스'}]>",드라마 옴니버스
+2391,펫다이어리2.런,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2392,고(故)길창덕화백 추모웹툰,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '일상'}]>",옴니버스 일상
+2393,연,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '옴니버스'}]>",스릴러 옴니버스
+2394,두근두근두근거려,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2395,새끼손가락,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2396,우월한하루,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2397,나는 어디에 있는 거니,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '일상'}]>",옴니버스 일상
+2398,로봇빠찌,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2399,번개기동대 2009,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2400,카라멜마끼아또,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '옴니버스'}]>",로맨스 옴니버스
+2401,일편단심화,"<QuerySet [{'genre_name': '감성'}, {'genre_name': '에피소드'}]>",감성 에피소드
+2402,번데기스,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '스포츠'}]>",스토리 스포츠
+2403,플루타크 영웅전,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2404,러브판타지페이퍼,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2405,사노라면,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '옴니버스'}]>",드라마 옴니버스
+2406,고향의꽃,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2407,고(故)노무현 前대통령 추모웹툰,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '일상'}]>",옴니버스 일상
+2408,N의등대-눈의등대,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2409,슈퍼트리오,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+2410,탐구생활3,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '코믹'}]>",옴니버스 코믹
+2411,창위의일루젼,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2412,핑크레이디,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2413,N의등대-도망자,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2414,N의등대-busted,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2415,내일은 럭키곰스타,"<QuerySet [{'genre_name': '옴니버스'}, {'genre_name': '코믹'}]>",옴니버스 코믹
+2416,N의등대-thecalling,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2417,3단합체김창남,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2418,골방환상곡,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+2419,반지의제왕,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '판타지'}]>",스토리 판타지
+2420,와탕카2,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+2421,향수,"<QuerySet [{'genre_name': '스릴러'}, {'genre_name': '스토리'}]>",스릴러 스토리
+2422,개편 축하 릴레이 카툰,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+2423,에피소드메이비,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2424,취업의소리,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+2425,태왕광개토,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '시대극'}]>",스토리 시대극
+2426,제로,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2427,트라우마,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+2428,식스센스,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+2429,탐구생활2,"<QuerySet [{'genre_name': '스토리'}, {'genre_name': '코믹'}]>",스토리 코믹
+2430,구석구석캠페인,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '일상'}]>",에피소드 일상
+2431,체스아일,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2432,펫다이어리,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '스토리'}]>",드라마 스토리
+2433,도자기,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '에피소드'}]>",드라마 에피소드
+2434,AA,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '스토리'}]>",로맨스 스토리
+2435,사랑in,"<QuerySet [{'genre_name': '로맨스'}, {'genre_name': '옴니버스'}]>",로맨스 옴니버스
+2436,까뱅,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+2437,와탕카,"<QuerySet [{'genre_name': '에피소드'}, {'genre_name': '코믹'}]>",에피소드 코믹
+2438,타투,"<QuerySet [{'genre_name': '드라마'}, {'genre_name': '옴니버스'}]>",드라마 옴니버스

@@ -1,36 +1,29 @@
 import React, { useState, useRef } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { withRouter, useHistory } from 'react-router-dom';
-import { useForm } from 'react-hook-form';
-// import Avatar from '@material-ui/core/Avatar';
-// import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
-import Button from '@material-ui/core/Button';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import TextField from '@material-ui/core/TextField';
-// import FormControlLabel from '@material-ui/core/FormControlLabel';
-// import Checkbox from '@material-ui/core/Checkbox';
-import Link from '@material-ui/core/Link';
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
+import { withRouter, useHistory } from "react-router-dom";
+import Button from "@material-ui/core/Button";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import TextField from "@material-ui/core/TextField";
+import Link from "@material-ui/core/Link";
+import Grid from "@material-ui/core/Grid";
+import { makeStyles } from "@material-ui/core/styles";
+import Container from "@material-ui/core/Container";
 
-import { join } from "../actions/auth";
+import AuthService from "../modules/auth.api";
 
 
 const useStyles = makeStyles((theme) => ({
   paper: {
     marginTop: theme.spacing(8),
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
   },
   avatar: {
     margin: theme.spacing(1),
     backgroundColor: theme.palette.secondary.main,
   },
   form: {
-    width: '100%',
+    width: "100%",
     marginTop: theme.spacing(3),
   },
   submit: {
@@ -38,33 +31,27 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-
 function Join() {
   const form = useRef();
   const history = useHistory();
-  const { handleSubmit, register, errors, watch } = useForm();
   const classes = useStyles();
-  
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordConfirm, setPasswordConfirm] = useState("");
-  // const [successful, setSuccessful] = useState(false);
-  
-  // const { message } = useSelector(state => state.message);
-  const dispatch = useDispatch();
-  
-  const joinBtnClick = () => {
-    if (!errors) {
-      dispatch(join(email, password))
-        .then(() => {
-          history.push("/login");
-        })
-        .catch(() => {
-          // setSuccessful(false);
-        });
-    } else {
-      // setSuccessful(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await AuthService.join(
+        username,
+        email,
+        password,
+        passwordConfirm
+      );
+      history.push("/login");
+    } catch (err) {
+      console.log(err);
     }
   };
 
@@ -92,36 +79,20 @@ function Join() {
     <Container component="main" maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper}>
-        {/* <Avatar className={classes.avatar}>
-          <LockOutlinedIcon />
-        </Avatar> */}
-        <Typography component="h1" variant="h5">
-          Sign up
-        </Typography>
-        <form className={classes.form} onSubmit={handleSubmit(joinBtnClick)} ref={form}>
+        <form className={classes.form} onSubmit={handleSubmit}>
           <Grid container spacing={2}>
             <Grid item xs={12}>
               <TextField
                 autoComplete="username"
+                required
                 name="username"
                 variant="outlined"
                 fullWidth
                 id="username"
-                label="userName"
+                label="닉네임"
                 autoFocus
                 value={username}
                 onChange={onChangeUsername}
-                ref={register({
-                  required: 'required',
-                  pattern: {
-                    value: /[0-9a-zA-Z]+/,
-                    message: 'invalid username',
-                  },
-                  maxLength: {
-                    value: 10,
-                    message: 'maxLength is 10',
-                  },
-                })}
               />
             </Grid>
             <Grid item xs={12}>
@@ -130,18 +101,11 @@ function Join() {
                 required
                 fullWidth
                 id="email"
-                label="Email Address"
+                label="이메일(로그인에 사용됩니다)"
                 name="email"
                 autoComplete="email"
                 value={email}
                 onChange={onChangeEmail}
-                ref={register({
-                  required: 'required',
-                  pattern: {
-                    value: /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i,
-                    message: 'invalid email',
-                  },
-                })}
               />
             </Grid>
             <Grid item xs={12}>
@@ -150,27 +114,12 @@ function Join() {
                 required
                 fullWidth
                 name="password"
-                label="Password"
+                label="비밀번호"
                 type="password"
                 id="password"
                 autoComplete="current-password"
                 value={password}
-                onChange={onChangeEmail}
-                ref={register({
-                  required: 'required',
-                  pattern: {
-                    value: /[0-9a-zA-Z]+/,
-                    message: 'invalid password',
-                  },
-                  minLength: {
-                    value: 8,
-                    message: 'maxLength is 8',
-                  },
-                  maxLength: {
-                    value: 16,
-                    message: 'maxLength is 16',
-                  },
-                })}
+                onChange={onChangePassword}
               />
             </Grid>
             <Grid item xs={12}>
@@ -179,25 +128,14 @@ function Join() {
                 required
                 fullWidth
                 name="passwordConfirm"
-                label="Password Confirm"
-                type="passwordConfirm"
+                label="비밀번호 확인"
+                type="password"
                 id="passwordConfirm"
                 autoComplete="current-password-confirm"
                 value={passwordConfirm}
-                ref={register({
-                  required: '필수입력사항 입니다.',
-                  validate: value => {
-                    return value === watch('password');
-                  },
-                })}
+                onChange={onChangePasswordConfirm}
               />
             </Grid>
-            {/* <Grid item xs={12}>
-              <FormControlLabel
-                control={<Checkbox value="allowExtraEmails" color="primary" />}
-                label="I want to receive inspiration, marketing promotions and updates via email."
-              />
-            </Grid> */}
           </Grid>
           <Button
             type="submit"
@@ -206,12 +144,17 @@ function Join() {
             color="primary"
             className={classes.submit}
           >
-            Join
+            <span>가입하기</span>
           </Button>
           <Grid container justify="flex-end">
             <Grid item>
-              <Link onClick={()=>{history.push('/login')}} variant="body2">
-                Already have an account? Login
+              <Link
+                onClick={() => {
+                  history.push("/login");
+                }}
+                variant="body2"
+              >
+                계정이 있으신가요? 로그인!
               </Link>
             </Grid>
           </Grid>
@@ -219,5 +162,5 @@ function Join() {
       </div>
     </Container>
   );
-};
-export default withRouter(Join)
+}
+export default withRouter(Join);

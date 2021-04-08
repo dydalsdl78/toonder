@@ -25,17 +25,22 @@ SECRET_KEY = 'cxva1mapfk%d@^p(sq5h=1la^gc(f_s-sw6__r1p&@1me@4gx$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '*',    # 서버 배포 시에는 필요한 HOST만 추가
+]
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'recommends',
+    'accounts',     # 유저 관련 기능
+    'recommends',   # 추천 알고리즘
+    'webtoons',     # 메인페이지를 위한 웹툰들, 상세페이지를 위한 웹툰들, 검색기능
 
     'rest_framework',
     'corsheaders',
-
+    'drf_yasg',
+    
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -44,6 +49,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
+# 서버 배포 시에는 서버 주소로 변경
+CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     'http://localhost:3001',
@@ -134,4 +141,27 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
+import os
+
+STATIC_FILES_DIRS = [
+    BASE_DIR / 'static',
+    BASE_DIR / 'media',
+]
 STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
+TEMP = BASE_DIR / 'media_cdn/temp'
+BASE_DIR = "http://127.0.0.1:8000"     # 서버 배포 시에는 서버 주소로 변경
+
+
+AUTH_USER_MODEL = 'accounts.User'
+
+
+import datetime
+
+JWT_AUTH = {
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(seconds=600),
+    'JWT_ALLOW_REFRESH': True,
+    'JWT_REFRESH_EXPIRATION_DELTA' : datetime.timedelta(days=7),
+}
