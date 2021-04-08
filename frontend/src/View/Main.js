@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import MediaCard from "../Components/MediaCard";
-import { Switch, Route, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { AuthContext } from "../Context/context";
 import "./Main.css";
 
