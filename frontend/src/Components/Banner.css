@@ -1,0 +1,15 @@
+.banner {
+  /* background: radial-gradient(
+    circle,
+    rgba(58, 130, 219, 1) 0%,
+    rgba(238, 174, 202, 1) 100%
+  ); */
+  height: 60px;
+  color: #fdf4be;
+  display: flex;
+  align-items: center; /* Vertical center alignment */
+  justify-content: center; /* Horizontal center alignment */
+  font-family: "Rubik Mono One", sans-serif;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}

@@ -1,22 +1,17 @@
-import React, { useState, useRef, useContext } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React, { useState, useContext } from "react";
 import { Redirect, withRouter, useHistory } from "react-router-dom";
-import { useForm } from "react-hook-form";
-// import Avatar from '@material-ui/core/Avatar';
-// import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 
 import Button from "@material-ui/core/Button";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import TextField from "@material-ui/core/TextField";
-// import FormControlLabel from '@material-ui/core/FormControlLabel';
-// import Checkbox from '@material-ui/core/Checkbox';
+
 import Link from "@material-ui/core/Link";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import { AuthContext } from "../Context/context";
-import AuthService from "../modules/auth.api";
+
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -44,14 +39,10 @@ function Login() {
   const classes = useStyles();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [loading, setLoading] = useState(false);
-
-  // const { message } = useSelector(state => state.message);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("login");
-    authContext.login(email, password);
+    await authContext.login(email, password);
   };
 
   const onChangeEmail = (e) => {
@@ -63,20 +54,22 @@ function Login() {
     const password = e.target.value;
     setPassword(password);
   };
-
-  if (AuthContext.isLoggedIn) {
+  if (AuthContext.username) {
     return <Redirect to="/" />;
   }
 
-  return (
+  return authContext.isLoggedIn ? (
+    <Redirect
+      to={{
+        pathname: "/",
+      }}
+    />
+  ) : (
     <Container component="main" maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper}>
-        {/* <Avatar className={classes.avatar}>
-          <LockOutlinedIcon />
-        </Avatar> */}
         <Typography component="h1" variant="h5">
-          Login
+          로그인해요
         </Typography>
         <form className={classes.form} onSubmit={handleSubmit}>
           <TextField
@@ -85,7 +78,7 @@ function Login() {
             // required
             fullWidth
             id="email"
-            label="Email Address"
+            label="이메일"
             name="email"
             value={email}
             onChange={onChangeEmail}
@@ -100,34 +93,24 @@ function Login() {
             name="password"
             value={password}
             onChange={onChangePassword}
-            label="Password"
+            label="비밀번호"
             type="password"
             id="password"
             autoComplete="current-password"
           />
-          {/* <FormControlLabel
-            control={<Checkbox value="remember" color="primary" />}
-            label="Remember me"
-          /> */}
           <Button
             type="submit"
             fullWidth
             variant="contained"
             color="primary"
-            disabled={loading}
             className={classes.submit}
           >
-            {loading ? "Loding" : "Login"}
+            로그인
           </Button>
           <Grid container>
-            <Grid item xs>
-              <Link href="#" variant="body2">
-                Forgot password?
-              </Link>
-            </Grid>
             <Grid item>
               <Link variant="body2" onClick={() => history.push("/join")}>
-                {"Don't have an account? Sign Up"}
+                {"처음 오셨나요? 회원가입!"}
               </Link>
             </Grid>
           </Grid>

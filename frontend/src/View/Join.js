@@ -1,20 +1,15 @@
 import React, { useState, useRef } from "react";
-import { useDispatch, useSelector } from "react-redux";
 import { withRouter, useHistory } from "react-router-dom";
-// import Avatar from '@material-ui/core/Avatar';
-// import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Button from "@material-ui/core/Button";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import TextField from "@material-ui/core/TextField";
-// import FormControlLabel from '@material-ui/core/FormControlLabel';
-// import Checkbox from '@material-ui/core/Checkbox';
 import Link from "@material-ui/core/Link";
 import Grid from "@material-ui/core/Grid";
-import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 
 import AuthService from "../modules/auth.api";
+
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -45,34 +40,19 @@ function Join() {
   const [password, setPassword] = useState("");
   const [passwordConfirm, setPasswordConfirm] = useState("");
 
-  //검증 룰이 더 필요함. 유저네임 이메일 중복확인, 비밀번호 일치여부 프론트에서 확인.
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("join");
     try {
-      let res = await AuthService.join(
+      await AuthService.join(
         username,
         email,
         password,
         passwordConfirm
       );
-      console.log(res);
       history.push("/login");
-    } catch (e) {
-      console.log(e);
+    } catch (err) {
+      console.log(err);
     }
-    // if (!errors) {
-    //   dispatch(join(email, password))
-    //     .then(() => {
-    //       setSuccessful(true);
-    //       history.push("/login");
-    //     })
-    //     .catch(() => {
-    //       setSuccessful(false);
-    //     });
-    // } else {
-    //   setSuccessful(false);
-    // }
   };
 
   const onChangeUsername = (e) => {
@@ -99,22 +79,17 @@ function Join() {
     <Container component="main" maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper}>
-        {/* <Avatar className={classes.avatar}>
-          <LockOutlinedIcon />
-        </Avatar> */}
-        <Typography component="h1" variant="h5">
-          Sign up
-        </Typography>
         <form className={classes.form} onSubmit={handleSubmit}>
           <Grid container spacing={2}>
             <Grid item xs={12}>
               <TextField
                 autoComplete="username"
+                required
                 name="username"
                 variant="outlined"
                 fullWidth
                 id="username"
-                label="userName"
+                label="닉네임"
                 autoFocus
                 value={username}
                 onChange={onChangeUsername}
@@ -126,7 +101,7 @@ function Join() {
                 required
                 fullWidth
                 id="email"
-                label="Email Address"
+                label="이메일(로그인에 사용됩니다)"
                 name="email"
                 autoComplete="email"
                 value={email}
@@ -139,7 +114,7 @@ function Join() {
                 required
                 fullWidth
                 name="password"
-                label="Password"
+                label="비밀번호"
                 type="password"
                 id="password"
                 autoComplete="current-password"
@@ -153,7 +128,7 @@ function Join() {
                 required
                 fullWidth
                 name="passwordConfirm"
-                label="Password Confirm"
+                label="비밀번호 확인"
                 type="password"
                 id="passwordConfirm"
                 autoComplete="current-password-confirm"
@@ -161,12 +136,6 @@ function Join() {
                 onChange={onChangePasswordConfirm}
               />
             </Grid>
-            {/* <Grid item xs={12}>
-                <FormControlLabel
-                  control={<Checkbox value="allowExtraEmails" color="primary" />}
-                  label="I want to receive inspiration, marketing promotions and updates via email."
-                />
-              </Grid> */}
           </Grid>
           <Button
             type="submit"
@@ -175,7 +144,7 @@ function Join() {
             color="primary"
             className={classes.submit}
           >
-            <span>Join</span>
+            <span>가입하기</span>
           </Button>
           <Grid container justify="flex-end">
             <Grid item>
@@ -185,7 +154,7 @@ function Join() {
                 }}
                 variant="body2"
               >
-                Already have an account? Login
+                계정이 있으신가요? 로그인!
               </Link>
             </Grid>
           </Grid>

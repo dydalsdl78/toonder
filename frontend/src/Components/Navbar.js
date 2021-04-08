@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { withRouter, useHistory } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
@@ -8,26 +8,24 @@ import ThumbUpIcon from "@material-ui/icons/ThumbUp";
 import BookmarksIcon from "@material-ui/icons/Bookmarks";
 import AccountBoxIcon from "@material-ui/icons/AccountBox";
 
-// import styled from 'styled-components';
 
 const useStyles = makeStyles({
   root: {
     width: "100%",
-    backgroundColor: "#f8f3d4",
+    backgroundColor: "white",
     position: "fixed",
     bottom: 0,
   },
   selected: {
-    color: "red",
+    color: "#f8f3d4",
   },
 });
 
-function Navbar() {
+function Navbar({ value, setValue }) {
   const history = useHistory();
   const classes = useStyles();
-  const [value, setValue] = useState("/");
 
-  const handleChange = (event, newValue) => {
+  const handleChange = async (event, newValue) => {
     setValue(newValue);
     history.push(newValue);
   };
