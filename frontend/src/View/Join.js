@@ -10,7 +10,6 @@ import Container from "@material-ui/core/Container";
 
 import AuthService from "../modules/auth.api";
 
-
 const useStyles = makeStyles((theme) => ({
   paper: {
     marginTop: theme.spacing(8),
@@ -43,14 +42,10 @@ function Join() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await AuthService.join(
-        username,
-        email,
-        password,
-        passwordConfirm
-      );
+      await AuthService.join(username, email, password, passwordConfirm);
       history.push("/login");
     } catch (err) {
+      alert("이미 가입된 회원정보입니다.");
       console.log(err);
     }
   };
